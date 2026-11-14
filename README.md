@@ -18,9 +18,11 @@ This is a stylized arcade game, not instruction for responding to a real fire.
 
 ## Play and review
 
-Development and acceptance testing are in progress. See [the initial design](INITIAL_VECTOR_PROMPT.txt)
-and [the acceptance checklist](docs/ACCEPTANCE.md) for intended scope. A source
-checkout is not evidence that native or browser acceptance has passed.
+Implementation is available; native acceptance is incomplete because emulator
+control approval expired unanswered. See [verification and remaining work](docs/VERIFICATION.md),
+[the initial design](INITIAL_VECTOR_PROMPT.txt) and [the acceptance checklist](docs/ACCEPTANCE.md).
+Actual Web play cleared the first incident and retained its reward after reopening.
+Required Android touch/ad tests and phone/tablet capture evidence remain pending.
 
 Open `project.godot` in Godot 4.5.1 and run the main scene. Android is the primary
 target; Web uses the single-threaded Compatibility export. There is no Windows

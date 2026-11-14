@@ -2,7 +2,7 @@
 
 The following is development evidence, not a claim of physical-device or Play backend verification. Parent handoff evidence records exported Android/Web play separately.
 
-On 2026-11-14, Godot 4.5.1 ran these suites in dedicated temporary user-data directories. No owner save was used. The current markers before Android handoff are `MODEL PASS checks=439`, `PROFILE PASS checks=57` and `UI PASS checks=236`.
+On 2026-11-14, Godot 4.5.1 ran these suites in dedicated temporary user-data directories. No owner save was used. The current markers before Android handoff are `MODEL PASS checks=439`, `PROFILE PASS checks=57` and `UI PASS checks=245`.
 
 The model suite plays all 36 authored campaign incidents and 72 consecutive seeded Daily dates with a simple baseline strategy using the actual heat/water/moisture/spread rules. All clear with three stars. It also completes eight escalating Endless waves. The slowest campaign strategy clear took 38.62 seconds; minimum campaign structure was 82.46%. These are model strategies, not human or Android gameplay. It verifies empty-tank holding cannot refill, release refills, no-input failure, earned-only recovery, duplicate grants, exact continued simulation after snapshot restoration, malformed snapshot rejection and actual upgrade effects.
 
@@ -27,3 +27,5 @@ Defects found and fixed during implementation:
 Godot's restricted Windows runtime emitted `Failed to read the root certificate store` in the isolated sandbox; the suites reached their pass markers. This environment warning is distinct from gameplay assertions and must not be presented as a production-services test. One initial invocation omitted temporary user-data isolation, failed creating `user://logs`, and crashed before executing its test script. No save operation ran in that invocation. Subsequent invocations used scoped temporary directories. No helper-error-1223 retry or security-setting change was used.
 
 Run suites from a prepared imported project using `godot --headless --path . --script res://tests/test_model.gd`, the analogous profile script, and `--script res://tests/test_ui.gd -- --qa-profile=user://qa-unique-name.json`. Prefer the repository's isolated validation runner, which supplies fresh per-suite data directories. The world and platform owners maintain their own additional regression suites and counts.
+
+The final Web audio regression passed all 245 UI checks. Nine added assertions cover pause transitions, muted track changes, focus return during ads, repeated frames and the streaming backend. Actual isolated-browser navigation, two campaign clears, upgrade persistence and active-run reload are recorded in VERIFICATION.md. No subjective listening or native input acceptance is implied.

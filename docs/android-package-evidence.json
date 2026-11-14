@@ -1,0 +1,125 @@
+{
+  "game": "Cinderbrook Brigade",
+  "checked_utc": "2026-11-14T18:56:12.015445+00:00",
+  "result": "PASS - static Android package inspection only",
+  "artifacts": {
+    "cinderbrook-brigade-test.apk": {
+      "path": "build/android/cinderbrook-brigade-test.apk",
+      "bytes": 282832400,
+      "sha256": "bdf5190d962015ab72fbc0a7a4a9e415b747020f102d5e2154ee3d986c73a85d",
+      "matches_coordinator_expected_sha256": true
+    },
+    "cinderbrook-brigade-debug.aab": {
+      "path": "build/android/cinderbrook-brigade-debug.aab",
+      "bytes": 110324286,
+      "sha256": "270aae9b6b3ab1e4988e351c8001755aab35bdef0dbb38a9453cce11cb5f758d",
+      "matches_coordinator_expected_sha256": true
+    }
+  },
+  "tools": {
+    "sdk_build_tools": "36.0.0",
+    "zipalign": {
+      "sdk_relative_path": "build-tools/36.0.0/zipalign.exe",
+      "version_basis": "build-tools source.properties Pkg.Revision=36.0.0"
+    },
+    "aapt": {
+      "sdk_relative_path": "build-tools/36.0.0/aapt.exe",
+      "reported_version": "Android Asset Packaging Tool, v0.2-13193326"
+    },
+    "apksigner": {
+      "sdk_relative_path": "build-tools/36.0.0/lib/apksigner.jar",
+      "reported_version": "0.9",
+      "invocation": "JDK 17 java -jar; official SDK apksigner CLI"
+    }
+  },
+  "commands": [
+    {
+      "tool": "zipalign",
+      "arguments": [
+        "-c",
+        "-P",
+        "16",
+        "4",
+        "build/android/cinderbrook-brigade-test.apk"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "check": "16 KB ZIP alignment"
+    },
+    {
+      "tool": "aapt",
+      "arguments": [
+        "dump",
+        "badging",
+        "build/android/cinderbrook-brigade-test.apk"
+      ],
+      "exit_code": 0
+    },
+    {
+      "tool": "aapt",
+      "arguments": [
+        "dump",
+        "xmltree",
+        "build/android/cinderbrook-brigade-test.apk",
+        "AndroidManifest.xml"
+      ],
+      "exit_code": 0
+    },
+    {
+      "tool": "apksigner",
+      "arguments": [
+        "verify",
+        "--verbose",
+        "--print-certs",
+        "build/android/cinderbrook-brigade-test.apk"
+      ],
+      "exit_code": 0,
+      "stdout_first_line": "Verifies",
+      "invocation": "JDK 17 java -jar build-tools/36.0.0/lib/apksigner.jar"
+    }
+  ],
+  "apk_manifest": {
+    "package": "com.ethannyakabuski.cinderbrookbrigade",
+    "application_label": "Cinderbrook Brigade",
+    "version_code": 1,
+    "version_name": "0.1.0",
+    "min_sdk": 24,
+    "target_sdk": 36,
+    "compile_sdk": 35,
+    "native_abis": [
+      "arm64-v8a",
+      "x86",
+      "x86_64"
+    ],
+    "admob_app_id": "ca-app-pub-3940256099942544~3347511713",
+    "admob_configuration": "Google sample App ID"
+  },
+  "apk_signature": {
+    "verifies": true,
+    "signers": 1,
+    "v1": false,
+    "v2": true,
+    "v3": false,
+    "v3_1": false,
+    "v4": false,
+    "source_stamp": false,
+    "certificate_dn": "CN=Godot, OU=Godot Engine, O=Stichting Godot, C=NL",
+    "certificate_sha256": "8382ec1c56494eb35141e0ed29986d2ec5009c529b096a2fd60d5fc5c5213e4f",
+    "certificate_sha1": "62ee05f2cac9953648bf3ad7c822558cc633cd24",
+    "public_key_sha256": "b275792ba29c854a9fd9546bb45e12ec96c9effa65d03f8588a40904fb270e8f",
+    "algorithm": "RSA",
+    "key_size_bits": 2048,
+    "development_certificate_not_owner_release_signing": true
+  },
+  "limitations": {
+    "apk_or_aab_modified": false,
+    "private_keystore_read": false,
+    "build_or_export_run": false,
+    "native_runtime_tested": false,
+    "physical_device_tested": false,
+    "device_16kb_execution_tested": false,
+    "aab_signature_tested": false,
+    "play_console_or_production_backend_tested": false
+  },
+  "inspection_scope": "Rebuilt audio-fix packages; APK zipalign -c -P 16 4, aapt badging/xmltree, and apksigner verify --verbose --print-certs rerun. AAB SHA256 checked only in this receipt; other structural checks are separate."
+}

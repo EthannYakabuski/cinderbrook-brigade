@@ -35,6 +35,25 @@ func buttons_fit(parent:Node) -> void:
 		if not scrolling:check(rect.position.y>=-1 and rect.end.y<=root.size.y+1,"button vertical viewport "+parent.text)
 	for child in parent.get_children():buttons_fit(child)
 
+func audio_lifecycle() -> void:
+	check(main.music.playback_type==(AudioServer.PLAYBACK_TYPE_STREAM if OS.has_feature("web") else AudioServer.PLAYBACK_TYPE_DEFAULT),"Web music streams; native music retains default backend")
+	check(main.spray_audio.playback_type==AudioServer.PLAYBACK_TYPE_DEFAULT,"short effects retain default low-latency backend")
+	main._notification(Node.NOTIFICATION_APPLICATION_FOCUS_OUT);main._process(0);await process_frame
+	check(main.music.stream_paused,"focus loss pauses music")
+	main.fullscreen=true;main._notification(Node.NOTIFICATION_APPLICATION_FOCUS_IN)
+	for i in range(120):main._process(0)
+	await process_frame;check(main.music.stream_paused,"focus return during ad keeps music paused")
+	main.fullscreen=false;main._process(0);await process_frame
+	check(not main.music.stream_paused,"ad dismissal restores enabled music")
+	main.profile.data.music=false;main._music("district_01");await process_frame
+	check(main.music.stream_paused,"new district track respects muted setting")
+	main._music("menu");await process_frame
+	check(main.music.stream_paused,"menu track remains muted across transition")
+	main.profile.data.music=true;main._process(0);await process_frame
+	check(not main.music.stream_paused and main.music.playing,"music setting resumes the current track")
+	for i in range(120):main._process(0)
+	await process_frame;check(not main.music.stream_paused and main.music.playing,"unchanged frames preserve playing music")
+
 func run_tests() -> void:
 	root.size=Vector2i(540,960)
 	var save_path:="user://qa-ui-tests.json"
@@ -48,6 +67,7 @@ func run_tests() -> void:
 	if scene==null or not scene.can_instantiate():printerr("UI game scene failed to load");quit(1);return
 	main=scene.instantiate();root.add_child(main);await process_frame;await process_frame;main.set_process(false)
 	check(main.screen=="home","initial home");buttons_fit(main.ui)
+	await audio_lifecycle()
 	await tap(button_named(main.ui,"Save incident 01"));check(main.screen=="play","native ScreenTouch activates primary Control")
 	if main.screen!="play":main.start_run("campaign",0);await process_frame
 	buttons_fit(main.ui);check(main.run.run_id>0 and not main.profile.data.active.is_empty(),"start snapshot durable")

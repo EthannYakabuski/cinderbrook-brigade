@@ -1,0 +1,1156 @@
+{
+  "game": "Cinderbrook Brigade",
+  "checked_utc": "2026-11-14T18:54:41.665939+00:00",
+  "result": "PASS",
+  "method": "Actual packaged CTEX bytes and all decoded RGBA channels equal source PNG pixels",
+  "catalog_sha256": "2b0cb55da98abea92050ce0192940a4bcdda719e1d5e7a0e044908b2c0a88977",
+  "icon_count": 23,
+  "artifacts": {
+    "apk": {
+      "path": "build/android/cinderbrook-brigade-test.apk",
+      "bytes": 282832400,
+      "sha256": "bdf5190d962015ab72fbc0a7a4a9e415b747020f102d5e2154ee3d986c73a85d",
+      "expected_sha256_matched": true,
+      "zip_crc_passed": true
+    },
+    "aab": {
+      "path": "build/android/cinderbrook-brigade-debug.aab",
+      "bytes": 110324286,
+      "sha256": "270aae9b6b3ab1e4988e351c8001755aab35bdef0dbb38a9453cce11cb5f758d",
+      "expected_sha256_matched": true,
+      "zip_crc_passed": true
+    }
+  },
+  "icons": [
+    {
+      "kind": "achievements",
+      "id": "first_response",
+      "source_path": "assets/achievements/first_response.png",
+      "source_sha256": "bced37e562719dc0a6db84ee45d3af442541ac92bd9c365b0b85980384d6ed81",
+      "source_md5": "3d56d9a0b9f9c5e2dd9aca998c94323e",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "26e20175bd2c6980c5529ce4f1f2052996e5d625e78503cbabcdfd5338016654",
+      "source_import_path": "assets/achievements/first_response.png.import",
+      "import_md5_path": ".godot/imported/first_response.png-314b1b7e0858f094d5166ae5da878b04.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "55c4b9eca7330fbf8aaaa089d9f5b635",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/first_response.png-314b1b7e0858f094d5166ae5da878b04.ctex",
+      "local_ctex_sha256": "1d4ed1cea9bd8b41d801c826c44f36a327d56282b9a1b3d63ff4674208e4d7aa",
+      "local_decoded_rgba_sha256": "26e20175bd2c6980c5529ce4f1f2052996e5d625e78503cbabcdfd5338016654",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 198902,
+        "riff_length_field": 198894
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/first_response.png-314b1b7e0858f094d5166ae5da878b04.ctex",
+        "ctex_sha256": "1d4ed1cea9bd8b41d801c826c44f36a327d56282b9a1b3d63ff4674208e4d7aa",
+        "decoded_rgba_sha256": "26e20175bd2c6980c5529ce4f1f2052996e5d625e78503cbabcdfd5338016654",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/achievements/first_response.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/first_response.png-314b1b7e0858f094d5166ae5da878b04.ctex",
+        "ctex_sha256": "1d4ed1cea9bd8b41d801c826c44f36a327d56282b9a1b3d63ff4674208e4d7aa",
+        "decoded_rgba_sha256": "26e20175bd2c6980c5529ce4f1f2052996e5d625e78503cbabcdfd5338016654",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/achievements/first_response.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "achievements",
+      "id": "cool_customer",
+      "source_path": "assets/achievements/cool_customer.png",
+      "source_sha256": "1d55bc49c1877ac68a14fff956d53ea011378bf1c928a909764c448b08b95d17",
+      "source_md5": "1d0892b74e0ff4d7f74ca5872cc2d508",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "e002a9ea538865fb281b4becf288f2c7c2e8ca68e1252ced4103520554df19d9",
+      "source_import_path": "assets/achievements/cool_customer.png.import",
+      "import_md5_path": ".godot/imported/cool_customer.png-1b2d3f1441e471970ee5ff64205cefbe.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "73ddf0e035de959d26628144df6e0559",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/cool_customer.png-1b2d3f1441e471970ee5ff64205cefbe.ctex",
+      "local_ctex_sha256": "492c50aaba93862abf78478ed9b8246b5343303bf6e6b03f69d5c8ce84d958b8",
+      "local_decoded_rgba_sha256": "e002a9ea538865fb281b4becf288f2c7c2e8ca68e1252ced4103520554df19d9",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 201830,
+        "riff_length_field": 201822
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/cool_customer.png-1b2d3f1441e471970ee5ff64205cefbe.ctex",
+        "ctex_sha256": "492c50aaba93862abf78478ed9b8246b5343303bf6e6b03f69d5c8ce84d958b8",
+        "decoded_rgba_sha256": "e002a9ea538865fb281b4becf288f2c7c2e8ca68e1252ced4103520554df19d9",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/achievements/cool_customer.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/cool_customer.png-1b2d3f1441e471970ee5ff64205cefbe.ctex",
+        "ctex_sha256": "492c50aaba93862abf78478ed9b8246b5343303bf6e6b03f69d5c8ce84d958b8",
+        "decoded_rgba_sha256": "e002a9ea538865fb281b4becf288f2c7c2e8ca68e1252ced4103520554df19d9",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/achievements/cool_customer.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "achievements",
+      "id": "sweep_team",
+      "source_path": "assets/achievements/sweep_team.png",
+      "source_sha256": "95df2772c8207a547c230167beeb0ccb82cdadf02247baefd3140fab02a7f02e",
+      "source_md5": "081de963d68d5573e14b0d0d687e6498",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "b8609b5aa47e157c6db10ddd4c0bbb61431b8689fe6d93e78bf4bbdee96937d5",
+      "source_import_path": "assets/achievements/sweep_team.png.import",
+      "import_md5_path": ".godot/imported/sweep_team.png-66539be0336f0d1ce1c9adc16a3f9032.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "45d2c7ecc376215ea35a2f9206c2df4e",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/sweep_team.png-66539be0336f0d1ce1c9adc16a3f9032.ctex",
+      "local_ctex_sha256": "6a20ef22a3a551a040bc5f67286d35c7bbf60df9d68ac7190c3e9dd3cb9d9b3f",
+      "local_decoded_rgba_sha256": "b8609b5aa47e157c6db10ddd4c0bbb61431b8689fe6d93e78bf4bbdee96937d5",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 184038,
+        "riff_length_field": 184030
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/sweep_team.png-66539be0336f0d1ce1c9adc16a3f9032.ctex",
+        "ctex_sha256": "6a20ef22a3a551a040bc5f67286d35c7bbf60df9d68ac7190c3e9dd3cb9d9b3f",
+        "decoded_rgba_sha256": "b8609b5aa47e157c6db10ddd4c0bbb61431b8689fe6d93e78bf4bbdee96937d5",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/achievements/sweep_team.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/sweep_team.png-66539be0336f0d1ce1c9adc16a3f9032.ctex",
+        "ctex_sha256": "6a20ef22a3a551a040bc5f67286d35c7bbf60df9d68ac7190c3e9dd3cb9d9b3f",
+        "decoded_rgba_sha256": "b8609b5aa47e157c6db10ddd4c0bbb61431b8689fe6d93e78bf4bbdee96937d5",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/achievements/sweep_team.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "achievements",
+      "id": "maple_mews",
+      "source_path": "assets/achievements/maple_mews.png",
+      "source_sha256": "3dc3bf62c51dc5b59beb879c5a2b275dc2e6fb3ecc33d96c2f2e39478268fb9b",
+      "source_md5": "74b74a254735a58f233382b1a6387ebb",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "a91583c0cf6a78d1ccf524a4b42a1d366f6f9cc7030e4ea65cf3b1bef4d8b9c5",
+      "source_import_path": "assets/achievements/maple_mews.png.import",
+      "import_md5_path": ".godot/imported/maple_mews.png-02f5911fddc8f1b80a0f2daa8761f3e2.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "807690f78ff07c9954167a1bdc6fc931",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/maple_mews.png-02f5911fddc8f1b80a0f2daa8761f3e2.ctex",
+      "local_ctex_sha256": "9dcd146a0a8f787ba28e23b1cd51b833b9e5a4afb2e802a9c2b355cf103187db",
+      "local_decoded_rgba_sha256": "a91583c0cf6a78d1ccf524a4b42a1d366f6f9cc7030e4ea65cf3b1bef4d8b9c5",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 194800,
+        "riff_length_field": 194792
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/maple_mews.png-02f5911fddc8f1b80a0f2daa8761f3e2.ctex",
+        "ctex_sha256": "9dcd146a0a8f787ba28e23b1cd51b833b9e5a4afb2e802a9c2b355cf103187db",
+        "decoded_rgba_sha256": "a91583c0cf6a78d1ccf524a4b42a1d366f6f9cc7030e4ea65cf3b1bef4d8b9c5",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/achievements/maple_mews.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/maple_mews.png-02f5911fddc8f1b80a0f2daa8761f3e2.ctex",
+        "ctex_sha256": "9dcd146a0a8f787ba28e23b1cd51b833b9e5a4afb2e802a9c2b355cf103187db",
+        "decoded_rgba_sha256": "a91583c0cf6a78d1ccf524a4b42a1d366f6f9cc7030e4ea65cf3b1bef4d8b9c5",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/achievements/maple_mews.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "achievements",
+      "id": "pine_camp",
+      "source_path": "assets/achievements/pine_camp.png",
+      "source_sha256": "d0103d92479b2178bacdf79364ad8fa28278bfa364545cad77b035bfcc877f1e",
+      "source_md5": "1daead8f6c6428dd1596abbdbbe9c6c4",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "bed539b5b2da1a63170670deb68dbd4d70cd7fc8ded2879129d340b604b7722f",
+      "source_import_path": "assets/achievements/pine_camp.png.import",
+      "import_md5_path": ".godot/imported/pine_camp.png-ad86d685e9951bb8b224fa42cdf04cd1.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "4fc9337df57054bc31696f88968b8162",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/pine_camp.png-ad86d685e9951bb8b224fa42cdf04cd1.ctex",
+      "local_ctex_sha256": "6d1e051517adf71514f3378c4c5e5e28a14ac62358a3c7e1cad890568831fda0",
+      "local_decoded_rgba_sha256": "bed539b5b2da1a63170670deb68dbd4d70cd7fc8ded2879129d340b604b7722f",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 205714,
+        "riff_length_field": 205706
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/pine_camp.png-ad86d685e9951bb8b224fa42cdf04cd1.ctex",
+        "ctex_sha256": "6d1e051517adf71514f3378c4c5e5e28a14ac62358a3c7e1cad890568831fda0",
+        "decoded_rgba_sha256": "bed539b5b2da1a63170670deb68dbd4d70cd7fc8ded2879129d340b604b7722f",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/achievements/pine_camp.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/pine_camp.png-ad86d685e9951bb8b224fa42cdf04cd1.ctex",
+        "ctex_sha256": "6d1e051517adf71514f3378c4c5e5e28a14ac62358a3c7e1cad890568831fda0",
+        "decoded_rgba_sha256": "bed539b5b2da1a63170670deb68dbd4d70cd7fc8ded2879129d340b604b7722f",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/achievements/pine_camp.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "achievements",
+      "id": "warehouse_row",
+      "source_path": "assets/achievements/warehouse_row.png",
+      "source_sha256": "6029616fc7ffafd889728625246148c3a9225236adab1ecde72e7f3d772b0ef7",
+      "source_md5": "7fc8a0e0881edbe3f635d25442b27dc9",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "2ff134913e910d08c4f0833bc310761f5f7bc11827c8461880b9dd54545f9d81",
+      "source_import_path": "assets/achievements/warehouse_row.png.import",
+      "import_md5_path": ".godot/imported/warehouse_row.png-2935017a436d50284565edb7f29e2eaa.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "3e773edd0af8c37867db8c3bed65dee4",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/warehouse_row.png-2935017a436d50284565edb7f29e2eaa.ctex",
+      "local_ctex_sha256": "33d48a5b8115e3e17b7d3504cff35738e9a9122cd8f5d71c23d94f40f230fa89",
+      "local_decoded_rgba_sha256": "2ff134913e910d08c4f0833bc310761f5f7bc11827c8461880b9dd54545f9d81",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 193216,
+        "riff_length_field": 193208
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/warehouse_row.png-2935017a436d50284565edb7f29e2eaa.ctex",
+        "ctex_sha256": "33d48a5b8115e3e17b7d3504cff35738e9a9122cd8f5d71c23d94f40f230fa89",
+        "decoded_rgba_sha256": "2ff134913e910d08c4f0833bc310761f5f7bc11827c8461880b9dd54545f9d81",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/achievements/warehouse_row.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/warehouse_row.png-2935017a436d50284565edb7f29e2eaa.ctex",
+        "ctex_sha256": "33d48a5b8115e3e17b7d3504cff35738e9a9122cd8f5d71c23d94f40f230fa89",
+        "decoded_rgba_sha256": "2ff134913e910d08c4f0833bc310761f5f7bc11827c8461880b9dd54545f9d81",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/achievements/warehouse_row.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "achievements",
+      "id": "orchard_bend",
+      "source_path": "assets/achievements/orchard_bend.png",
+      "source_sha256": "1fe4d40674f8b5d55e12a64609e8550de05e846b42e17696c3bb253a37f2e92f",
+      "source_md5": "da9e347e36d1d0f9a6030275dd30453c",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "9dcf431496b5e6a5dbf1fb303ea7ba699a1b20bdc9dd1f7b518e5e1a052e08c2",
+      "source_import_path": "assets/achievements/orchard_bend.png.import",
+      "import_md5_path": ".godot/imported/orchard_bend.png-2e7417b048af23089743eda8fec06950.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "975746e9e904015898039a7b087bcd79",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/orchard_bend.png-2e7417b048af23089743eda8fec06950.ctex",
+      "local_ctex_sha256": "ecbe794f4e16418d9ab5643e0c2be500ee6c614730de35f16975a425269e9ca0",
+      "local_decoded_rgba_sha256": "9dcf431496b5e6a5dbf1fb303ea7ba699a1b20bdc9dd1f7b518e5e1a052e08c2",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 202414,
+        "riff_length_field": 202406
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/orchard_bend.png-2e7417b048af23089743eda8fec06950.ctex",
+        "ctex_sha256": "ecbe794f4e16418d9ab5643e0c2be500ee6c614730de35f16975a425269e9ca0",
+        "decoded_rgba_sha256": "9dcf431496b5e6a5dbf1fb303ea7ba699a1b20bdc9dd1f7b518e5e1a052e08c2",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/achievements/orchard_bend.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/orchard_bend.png-2e7417b048af23089743eda8fec06950.ctex",
+        "ctex_sha256": "ecbe794f4e16418d9ab5643e0c2be500ee6c614730de35f16975a425269e9ca0",
+        "decoded_rgba_sha256": "9dcf431496b5e6a5dbf1fb303ea7ba699a1b20bdc9dd1f7b518e5e1a052e08c2",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/achievements/orchard_bend.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "achievements",
+      "id": "lakeside_fair",
+      "source_path": "assets/achievements/lakeside_fair.png",
+      "source_sha256": "30672da93e5fdc5f4fa99a1e70cc2da30866715f8813283dcddfbdb3d666cc3e",
+      "source_md5": "7b6e65db48be0135a8e2c5ef6c544b40",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "727f0aa9c9c25072e60e853dd6f361dbebd7d11c1f8622ed2f3d1cae41ba10b0",
+      "source_import_path": "assets/achievements/lakeside_fair.png.import",
+      "import_md5_path": ".godot/imported/lakeside_fair.png-d95d33c3670762e46e8bf0719f60035d.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "353dfc4c959088f711b606a77ce1cd73",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/lakeside_fair.png-d95d33c3670762e46e8bf0719f60035d.ctex",
+      "local_ctex_sha256": "e2b6c45c08f4975d14d1f700ed757ae58667f5e536fb2cb0fa4aa7a92752b04b",
+      "local_decoded_rgba_sha256": "727f0aa9c9c25072e60e853dd6f361dbebd7d11c1f8622ed2f3d1cae41ba10b0",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 218544,
+        "riff_length_field": 218536
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/lakeside_fair.png-d95d33c3670762e46e8bf0719f60035d.ctex",
+        "ctex_sha256": "e2b6c45c08f4975d14d1f700ed757ae58667f5e536fb2cb0fa4aa7a92752b04b",
+        "decoded_rgba_sha256": "727f0aa9c9c25072e60e853dd6f361dbebd7d11c1f8622ed2f3d1cae41ba10b0",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/achievements/lakeside_fair.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/lakeside_fair.png-d95d33c3670762e46e8bf0719f60035d.ctex",
+        "ctex_sha256": "e2b6c45c08f4975d14d1f700ed757ae58667f5e536fb2cb0fa4aa7a92752b04b",
+        "decoded_rgba_sha256": "727f0aa9c9c25072e60e853dd6f361dbebd7d11c1f8622ed2f3d1cae41ba10b0",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/achievements/lakeside_fair.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "achievements",
+      "id": "lantern_heights",
+      "source_path": "assets/achievements/lantern_heights.png",
+      "source_sha256": "a930aa66a0bda224266cf30fc5e92205761528493eb2bc4f29705844fb8ba680",
+      "source_md5": "7414b4b5ee9b55df07ba86255944c7ce",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "ab7f90b324a4a4c11f750f1ca403bf506e145c6d9869f245470482fa5bc528a0",
+      "source_import_path": "assets/achievements/lantern_heights.png.import",
+      "import_md5_path": ".godot/imported/lantern_heights.png-e0bbe4d6dddbf8427e29fa6370d87dac.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "fbd24096130b1b75a768285ca7ec460f",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/lantern_heights.png-e0bbe4d6dddbf8427e29fa6370d87dac.ctex",
+      "local_ctex_sha256": "30eff27d7007c072ce214e3b9cfaf197cb257b9221da633d19959aeced05616d",
+      "local_decoded_rgba_sha256": "ab7f90b324a4a4c11f750f1ca403bf506e145c6d9869f245470482fa5bc528a0",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 207216,
+        "riff_length_field": 207208
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/lantern_heights.png-e0bbe4d6dddbf8427e29fa6370d87dac.ctex",
+        "ctex_sha256": "30eff27d7007c072ce214e3b9cfaf197cb257b9221da633d19959aeced05616d",
+        "decoded_rgba_sha256": "ab7f90b324a4a4c11f750f1ca403bf506e145c6d9869f245470482fa5bc528a0",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/achievements/lantern_heights.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/lantern_heights.png-e0bbe4d6dddbf8427e29fa6370d87dac.ctex",
+        "ctex_sha256": "30eff27d7007c072ce214e3b9cfaf197cb257b9221da633d19959aeced05616d",
+        "decoded_rgba_sha256": "ab7f90b324a4a4c11f750f1ca403bf506e145c6d9869f245470482fa5bc528a0",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/achievements/lantern_heights.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "achievements",
+      "id": "three_star",
+      "source_path": "assets/achievements/three_star.png",
+      "source_sha256": "b4fde7444f751533dc188830edfb1d3283505a6ab3a7ec39ca81412ecfb79423",
+      "source_md5": "ab9838e8e0797605ddc02bca50d7f8c4",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "d6af1b1a7783b769a945b87342147bd8f453e9f2988d0ef7202ed736954f424d",
+      "source_import_path": "assets/achievements/three_star.png.import",
+      "import_md5_path": ".godot/imported/three_star.png-df69f00fee8592c14da64a56c8201782.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "627dd3d1777ed1fbd9d3a437dc53dbc3",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/three_star.png-df69f00fee8592c14da64a56c8201782.ctex",
+      "local_ctex_sha256": "dd9b6ada2f16f25537ebc360c1ae6ddce418fa8146f0728584324f795a643cbc",
+      "local_decoded_rgba_sha256": "d6af1b1a7783b769a945b87342147bd8f453e9f2988d0ef7202ed736954f424d",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 188088,
+        "riff_length_field": 188080
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/three_star.png-df69f00fee8592c14da64a56c8201782.ctex",
+        "ctex_sha256": "dd9b6ada2f16f25537ebc360c1ae6ddce418fa8146f0728584324f795a643cbc",
+        "decoded_rgba_sha256": "d6af1b1a7783b769a945b87342147bd8f453e9f2988d0ef7202ed736954f424d",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/achievements/three_star.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/three_star.png-df69f00fee8592c14da64a56c8201782.ctex",
+        "ctex_sha256": "dd9b6ada2f16f25537ebc360c1ae6ddce418fa8146f0728584324f795a643cbc",
+        "decoded_rgba_sha256": "d6af1b1a7783b769a945b87342147bd8f453e9f2988d0ef7202ed736954f424d",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/achievements/three_star.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "achievements",
+      "id": "star_collector",
+      "source_path": "assets/achievements/star_collector.png",
+      "source_sha256": "cf62f2e9fd24b2c172338db5bc5eb1dae12e76624700d4e81e8cfd157f058c53",
+      "source_md5": "24df4b97f59bfd61beef610e4a66450c",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "2d3fa791fe652bd050fcefe2d3987efd4f5ccab0526ad63acb871805a53b6788",
+      "source_import_path": "assets/achievements/star_collector.png.import",
+      "import_md5_path": ".godot/imported/star_collector.png-b4fe843ba5bc4d061eca8fc827f44207.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "6cc48cefd4f52c6d32053a5efec357bc",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/star_collector.png-b4fe843ba5bc4d061eca8fc827f44207.ctex",
+      "local_ctex_sha256": "6bed4113d1870438594ae3cc5e65f54101d0e52be7abbf42ad9847847f742623",
+      "local_decoded_rgba_sha256": "2d3fa791fe652bd050fcefe2d3987efd4f5ccab0526ad63acb871805a53b6788",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 210038,
+        "riff_length_field": 210030
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/star_collector.png-b4fe843ba5bc4d061eca8fc827f44207.ctex",
+        "ctex_sha256": "6bed4113d1870438594ae3cc5e65f54101d0e52be7abbf42ad9847847f742623",
+        "decoded_rgba_sha256": "2d3fa791fe652bd050fcefe2d3987efd4f5ccab0526ad63acb871805a53b6788",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/achievements/star_collector.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/star_collector.png-b4fe843ba5bc4d061eca8fc827f44207.ctex",
+        "ctex_sha256": "6bed4113d1870438594ae3cc5e65f54101d0e52be7abbf42ad9847847f742623",
+        "decoded_rgba_sha256": "2d3fa791fe652bd050fcefe2d3987efd4f5ccab0526ad63acb871805a53b6788",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/achievements/star_collector.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "achievements",
+      "id": "cinderbrook_hero",
+      "source_path": "assets/achievements/cinderbrook_hero.png",
+      "source_sha256": "6a84cb657787c7e24855232ba9827316d17bcc0e0a933084eb6990dd544639ce",
+      "source_md5": "d166343367bdaf82eba8684de0a17615",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "06e6af021e6937d20be3b84a06e8015940af0214593fdd117a26d74d3e89adf6",
+      "source_import_path": "assets/achievements/cinderbrook_hero.png.import",
+      "import_md5_path": ".godot/imported/cinderbrook_hero.png-30239395c2e347f2e40b0957de8ffb11.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "0195e3f5062fde0330a9e478eb347ef5",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/cinderbrook_hero.png-30239395c2e347f2e40b0957de8ffb11.ctex",
+      "local_ctex_sha256": "ffbf72c697ae99da84d1f2c9679dfacd5ec47aa7b3f6ab018edb6967386f5fb5",
+      "local_decoded_rgba_sha256": "06e6af021e6937d20be3b84a06e8015940af0214593fdd117a26d74d3e89adf6",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 220890,
+        "riff_length_field": 220882
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/cinderbrook_hero.png-30239395c2e347f2e40b0957de8ffb11.ctex",
+        "ctex_sha256": "ffbf72c697ae99da84d1f2c9679dfacd5ec47aa7b3f6ab018edb6967386f5fb5",
+        "decoded_rgba_sha256": "06e6af021e6937d20be3b84a06e8015940af0214593fdd117a26d74d3e89adf6",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/achievements/cinderbrook_hero.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/cinderbrook_hero.png-30239395c2e347f2e40b0957de8ffb11.ctex",
+        "ctex_sha256": "ffbf72c697ae99da84d1f2c9679dfacd5ec47aa7b3f6ab018edb6967386f5fb5",
+        "decoded_rgba_sha256": "06e6af021e6937d20be3b84a06e8015940af0214593fdd117a26d74d3e89adf6",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/achievements/cinderbrook_hero.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "achievements",
+      "id": "steady_hands",
+      "source_path": "assets/achievements/steady_hands.png",
+      "source_sha256": "d35fb5f997ec40b374fc2a1ee0e0403c47a90a948f700ca28c1123112031b827",
+      "source_md5": "641a8065b89f7936560d209e62b4ac8c",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "cf211488bfd6c40f6dc0dca987254215e7ff1b7a45ac56909a2022a03e55e3d9",
+      "source_import_path": "assets/achievements/steady_hands.png.import",
+      "import_md5_path": ".godot/imported/steady_hands.png-a4acc0e2dbc671deff6018ba3cd6f759.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "96f21b66a9ddba5a74b03c1f334948e9",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/steady_hands.png-a4acc0e2dbc671deff6018ba3cd6f759.ctex",
+      "local_ctex_sha256": "9d52c888aead08e713b583761c96935c2a658693e9fb062ace6e4ae04bd7729d",
+      "local_decoded_rgba_sha256": "cf211488bfd6c40f6dc0dca987254215e7ff1b7a45ac56909a2022a03e55e3d9",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 190594,
+        "riff_length_field": 190586
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/steady_hands.png-a4acc0e2dbc671deff6018ba3cd6f759.ctex",
+        "ctex_sha256": "9d52c888aead08e713b583761c96935c2a658693e9fb062ace6e4ae04bd7729d",
+        "decoded_rgba_sha256": "cf211488bfd6c40f6dc0dca987254215e7ff1b7a45ac56909a2022a03e55e3d9",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/achievements/steady_hands.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/steady_hands.png-a4acc0e2dbc671deff6018ba3cd6f759.ctex",
+        "ctex_sha256": "9d52c888aead08e713b583761c96935c2a658693e9fb062ace6e4ae04bd7729d",
+        "decoded_rgba_sha256": "cf211488bfd6c40f6dc0dca987254215e7ff1b7a45ac56909a2022a03e55e3d9",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/achievements/steady_hands.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "achievements",
+      "id": "watch_captain",
+      "source_path": "assets/achievements/watch_captain.png",
+      "source_sha256": "a33e6151c8fb595635449dd3c4f30b1111debd6c582126ccd77b5c3ca02b1dac",
+      "source_md5": "5280aa50507717068069b05628edff21",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "3c0b1d64045693dbf4587dee809879ae832536cf58e58e618daa640f243a0641",
+      "source_import_path": "assets/achievements/watch_captain.png.import",
+      "import_md5_path": ".godot/imported/watch_captain.png-8acbb389839a572b5c8a020e829b207b.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "a9bdef2b8c710f5cef3047b59a66487d",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/watch_captain.png-8acbb389839a572b5c8a020e829b207b.ctex",
+      "local_ctex_sha256": "1e36ec1243b229182555d79a3ebf408a428abc76dd62fc354810b9be4fddc85b",
+      "local_decoded_rgba_sha256": "3c0b1d64045693dbf4587dee809879ae832536cf58e58e618daa640f243a0641",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 219696,
+        "riff_length_field": 219688
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/watch_captain.png-8acbb389839a572b5c8a020e829b207b.ctex",
+        "ctex_sha256": "1e36ec1243b229182555d79a3ebf408a428abc76dd62fc354810b9be4fddc85b",
+        "decoded_rgba_sha256": "3c0b1d64045693dbf4587dee809879ae832536cf58e58e618daa640f243a0641",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/achievements/watch_captain.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/watch_captain.png-8acbb389839a572b5c8a020e829b207b.ctex",
+        "ctex_sha256": "1e36ec1243b229182555d79a3ebf408a428abc76dd62fc354810b9be4fddc85b",
+        "decoded_rgba_sha256": "3c0b1d64045693dbf4587dee809879ae832536cf58e58e618daa640f243a0641",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/achievements/watch_captain.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "achievements",
+      "id": "daily_dispatch",
+      "source_path": "assets/achievements/daily_dispatch.png",
+      "source_sha256": "2e7efc8813c4b75a2e59febb5239b4910324b70d84be3b8d1ca33e8b6187a486",
+      "source_md5": "a1b6cc5dc0606bc67199a22642bde537",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "e5dae64e871fd5d1425583738b265b7a272090d2745562dc1f9ff24a05f08b7d",
+      "source_import_path": "assets/achievements/daily_dispatch.png.import",
+      "import_md5_path": ".godot/imported/daily_dispatch.png-845a721ba7e7b44410e5043a112a45e3.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "fea6d9a7c7d0868e38f1e03c00a2ea66",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/daily_dispatch.png-845a721ba7e7b44410e5043a112a45e3.ctex",
+      "local_ctex_sha256": "ff4b37aa3df4bf3fac35eb67cd1618b9b336d276fc00bea9402e68885d65db78",
+      "local_decoded_rgba_sha256": "e5dae64e871fd5d1425583738b265b7a272090d2745562dc1f9ff24a05f08b7d",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 190748,
+        "riff_length_field": 190740
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/daily_dispatch.png-845a721ba7e7b44410e5043a112a45e3.ctex",
+        "ctex_sha256": "ff4b37aa3df4bf3fac35eb67cd1618b9b336d276fc00bea9402e68885d65db78",
+        "decoded_rgba_sha256": "e5dae64e871fd5d1425583738b265b7a272090d2745562dc1f9ff24a05f08b7d",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/achievements/daily_dispatch.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/daily_dispatch.png-845a721ba7e7b44410e5043a112a45e3.ctex",
+        "ctex_sha256": "ff4b37aa3df4bf3fac35eb67cd1618b9b336d276fc00bea9402e68885d65db78",
+        "decoded_rgba_sha256": "e5dae64e871fd5d1425583738b265b7a272090d2745562dc1f9ff24a05f08b7d",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/achievements/daily_dispatch.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "achievements",
+      "id": "week_of_service",
+      "source_path": "assets/achievements/week_of_service.png",
+      "source_sha256": "7fea6a2cfcdbee25470f7697968b38301956e0ea267bd5ddf60a194057f8b567",
+      "source_md5": "ab514b1e98d1393eecf5eab5a69bd8a1",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "4d67ad3e9bdceff85486998d380a0cb17a1f5d01f057bfa18addd6dfd380b31e",
+      "source_import_path": "assets/achievements/week_of_service.png.import",
+      "import_md5_path": ".godot/imported/week_of_service.png-f3ff91b91bf6fd46b4119a1b28d4c50a.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "af140cecac6c4776d45d846c89b79c5d",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/week_of_service.png-f3ff91b91bf6fd46b4119a1b28d4c50a.ctex",
+      "local_ctex_sha256": "6d63a8963e4508d2f70f18e668b7a32e588f14b37fdbb4b211371223dd7a48f9",
+      "local_decoded_rgba_sha256": "4d67ad3e9bdceff85486998d380a0cb17a1f5d01f057bfa18addd6dfd380b31e",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 210436,
+        "riff_length_field": 210428
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/week_of_service.png-f3ff91b91bf6fd46b4119a1b28d4c50a.ctex",
+        "ctex_sha256": "6d63a8963e4508d2f70f18e668b7a32e588f14b37fdbb4b211371223dd7a48f9",
+        "decoded_rgba_sha256": "4d67ad3e9bdceff85486998d380a0cb17a1f5d01f057bfa18addd6dfd380b31e",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/achievements/week_of_service.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/week_of_service.png-f3ff91b91bf6fd46b4119a1b28d4c50a.ctex",
+        "ctex_sha256": "6d63a8963e4508d2f70f18e668b7a32e588f14b37fdbb4b211371223dd7a48f9",
+        "decoded_rgba_sha256": "4d67ad3e9bdceff85486998d380a0cb17a1f5d01f057bfa18addd6dfd380b31e",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/achievements/week_of_service.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "achievements",
+      "id": "quartermaster",
+      "source_path": "assets/achievements/quartermaster.png",
+      "source_sha256": "71d8139a19325f580b59c2300bcacee85c6d42f92995d67c4df8b591711aaa08",
+      "source_md5": "8c91f71f22c36ae256e527d966a34a73",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "8cb29b938155271f548cb9000dc3a5bddfe7191a3530b6bdac2a40fbd4284e25",
+      "source_import_path": "assets/achievements/quartermaster.png.import",
+      "import_md5_path": ".godot/imported/quartermaster.png-0d1d109a7a7f10ea30b77f222caeb401.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "981ff084f160e73ac30806917bcc809d",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/quartermaster.png-0d1d109a7a7f10ea30b77f222caeb401.ctex",
+      "local_ctex_sha256": "23d1917b9774b364d07732993f582432622347aade3993c16fcbd5623163deed",
+      "local_decoded_rgba_sha256": "8cb29b938155271f548cb9000dc3a5bddfe7191a3530b6bdac2a40fbd4284e25",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 199918,
+        "riff_length_field": 199910
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/quartermaster.png-0d1d109a7a7f10ea30b77f222caeb401.ctex",
+        "ctex_sha256": "23d1917b9774b364d07732993f582432622347aade3993c16fcbd5623163deed",
+        "decoded_rgba_sha256": "8cb29b938155271f548cb9000dc3a5bddfe7191a3530b6bdac2a40fbd4284e25",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/achievements/quartermaster.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/quartermaster.png-0d1d109a7a7f10ea30b77f222caeb401.ctex",
+        "ctex_sha256": "23d1917b9774b364d07732993f582432622347aade3993c16fcbd5623163deed",
+        "decoded_rgba_sha256": "8cb29b938155271f548cb9000dc3a5bddfe7191a3530b6bdac2a40fbd4284e25",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/achievements/quartermaster.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "achievements",
+      "id": "first_upgrade",
+      "source_path": "assets/achievements/first_upgrade.png",
+      "source_sha256": "3ba51d7918809e346b8732bfab40a4f3ed94a530e4cee28e93c27e6340c40a30",
+      "source_md5": "17d67caaf8ee65aa50446729094f8689",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "7009b2586e61f58df5b4c5ea5c9c2c3687ab53f855d971988eee17fa0bc17478",
+      "source_import_path": "assets/achievements/first_upgrade.png.import",
+      "import_md5_path": ".godot/imported/first_upgrade.png-f7d630e64a3d6290020b377c24affe2a.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "bb7ecf9f6fd5c021956ea82d88c162c9",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/first_upgrade.png-f7d630e64a3d6290020b377c24affe2a.ctex",
+      "local_ctex_sha256": "eeae1729a9ed16c6e4f4eb3187db416f7fa66cee1b17a21ee2b633dd0d083418",
+      "local_decoded_rgba_sha256": "7009b2586e61f58df5b4c5ea5c9c2c3687ab53f855d971988eee17fa0bc17478",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 203000,
+        "riff_length_field": 202992
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/first_upgrade.png-f7d630e64a3d6290020b377c24affe2a.ctex",
+        "ctex_sha256": "eeae1729a9ed16c6e4f4eb3187db416f7fa66cee1b17a21ee2b633dd0d083418",
+        "decoded_rgba_sha256": "7009b2586e61f58df5b4c5ea5c9c2c3687ab53f855d971988eee17fa0bc17478",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/achievements/first_upgrade.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/first_upgrade.png-f7d630e64a3d6290020b377c24affe2a.ctex",
+        "ctex_sha256": "eeae1729a9ed16c6e4f4eb3187db416f7fa66cee1b17a21ee2b633dd0d083418",
+        "decoded_rgba_sha256": "7009b2586e61f58df5b4c5ea5c9c2c3687ab53f855d971988eee17fa0bc17478",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/achievements/first_upgrade.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "achievements",
+      "id": "brigade_rank_5",
+      "source_path": "assets/achievements/brigade_rank_5.png",
+      "source_sha256": "b6a92a650e238bffcbe98b4e1a329dce7191226e372e93da6461f87d44794482",
+      "source_md5": "fd616e67ef2cba87201103a527d2f489",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "0099638dcb630c3160c3b7c3821440efc523c84feef28aff36a570d7da115007",
+      "source_import_path": "assets/achievements/brigade_rank_5.png.import",
+      "import_md5_path": ".godot/imported/brigade_rank_5.png-36a9620323722b0604dc4c9cc699bcd3.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "ce31b31c480844c5d8d558e75d37efdb",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/brigade_rank_5.png-36a9620323722b0604dc4c9cc699bcd3.ctex",
+      "local_ctex_sha256": "bed396511d365ee89808ca480c296a98b48efb6c7f147182ffcb223d8b60248c",
+      "local_decoded_rgba_sha256": "0099638dcb630c3160c3b7c3821440efc523c84feef28aff36a570d7da115007",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 202120,
+        "riff_length_field": 202112
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/brigade_rank_5.png-36a9620323722b0604dc4c9cc699bcd3.ctex",
+        "ctex_sha256": "bed396511d365ee89808ca480c296a98b48efb6c7f147182ffcb223d8b60248c",
+        "decoded_rgba_sha256": "0099638dcb630c3160c3b7c3821440efc523c84feef28aff36a570d7da115007",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/achievements/brigade_rank_5.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/brigade_rank_5.png-36a9620323722b0604dc4c9cc699bcd3.ctex",
+        "ctex_sha256": "bed396511d365ee89808ca480c296a98b48efb6c7f147182ffcb223d8b60248c",
+        "decoded_rgba_sha256": "0099638dcb630c3160c3b7c3821440efc523c84feef28aff36a570d7da115007",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/achievements/brigade_rank_5.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "achievements",
+      "id": "brigade_rank_10",
+      "source_path": "assets/achievements/brigade_rank_10.png",
+      "source_sha256": "0de6ea66a6b2851fff7061d0eeb2abf716d3cbdf0f81c390b4e9a5f4122b69d0",
+      "source_md5": "50b4b2aee1cb462750ec2f6e6cd2f86d",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "f2d840fa48391eb6c2bd8768898146eb27a54b55cfc5c007eea40e340d7a035a",
+      "source_import_path": "assets/achievements/brigade_rank_10.png.import",
+      "import_md5_path": ".godot/imported/brigade_rank_10.png-e0cf72787c26fe55457be49b93690ec4.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "b805e0d13e80cdb5736f54fce4cc29ff",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/brigade_rank_10.png-e0cf72787c26fe55457be49b93690ec4.ctex",
+      "local_ctex_sha256": "173a8bd646d42b7ef656f37a1197ee2961adc91c25abdebdc55972be0e6598a6",
+      "local_decoded_rgba_sha256": "f2d840fa48391eb6c2bd8768898146eb27a54b55cfc5c007eea40e340d7a035a",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 225002,
+        "riff_length_field": 224994
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/brigade_rank_10.png-e0cf72787c26fe55457be49b93690ec4.ctex",
+        "ctex_sha256": "173a8bd646d42b7ef656f37a1197ee2961adc91c25abdebdc55972be0e6598a6",
+        "decoded_rgba_sha256": "f2d840fa48391eb6c2bd8768898146eb27a54b55cfc5c007eea40e340d7a035a",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/achievements/brigade_rank_10.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/brigade_rank_10.png-e0cf72787c26fe55457be49b93690ec4.ctex",
+        "ctex_sha256": "173a8bd646d42b7ef656f37a1197ee2961adc91c25abdebdc55972be0e6598a6",
+        "decoded_rgba_sha256": "f2d840fa48391eb6c2bd8768898146eb27a54b55cfc5c007eea40e340d7a035a",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/achievements/brigade_rank_10.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "leaderboards",
+      "id": "career_xp",
+      "source_path": "assets/leaderboards/career_xp.png",
+      "source_sha256": "b1e0e5718f6bcad73905b544b057dd4817318266013aa84f28cce64b6fd8f57e",
+      "source_md5": "e029f0f2760d2908eda5dbcf199f64f6",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "a7972d2bb13d2f1965de78644d64dad0cf3d8052791d8ed6503f70fe0925b4f5",
+      "source_import_path": "assets/leaderboards/career_xp.png.import",
+      "import_md5_path": ".godot/imported/career_xp.png-02127c6cc830eba5a9b06ace9bb9e60c.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "54ed7e7ef6a6255663f6b97f93841b3d",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/career_xp.png-02127c6cc830eba5a9b06ace9bb9e60c.ctex",
+      "local_ctex_sha256": "2136f1670629602a2db4dbe74064db2f5b4eac34bc094ae86f26aad292024260",
+      "local_decoded_rgba_sha256": "a7972d2bb13d2f1965de78644d64dad0cf3d8052791d8ed6503f70fe0925b4f5",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 254054,
+        "riff_length_field": 254046
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/career_xp.png-02127c6cc830eba5a9b06ace9bb9e60c.ctex",
+        "ctex_sha256": "2136f1670629602a2db4dbe74064db2f5b4eac34bc094ae86f26aad292024260",
+        "decoded_rgba_sha256": "a7972d2bb13d2f1965de78644d64dad0cf3d8052791d8ed6503f70fe0925b4f5",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/leaderboards/career_xp.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/career_xp.png-02127c6cc830eba5a9b06ace9bb9e60c.ctex",
+        "ctex_sha256": "2136f1670629602a2db4dbe74064db2f5b4eac34bc094ae86f26aad292024260",
+        "decoded_rgba_sha256": "a7972d2bb13d2f1965de78644d64dad0cf3d8052791d8ed6503f70fe0925b4f5",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/leaderboards/career_xp.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "leaderboards",
+      "id": "incident_score",
+      "source_path": "assets/leaderboards/incident_score.png",
+      "source_sha256": "3ce900b4a724d0bdd7dc94579354c4a28b3afc3d9cc79609bc01794fe5ec105f",
+      "source_md5": "c6a11b0e164d2412563352936cad27c6",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "8f65d448d44eb361f01c257967fd39477049e303804140b37340a36b178a98be",
+      "source_import_path": "assets/leaderboards/incident_score.png.import",
+      "import_md5_path": ".godot/imported/incident_score.png-eb75dde2d22a43d9b9f9f17c66108a0d.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "40a6ff57d4e148bb3bc2554432c7cd75",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/incident_score.png-eb75dde2d22a43d9b9f9f17c66108a0d.ctex",
+      "local_ctex_sha256": "eb4423d0993960b18902dac72e3c8cfc1b581adade63abb44c3601acd953800a",
+      "local_decoded_rgba_sha256": "8f65d448d44eb361f01c257967fd39477049e303804140b37340a36b178a98be",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 245810,
+        "riff_length_field": 245802
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/incident_score.png-eb75dde2d22a43d9b9f9f17c66108a0d.ctex",
+        "ctex_sha256": "eb4423d0993960b18902dac72e3c8cfc1b581adade63abb44c3601acd953800a",
+        "decoded_rgba_sha256": "8f65d448d44eb361f01c257967fd39477049e303804140b37340a36b178a98be",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/leaderboards/incident_score.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/incident_score.png-eb75dde2d22a43d9b9f9f17c66108a0d.ctex",
+        "ctex_sha256": "eb4423d0993960b18902dac72e3c8cfc1b581adade63abb44c3601acd953800a",
+        "decoded_rgba_sha256": "8f65d448d44eb361f01c257967fd39477049e303804140b37340a36b178a98be",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/leaderboards/incident_score.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    },
+    {
+      "kind": "leaderboards",
+      "id": "endless_watch",
+      "source_path": "assets/leaderboards/endless_watch.png",
+      "source_sha256": "3785afeb900783d21e0c0abdc0273e78a51005d32a298568fd8e8c0050858f80",
+      "source_md5": "0f3d7ce25624eabdbf1d36a78230491d",
+      "source_dimensions": {
+        "width": 512,
+        "height": 512
+      },
+      "decoded_pixel_format": "RGBA",
+      "source_rgba_sha256": "7c6342571645509179d43408c9af7730aba92cd462c1664af2fc835b79ba1d7f",
+      "source_import_path": "assets/leaderboards/endless_watch.png.import",
+      "import_md5_path": ".godot/imported/endless_watch.png-19e815ce5763758c6e515c07d4538372.md5",
+      "import_source_md5_matched": true,
+      "import_destination_md5": "6bd2f724f1bee1d43f6ea0c6368758a7",
+      "import_destination_md5_matched": true,
+      "local_ctex_path": ".godot/imported/endless_watch.png-19e815ce5763758c6e515c07d4538372.ctex",
+      "local_ctex_sha256": "4ca0cf65d1a5f02058fbe247224fb4ff8e960dc760d98226509dd98e460306bf",
+      "local_decoded_rgba_sha256": "7c6342571645509179d43408c9af7730aba92cd462c1664af2fc835b79ba1d7f",
+      "local_source_pixels_exact": true,
+      "ctex_header": {
+        "width": 512,
+        "height": 512,
+        "webp_offset": 56,
+        "payload_bytes": 236894,
+        "riff_length_field": 236886
+      },
+      "apk": {
+        "entry": "assets/.godot/imported/endless_watch.png-19e815ce5763758c6e515c07d4538372.ctex",
+        "ctex_sha256": "4ca0cf65d1a5f02058fbe247224fb4ff8e960dc760d98226509dd98e460306bf",
+        "decoded_rgba_sha256": "7c6342571645509179d43408c9af7730aba92cd462c1664af2fc835b79ba1d7f",
+        "source_pixels_exact": true,
+        "import_entry": "assets/assets/leaderboards/endless_watch.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      },
+      "aab": {
+        "entry": "assetPackInstallTime/assets/.godot/imported/endless_watch.png-19e815ce5763758c6e515c07d4538372.ctex",
+        "ctex_sha256": "4ca0cf65d1a5f02058fbe247224fb4ff8e960dc760d98226509dd98e460306bf",
+        "decoded_rgba_sha256": "7c6342571645509179d43408c9af7730aba92cd462c1664af2fc835b79ba1d7f",
+        "source_pixels_exact": true,
+        "import_entry": "assetPackInstallTime/assets/assets/leaderboards/endless_watch.png.import",
+        "import_remap_matches": true,
+        "import_bytes_equal_local": false,
+        "editor_only_import_deps_stripped": true
+      }
+    }
+  ],
+  "runtime_rendering_tested": false,
+  "physical_device_tested": false,
+  "source_or_packages_modified": false
+}

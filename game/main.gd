@@ -44,6 +44,7 @@ var music:AudioStreamPlayer
 var spray_audio:AudioStreamPlayer
 var sounds:Array[AudioStreamPlayer]=[]
 var music_key:=""
+var music_pause_applied:=false
 var result_panel:Control
 var result_elapsed:=0.0
 var starting:=false
@@ -56,7 +57,11 @@ func _ready() -> void:
 	profile=Profile.new(save_path)
 	catalog=JSON.parse_string(FileAccess.get_file_as_string("res://game/catalog.json"))
 	if FileAccess.file_exists("res://assets/audio/manifest.json"):audio_manifest=JSON.parse_string(FileAccess.get_file_as_string("res://assets/audio/manifest.json"))
-	music=AudioStreamPlayer.new();music.volume_db=-15;add_child(music)
+	music=AudioStreamPlayer.new();music.volume_db=-15
+	# Web sample playback copies the full buffer when resumed. Stream long music
+	# through Godot's mixer; leave short effects and native playback unchanged.
+	if OS.has_feature("web"):music.playback_type=AudioServer.PLAYBACK_TYPE_STREAM
+	add_child(music)
 	spray_audio=AudioStreamPlayer.new();spray_audio.volume_db=-18;add_child(spray_audio)
 	for i in range(8):
 		var player:=AudioStreamPlayer.new();player.volume_db=-8;add_child(player);sounds.append(player)
@@ -295,7 +300,7 @@ func _process(delta:float) -> void:
 	if toast_time>0:
 		toast_time=maxf(0,toast_time-delta)
 		if is_instance_valid(toast_label):toast_label.visible=toast_time>0
-	if music:music.stream_paused=not profile.data.music or fullscreen or not app_focused
+	_sync_music_pause()
 	if screen=="play" and not fullscreen and app_focused:
 		if not run.done:
 			var old_doused:int=run.doused;var old_water:float=run.water;run.advance(delta,aim,dragging)
@@ -477,7 +482,17 @@ func _music(key:String) -> void:
 	if music.stream is AudioStreamWAV:
 		music.stream.loop_mode=AudioStreamWAV.LOOP_FORWARD;music.stream.loop_begin=0;music.stream.loop_end=int(music.stream.get_length()*music.stream.mix_rate)
 	music.play()
-	music.stream_paused=not profile.data.music or fullscreen or not app_focused
+	music_pause_applied=false
+	_sync_music_pause()
+
+func _sync_music_pause() -> void:
+	if music==null or profile==null:return
+	var should_pause:bool=not profile.data.music or fullscreen or not app_focused
+	# Godot 4.5.1's Web sample backend restarts even on a repeated false setter.
+	# Track the requested state so neither resume nor pause runs every frame.
+	if should_pause==music_pause_applied:return
+	music.stream_paused=should_pause
+	music_pause_applied=should_pause
 
 func sound(key:String) -> void:
 	if profile==null or not profile.data.sfx or not app_focused or fullscreen:return
