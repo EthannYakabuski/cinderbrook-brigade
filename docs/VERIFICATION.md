@@ -74,12 +74,31 @@ request succeeded. The current verified APK then installed and cold-launched
 on the read-only API 30 x86 emulator, with Android activity status OK.
 However, Windows capture failed with `FrameArrived timed out: timed out waiting
 on channel`, including one recovery after refreshing the current window. The
-window Raise action also timed out. Native game input has still not been sent.
-The current limitation is display capture, not an unanswered permission request.
+window Raise action also timed out on that emulator instance.
+
+A separately labeled, read-only Android framebuffer diagnostic showed a black
+game area and a visible Google test banner. Fresh startup logs recorded the
+SwiftShader shader-link failure `Fragment shader active uniforms exceed
+GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)`, matching Godot issue 109550. Relaunching
+only the task-owned read-only emulator with the supported per-session `-gpu host`
+option produced a clean Godot startup on NVIDIA RTX A400 and a fully rendered
+home screen with the same unchanged APK. No game graphics limits, persistent
+emulator settings or security settings were changed. See the sanitized
+[render diagnostic receipt](android-render-diagnostic.json). These diagnostic
+images are not gameplay captures and do not satisfy store acceptance.
+
+The approved Computer Use connection selected the new emulator without another
+permission request. Its Raise action now succeeded, but screenshot capture still
+failed before and after that activation with `window capture timed out: timed
+out waiting on channel`. No native game input was sent. The remaining limitation
+is the Windows control tool's display capture, not an unanswered permission
+request or a black Android framebuffer.
 Native input, ad dismissal/earned callbacks in the real SDK,
 cold save/reload after play and phone/7-inch/10-inch runtime screenshots remain
 required. There is no physical-device, subjective listening, thermal or real
-Play backend acceptance.
+Play backend acceptance. The APK's development signature was verified. The AAB
+was explicitly checked with jarsigner and is unsigned; an exit-zero unsigned
+result is not represented as valid signing. It is not a Play submission artifact.
 
 ## Repository and hosting
 

@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "game": "Cinderbrook Brigade",
+  "scope": "Android emulator rendering diagnosis only; not native gameplay or control acceptance.",
+  "apk": {
+    "path": "build/android/cinderbrook-brigade-test.apk",
+    "sha256": "bdf5190d962015ab72fbc0a7a4a9e415b747020f102d5e2154ee3d986c73a85d",
+    "build_evidence": "docs/android-package-evidence.json",
+    "unchanged_between_observations": true
+  },
+  "environment": {
+    "godot": "4.5.1 stable",
+    "renderer": "GL Compatibility",
+    "android_emulator_version": "35.1.21.0",
+    "android_api": 30,
+    "android_abi": "x86",
+    "physical_device": false,
+    "display_pixels": [1080, 1920],
+    "display_density_dpi": 420
+  },
+  "observations": [
+    {
+      "backend": "swiftshader_indirect",
+      "captured_at_utc": "2026-11-14T23:18:43.482543+00:00",
+      "diagnostic_file": "build/native/observations/owner-present-render-diagnostic.png",
+      "png_sha256": "487e4da72c79e9e0dcd0361a0b138ee4f180574ba40341fd740b6f483cc1fb4a",
+      "capture_method": "Unmodified Android framebuffer read with ADB exec-out screencap; no input was sent.",
+      "visible_result": "Android system bars and a Google test banner rendered; the Godot game area was black.",
+      "runtime_renderer": "OpenGL ES 3.0 SwiftShader 4.0.0.1",
+      "sanitized_log_evidence": [
+        "SceneShaderGLES3: Program linking failed:",
+        "Fragment shader active uniforms exceed GL_MAX_FRAGMENT_UNIFORM_VECTORS (261)",
+        "shader failed to compile, unable to bind shader."
+      ]
+    },
+    {
+      "backend": "host",
+      "captured_at_utc": "2026-11-14T23:26:50.828476+00:00",
+      "diagnostic_file": "build/native/observations/host-gpu-render-diagnostic.png",
+      "png_sha256": "6d980305fb868382d47bc511f7d5893ba133de01da21565ab2dbec660a5e27b6",
+      "capture_method": "Unmodified Android framebuffer read with ADB exec-out screencap; no input was sent.",
+      "visible_result": "The illustrated home screen, readable menu controls, 35 supplies and a Google Test Ad banner rendered.",
+      "runtime_renderer": "OpenGL ES 3.0 (4.5.0 NVIDIA 560.94); NVIDIA RTX A400",
+      "sanitized_log_evidence": [
+        "OpenGL API OpenGL ES 3.0 (4.5.0 NVIDIA 560.94) - Compatibility - Using Device: Google (NVIDIA Corporation) - Android Emulator OpenGL ES Translator (NVIDIA RTX A400/PCIe/SSE2)"
+      ],
+      "startup_shader_failure_observed": false
+    }
+  ],
+  "interpretation": {
+    "result": "Changing only the task emulator's temporary GPU backend resolved the observed black home screen for this unchanged APK.",
+    "likely_cause": "SwiftShader shader compilation incompatibility, consistent with Godot issue 109550. This does not establish compatibility on physical devices.",
+    "project_graphics_settings_changed": false,
+    "authored_content_or_quality_reduced": false,
+    "persistent_emulator_or_security_settings_changed": false
+  },
+  "acceptance_limits": {
+    "native_gameplay_input_sent": false,
+    "native_touch_gameplay_verified": false,
+    "native_success_failure_progression_verified": false,
+    "native_rewarded_or_interstitial_callbacks_verified": false,
+    "native_pause_restart_save_acceptance_verified": false,
+    "native_tablet_gameplay_captures_verified": false,
+    "physical_device_acceptance_verified": false,
+    "screenshots_registered_as_marketing_provenance": false,
+    "ci_pass_claimed": false,
+    "control_state": "Official Computer Use app selection was approved, but capture failed. Raising the emulator window succeeded; the allowed screenshot retry again returned: window capture timed out: timed out waiting on channel. No native game input followed.",
+    "remaining_gate": "Complete genuine native interaction, ad callback and persistence acceptance, plus phone and tablet runtime capture provenance, through working authorized tooling. These diagnostic images do not satisfy that gate."
+  },
+  "references": [
+    {
+      "title": "Godot issue 109550: Android fragment uniform error and SwiftShader investigation",
+      "url": "https://github.com/godotengine/godot/issues/109550"
+    },
+    {
+      "title": "Android Emulator command-line graphics acceleration",
+      "url": "https://developer.android.com/studio/run/emulator-acceleration#command-gpu"
+    }
+  ]
+}

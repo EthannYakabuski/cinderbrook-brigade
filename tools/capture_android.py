@@ -49,8 +49,10 @@ def main():
         "path": target.relative_to(ROOT).as_posix(), "width": width, "height": height,
         "sha256": hashlib.sha256(pixels).hexdigest(), "profile": args.profile,
         "description": args.description,
-        "method": "ADB exec-out screencap: unmodified full Android framebuffer after ordinary touchscreen UI input",
-        "device_class": "Android API 30 x86 emulator with SwiftShader GLES 3; logical display profile",
+        "method": ("ADB exec-out screencap: unmodified read-only Android rendering diagnostic; no touch acceptance implied"
+                   if args.diagnostic else
+                   "ADB exec-out screencap: unmodified full Android framebuffer after ordinary touchscreen UI input"),
+        "device_class": "Android API 30 x86 emulator; logical display profile; graphics backend recorded in runtime diagnostics",
         "physical_device": False, "capture_kind": "android_emulator", "source_id": source_id,
         "captured_at_utc": datetime.now(timezone.utc).isoformat(),
         "display_size": adb("shell", "wm", "size").decode().strip(),

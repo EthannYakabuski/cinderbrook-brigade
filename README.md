@@ -19,7 +19,8 @@ This is a stylized arcade game, not instruction for responding to a real fire.
 ## Play and review
 
 Implementation is available; native acceptance is incomplete. Emulator control
-is now approved, but Windows display capture timed out after recovery. See [verification and remaining work](docs/VERIFICATION.md),
+is now approved. A temporary host GPU option fixed the emulator's black game
+area; Windows control-tool capture still times out. See [verification and remaining work](docs/VERIFICATION.md),
 [the initial design](INITIAL_VECTOR_PROMPT.txt) and [the acceptance checklist](docs/ACCEPTANCE.md).
 Actual Web play cleared the first incident and retained its reward after reopening.
 Required Android touch/ad tests and phone/tablet capture evidence remain pending.
@@ -36,7 +37,9 @@ gated on successful validation and Android CI for the exact published commit.
 ## Native configuration and builds
 
 The package is `com.ethannyakabuski.cinderbrookbrigade`. Development presets use
-API 24 minimum, API 36 target and ARM64, x86 and x86_64. Use the installed Godot
+API 24 minimum, API 36 target and ARM64, x86 and x86_64. The local APK has a
+verified development signature; the local AAB is unsigned and is not ready for
+Play submission. Use the installed Godot
 4.5.1 export templates, JDK 17 and Android SDK. The default Android export is an
 AAB; `Android Test APK` produces an installable debug APK.
 
