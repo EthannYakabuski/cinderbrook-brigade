@@ -64,7 +64,7 @@ def main():
         data = json.loads(manifest.read_text(encoding="utf-8")) if manifest.exists() else {"game": "Cinderbrook Brigade", "schema_version": 1, "sources": {}, "captures": []}
         data["sources"][source_id] = {
             "kind": "android_apk", "apk_sha256": apk_hash, "package_name": PACKAGE,
-            "build_evidence": "docs/build-evidence.json", "artifact_path": apk.relative_to(ROOT).as_posix(),
+            "build_evidence": "docs/android-package-evidence.json", "artifact_path": apk.relative_to(ROOT).as_posix(),
         }
         data["captures"].append(observation)
         manifest.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")

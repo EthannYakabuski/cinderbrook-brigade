@@ -23,6 +23,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Test package signature receipt classification
+        run: python tests/test_package_signatures.py
       - uses: actions/cache@v4
         with:
           path: |
@@ -121,6 +123,7 @@ jobs:
           python platform/tests/validate_platform.py --artifact build/android/cinderbrook-brigade-test.apk
           python tools/verify_native_alignment.py build/android/cinderbrook-brigade-debug.aab --output build/android/aab-native-alignment.json
           python tools/verify_native_alignment.py build/android/cinderbrook-brigade-test.apk --output build/android/apk-native-alignment.json
+          python tools/verify_package_signatures.py --apk build/android/cinderbrook-brigade-test.apk --aab build/android/cinderbrook-brigade-debug.aab --apksigner-jar "$ANDROID_HOME/build-tools/35.0.0/lib/apksigner.jar" --output build/android/package-signatures.json
           cp LICENSE NOTICE build/android/
           cp -R LICENSES build/android/LICENSES
           python - <<'PY'
@@ -129,7 +132,14 @@ jobs:
           folder = Path('build/android')
           files = {p.name: {'bytes': p.stat().st_size, 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted(folder.iterdir()) if p.suffix in ('.apk', '.aab')}
           assert len(files) == 2
-          receipt = {'game': 'Cinderbrook Brigade', 'source_commit': os.environ['GITHUB_SHA'], 'signing': 'ephemeral CI debug key', 'native_runtime_tested': False, 'files': files}
+          signatures = json.loads((folder / 'package-signatures.json').read_text(encoding='utf-8'))
+          assert signatures['passed'] and signatures['artifact_bytes_unchanged']
+          assert set(files) == set(signatures['files'])
+          for name, artifact in files.items():
+              observed = signatures['files'][name]
+              assert artifact['sha256'] == observed['sha256'] and artifact['bytes'] == observed['bytes']
+              artifact['signature'] = observed['signature']
+          receipt = {'game': 'Cinderbrook Brigade', 'source_commit': os.environ['GITHUB_SHA'], 'signature_evidence': 'package-signatures.json', 'native_runtime_tested': False, 'play_submission_eligibility_verified': False, 'files': files}
           (folder / 'build.json').write_text(json.dumps(receipt, indent=2) + '\n', encoding='utf-8')
           PY
           test -z "$(git status --porcelain --untracked-files=all)"

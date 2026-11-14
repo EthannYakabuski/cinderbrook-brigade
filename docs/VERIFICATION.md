@@ -69,7 +69,14 @@ The Windows Computer Use application-control request timed out without an
 approved response. One separately authorized fresh request also timed out. No
 native touch input was sent, no alternate input driver bypassed that gate, and
 no Android gameplay/results/tablet image is being represented as captured.
-The owner was away. Native input, ad dismissal/earned callbacks in the real SDK,
+The owner was away during those first requests. A later owner-present official
+request succeeded. The current verified APK then installed and cold-launched
+on the read-only API 30 x86 emulator, with Android activity status OK.
+However, Windows capture failed with `FrameArrived timed out: timed out waiting
+on channel`, including one recovery after refreshing the current window. The
+window Raise action also timed out. Native game input has still not been sent.
+The current limitation is display capture, not an unanswered permission request.
+Native input, ad dismissal/earned callbacks in the real SDK,
 cold save/reload after play and phone/7-inch/10-inch runtime screenshots remain
 required. There is no physical-device, subjective listening, thermal or real
 Play backend acceptance.
@@ -85,9 +92,11 @@ correctly fails while that evidence is absent, and the required CI workflow
 must not be described as passing merely because code-level tests passed.
 No test or provenance rule has been relaxed to hide the missing acceptance.
 
-Pages was inspected: hosting was off, the account had repository administration
-and push permission, and the deployment variable was absent. The prepared
-manual workflow has not been activated. No hosting mutation, Google Play
+Pages was initially off. The owner subsequently explicitly authorized setup;
+GitHub Actions is now the configured Pages source and `PAGES_DEPLOY_ENABLED` is
+`true`, verified by API readback. Deployment has not been dispatched: the workflow
+still requires successful `validate` and `android` jobs for the exact main commit.
+No live website is claimed before deployment verification. No Google Play
 publication/import, purchases, personal-browser control or schedule changes
 were performed.
 

@@ -1,7 +1,7 @@
 {
   "game": "Cinderbrook Brigade",
   "checked_utc": "2026-11-14T18:56:12.015445+00:00",
-  "result": "PASS - static Android package inspection only",
+  "result": "Static Android package inspection complete: APK checks passed; AAB is unsigned.",
   "artifacts": {
     "cinderbrook-brigade-test.apk": {
       "path": "build/android/cinderbrook-brigade-test.apk",
@@ -30,6 +30,10 @@
       "sdk_relative_path": "build-tools/36.0.0/lib/apksigner.jar",
       "reported_version": "0.9",
       "invocation": "JDK 17 java -jar; official SDK apksigner CLI"
+    },
+    "jarsigner": {
+      "tool": "JDK 17 jarsigner",
+      "invocation": "jarsigner -verify -strict -certs"
     }
   },
   "commands": [
@@ -76,6 +80,18 @@
       "exit_code": 0,
       "stdout_first_line": "Verifies",
       "invocation": "JDK 17 java -jar build-tools/36.0.0/lib/apksigner.jar"
+    },
+    {
+      "tool": "jarsigner",
+      "arguments": [
+        "-verify",
+        "-strict",
+        "-certs",
+        "build/android/cinderbrook-brigade-debug.aab"
+      ],
+      "exit_code": 0,
+      "stdout": "no manifest.\r\n\r\njar is unsigned.",
+      "interpretation": "jarsigner returned exit 0 but explicitly reported no manifest and jar is unsigned. Exit 0 is not a signature pass."
     }
   ],
   "apk_manifest": {
@@ -118,8 +134,20 @@
     "native_runtime_tested": false,
     "physical_device_tested": false,
     "device_16kb_execution_tested": false,
-    "aab_signature_tested": false,
+    "aab_signature_tested": true,
     "play_console_or_production_backend_tested": false
   },
-  "inspection_scope": "Rebuilt audio-fix packages; APK zipalign -c -P 16 4, aapt badging/xmltree, and apksigner verify --verbose --print-certs rerun. AAB SHA256 checked only in this receipt; other structural checks are separate."
+  "inspection_scope": "Rebuilt audio-fix packages; APK zipalign -c -P 16 4, aapt badging/xmltree, and apksigner verify --verbose --print-certs rerun. AAB SHA256 matched; subsequent JDK 17 jarsigner -verify -strict -certs reported no manifest and an unsigned archive. Exit 0 does not establish a valid signature. Other structural checks are separate.",
+  "aab_signature": {
+    "checked_utc": "2026-11-14T22:59:09.140427Z",
+    "artifact_sha256": "270aae9b6b3ab1e4988e351c8001755aab35bdef0dbb38a9453cce11cb5f758d",
+    "status": "unsigned",
+    "verifies": false,
+    "signer_certificate": null,
+    "exit_code": 0,
+    "output": "no manifest.\r\n\r\njar is unsigned.",
+    "interpretation": "jarsigner returned exit 0 but explicitly reported no manifest and jar is unsigned. Exit 0 is not a signature pass.",
+    "release_limitation": "This AAB is an unsigned development export. A properly signed upload bundle remains required for Play submission; no signing or Console action was performed.",
+    "receipt": "build/checks/aab-signature/receipt.json"
+  }
 }

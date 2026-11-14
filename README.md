@@ -18,8 +18,8 @@ This is a stylized arcade game, not instruction for responding to a real fire.
 
 ## Play and review
 
-Implementation is available; native acceptance is incomplete because emulator
-control approval expired unanswered. See [verification and remaining work](docs/VERIFICATION.md),
+Implementation is available; native acceptance is incomplete. Emulator control
+is now approved, but Windows display capture timed out after recovery. See [verification and remaining work](docs/VERIFICATION.md),
 [the initial design](INITIAL_VECTOR_PROMPT.txt) and [the acceptance checklist](docs/ACCEPTANCE.md).
 Actual Web play cleared the first incident and retained its reward after reopening.
 Required Android touch/ad tests and phone/tablet capture evidence remain pending.
@@ -30,8 +30,8 @@ distribution. Local generated outputs belong in `build/android/` and
 `build/site/`; they are not source-controlled.
 
 The HTML review source is `review/index.html`. A complete assembled review lives
-at `build/site/review/index.html` after export and assembly. No public website
-hosting is enabled by this repository.
+at `build/site/review/index.html` after export and assembly. Owner-approved Pages configuration now uses GitHub Actions. Deployment remains
+gated on successful validation and Android CI for the exact published commit.
 
 ## Native configuration and builds
 
