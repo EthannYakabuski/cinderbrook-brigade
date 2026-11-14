@@ -1,0 +1,74 @@
+name: Publish approved Web review
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: cinderbrook-pages
+  cancel-in-progress: false
+jobs:
+  prepare:
+    # Preparation only: enabling this variable requires this repository's owner approval.
+    if: github.ref == 'refs/heads/main' && vars.PAGES_DEPLOY_ENABLED == 'true'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      actions: read
+    steps:
+      - name: Find successful exact-commit validation and Android build
+        id: source
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const {owner, repo} = context.repo;
+            const response = await github.rest.actions.listWorkflowRuns({owner, repo, workflow_id: 'ci.yml', head_sha: context.sha, status: 'completed', per_page: 50});
+            let accepted;
+            for (const run of response.data.workflow_runs) {
+              if (run.head_sha !== context.sha || run.head_branch !== 'main' || run.conclusion !== 'success') continue;
+              const jobs = await github.paginate(github.rest.actions.listJobsForWorkflowRun, {owner, repo, run_id: run.id, per_page: 100});
+              if (['validate', 'android'].every(name => jobs.some(job => job.name === name && job.conclusion === 'success'))) { accepted = run; break; }
+            }
+            if (!accepted) throw new Error('No successful validate AND Android jobs exist for this exact main commit.');
+            core.setOutput('run-id', accepted.id);
+      - uses: actions/download-artifact@v4
+        with:
+          name: cinderbrook-brigade-web-${{ github.sha }}
+          path: site
+          run-id: ${{ steps.source.outputs.run-id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Verify artifact identity and exported bytes
+        run: |
+          python - <<'PY'
+          import hashlib, json, os
+          from pathlib import Path
+          root = Path('site').resolve()
+          receipt = json.loads((root / 'build.json').read_text(encoding='utf-8'))
+          assert receipt['game'] == 'Cinderbrook Brigade'
+          assert receipt['source_commit'] == os.environ['GITHUB_SHA']
+          assert receipt['uncommitted_changes'] is False
+          hashes = receipt['web_export_sha256']
+          assert hashes and 'play/index.html' in hashes
+          for name, expected in hashes.items():
+              path = (root / name).resolve()
+              assert path.is_relative_to(root) and path.is_file(), name
+              assert hashlib.sha256(path.read_bytes()).hexdigest() == expected, name
+          print('Exact-commit reviewed Web artifact validated; deployment is separately gated.')
+          PY
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+  deploy:
+    needs: prepare
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy the approved validated artifact
+        id: deployment
+        uses: actions/deploy-pages@v4

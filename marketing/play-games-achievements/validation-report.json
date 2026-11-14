@@ -1,0 +1,185 @@
+{
+  "result": "PASS - local static validation only",
+  "achievement_count": 20,
+  "entry_count": 22,
+  "total_points": 700,
+  "points_reserved": 1300,
+  "default_locale": "en-US",
+  "localization_rows": 0,
+  "zip_bytes": 5113990,
+  "zip_sha256": "b9a04a0126aa8d9d8f38d286fa47750b6b4d08d9c41709e40f736803643232c4",
+  "console_upload_performed": false,
+  "console_acceptance_verified": false,
+  "files": [
+    {
+      "name": "AchievementsIconsMappings.csv",
+      "bytes": 682,
+      "sha256": "817af623eacc99557e36e86ec6ee1a239ffa92d61cfa5a02f457ae332dce3e75"
+    },
+    {
+      "name": "AchievementsMetadata.csv",
+      "bytes": 1581,
+      "sha256": "5f3ae3829d3e1cfd7a748cb25c14d5bb8428b06a8f6e1e5752bbe268ef630113"
+    },
+    {
+      "name": "brigade_rank_10.png",
+      "bytes": 272875,
+      "sha256": "0de6ea66a6b2851fff7061d0eeb2abf716d3cbdf0f81c390b4e9a5f4122b69d0",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "brigade_rank_5.png",
+      "bytes": 261723,
+      "sha256": "b6a92a650e238bffcbe98b4e1a329dce7191226e372e93da6461f87d44794482",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "cinderbrook_hero.png",
+      "bytes": 267682,
+      "sha256": "6a84cb657787c7e24855232ba9827316d17bcc0e0a933084eb6990dd544639ce",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "cool_customer.png",
+      "bytes": 257579,
+      "sha256": "1d55bc49c1877ac68a14fff956d53ea011378bf1c928a909764c448b08b95d17",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "daily_dispatch.png",
+      "bytes": 235448,
+      "sha256": "2e7efc8813c4b75a2e59febb5239b4910324b70d84be3b8d1ca33e8b6187a486",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "first_response.png",
+      "bytes": 248690,
+      "sha256": "bced37e562719dc0a6db84ee45d3af442541ac92bd9c365b0b85980384d6ed81",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "first_upgrade.png",
+      "bytes": 260756,
+      "sha256": "3ba51d7918809e346b8732bfab40a4f3ed94a530e4cee28e93c27e6340c40a30",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "lakeside_fair.png",
+      "bytes": 265494,
+      "sha256": "30672da93e5fdc5f4fa99a1e70cc2da30866715f8813283dcddfbdb3d666cc3e",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "lantern_heights.png",
+      "bytes": 261246,
+      "sha256": "a930aa66a0bda224266cf30fc5e92205761528493eb2bc4f29705844fb8ba680",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "maple_mews.png",
+      "bytes": 244246,
+      "sha256": "3dc3bf62c51dc5b59beb879c5a2b275dc2e6fb3ecc33d96c2f2e39478268fb9b",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "orchard_bend.png",
+      "bytes": 261597,
+      "sha256": "1fe4d40674f8b5d55e12a64609e8550de05e846b42e17696c3bb253a37f2e92f",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "pine_camp.png",
+      "bytes": 261341,
+      "sha256": "d0103d92479b2178bacdf79364ad8fa28278bfa364545cad77b035bfcc877f1e",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "quartermaster.png",
+      "bytes": 256532,
+      "sha256": "71d8139a19325f580b59c2300bcacee85c6d42f92995d67c4df8b591711aaa08",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "star_collector.png",
+      "bytes": 253019,
+      "sha256": "cf62f2e9fd24b2c172338db5bc5eb1dae12e76624700d4e81e8cfd157f058c53",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "steady_hands.png",
+      "bytes": 240315,
+      "sha256": "d35fb5f997ec40b374fc2a1ee0e0403c47a90a948f700ca28c1123112031b827",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "sweep_team.png",
+      "bytes": 235877,
+      "sha256": "95df2772c8207a547c230167beeb0ccb82cdadf02247baefd3140fab02a7f02e",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "three_star.png",
+      "bytes": 228892,
+      "sha256": "b4fde7444f751533dc188830edfb1d3283505a6ab3a7ec39ca81412ecfb79423",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "warehouse_row.png",
+      "bytes": 251066,
+      "sha256": "6029616fc7ffafd889728625246148c3a9225236adab1ecde72e7f3d772b0ef7",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "watch_captain.png",
+      "bytes": 282410,
+      "sha256": "a33e6151c8fb595635449dd3c4f30b1111debd6c582126ccd77b5c3ca02b1dac",
+      "width": 512,
+      "height": 512
+    },
+    {
+      "name": "week_of_service.png",
+      "bytes": 262463,
+      "sha256": "7fea6a2cfcdbee25470f7697968b38301956e0ea267bd5ddf60a194057f8b567",
+      "width": 512,
+      "height": 512
+    }
+  ],
+  "deterministic_rebuild_verified": true,
+  "standard_achievements": 20,
+  "incremental_achievements": 0,
+  "checked_at_utc": "2026-11-14T17:44:24.969814+00:00",
+  "catalog_sha256": "2b0cb55da98abea92050ce0192940a4bcdda719e1d5e7a0e044908b2c0a88977",
+  "sources_checked_date": "2026-11-14",
+  "official_sources": [
+    "https://developer.android.com/games/pgs/integrate-achievements#zip-file-guidelines",
+    "https://developer.android.com/games/pgs/achievements#points_and_experience_points",
+    "https://support.google.com/googleplay/android-developer/answer/2990418?hl=en"
+  ],
+  "schema_convention": "Owner-confirmed Beacon plural IconsMappings",
+  "reference_archive_sha256": "856729c69788cb15340513ee3e911697d1485b66681646e4e5ce860ad3a9db5f",
+  "points_and_states_status": "Proposed catalog values preserved; owner review before Console import",
+  "archive_compression": "Stored entries; original PNG compression retained; zlib-version-independent ZIP generation",
+  "conservative_limits": {
+    "each_file_bytes_exclusive": 1000000,
+    "zip_bytes_exclusive": 200000000,
+    "max_files": 202
+  }
+}

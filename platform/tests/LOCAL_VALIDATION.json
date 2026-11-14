@@ -1,0 +1,23 @@
+{
+  "game": "Cinderbrook Brigade",
+  "recorded_utc": "2026-11-14T17:42:05.861565+00:00",
+  "godot": "4.5.1.stable.official.f62fdbde1",
+  "callback_fixture_checks": 50,
+  "callback_fixture_failures": [],
+  "fixture_logs": "build/platform-tests-8ea6ee65ddfd/result.json",
+  "fixture_exit_codes": [
+    0,
+    0
+  ],
+  "known_host_diagnostic": "ERROR: Failed to read the root certificate store.",
+  "native_sdk_delivery_tested": false,
+  "production_backends_tested": false,
+  "template_preparation_tests": 1,
+  "source_sha256": {
+    "platform/services.gd": "441a7b54a8d3689a56657e76abac24b0e8732636feef3a7413430878817fdd03",
+    "platform/tests/test_services.gd": "f5f326279004dfea79ad1e721ce2fd34a65233bfd6489cb305fee83393f003e2",
+    "platform/config.json": "bd766d86506628e5f7dce733a731308b87b7b102ca13d5c6a8da4271f543ae1d"
+  },
+  "static_python_parse_files": 8,
+  "cadence_persistence": "round count, consumed opportunities and latest256 stable IDs; consumption committed before SDK show"
+}

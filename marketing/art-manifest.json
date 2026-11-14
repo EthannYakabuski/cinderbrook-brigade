@@ -1,0 +1,842 @@
+{
+  "generator": "Built-in image_gen; 2026-11-14",
+  "source_type": "Original AI-assisted game illustrations",
+  "formatting": "Measured individual atlas crops, Lanczos aspect-preserving contain with neutral margins, PNG encode; no fabricated runtime images",
+  "sources": [
+    {
+      "path": "marketing/source/achievements-source.png",
+      "width": 1402,
+      "height": 1122,
+      "sha256": "92037e5c7dd334b25a141c8f21736542bc725acdc8802b13ab4292b4bdc2218c"
+    },
+    {
+      "path": "marketing/source/feature-source.png",
+      "width": 1774,
+      "height": 887,
+      "sha256": "5370f44b75225cdb25fdbb81ff9ae6233c292e530f5f0f59895d56900dfcf791"
+    },
+    {
+      "path": "marketing/source/icon-source.png",
+      "width": 1254,
+      "height": 1254,
+      "sha256": "f1667012fdd25fe22e879d26eadd9c993e66e6baa78d225057407573ab8ac2b8"
+    },
+    {
+      "path": "marketing/source/leaderboards-source.png",
+      "width": 2172,
+      "height": 724,
+      "sha256": "46930ecf6c9d76bd2127df9f5b1a942e0010687fc343a55273e9581a13562389"
+    },
+    {
+      "path": "marketing/source/splash-source.png",
+      "width": 941,
+      "height": 1672,
+      "sha256": "db274a3861e4d6fbe3189ad9ae8c9096370d2772316e124e8ffd785f26fa31fe"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "assets/brand/app-icon.png",
+      "source": "marketing/source/icon-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "bytes": 416637,
+      "sha256": "0a28645426b192ec217546721f500c9d4b11a9fb13f4e9a7ff38f10c048d2c6a",
+      "crop": null,
+      "sizing": "aspect-preserving fit"
+    },
+    {
+      "path": "assets/brand/icon.png",
+      "source": "marketing/source/icon-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "bytes": 416637,
+      "sha256": "0a28645426b192ec217546721f500c9d4b11a9fb13f4e9a7ff38f10c048d2c6a",
+      "crop": null,
+      "sizing": "aspect-preserving fit"
+    },
+    {
+      "path": "marketing/app-icon-512.png",
+      "source": "marketing/source/icon-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGBA",
+      "bytes": 416637,
+      "sha256": "0a28645426b192ec217546721f500c9d4b11a9fb13f4e9a7ff38f10c048d2c6a",
+      "crop": null,
+      "sizing": "aspect-preserving fit"
+    },
+    {
+      "path": "marketing/feature-graphic-1024x500.png",
+      "source": "marketing/source/feature-source.png",
+      "width": 1024,
+      "height": 500,
+      "mode": "RGB",
+      "bytes": 951385,
+      "sha256": "8fd4b91a8c4ea4718f15a01ea784019edf7007ee8ec8d8c64351d937de729f10",
+      "crop": null,
+      "sizing": "aspect-preserving fit"
+    },
+    {
+      "path": "marketing/splash-1080x1920.png",
+      "source": "marketing/source/splash-source.png",
+      "width": 1080,
+      "height": 1920,
+      "mode": "RGB",
+      "bytes": 3295035,
+      "sha256": "035d596c4e2e94f0e60e6ca064a05b9a55463d98b5945e182a09b361ead75cd6",
+      "crop": null,
+      "sizing": "aspect-preserving fit"
+    },
+    {
+      "path": "assets/brand/splash-portrait.png",
+      "source": "marketing/source/splash-source.png",
+      "width": 720,
+      "height": 1280,
+      "mode": "RGB",
+      "bytes": 1635430,
+      "sha256": "89fe0267c193e8410faf71340a0009eb38fff95b30d21fea93bf8c29d4f25a5d",
+      "crop": null,
+      "sizing": "aspect-preserving fit"
+    },
+    {
+      "path": "marketing/achievements/first_response.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 248690,
+      "sha256": "bced37e562719dc0a6db84ee45d3af442541ac92bd9c365b0b85980384d6ed81",
+      "crop": [
+        33,
+        11,
+        285,
+        281
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/achievements/first_response.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 248690,
+      "sha256": "bced37e562719dc0a6db84ee45d3af442541ac92bd9c365b0b85980384d6ed81",
+      "crop": [
+        33,
+        11,
+        285,
+        281
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/achievements/cool_customer.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 257579,
+      "sha256": "1d55bc49c1877ac68a14fff956d53ea011378bf1c928a909764c448b08b95d17",
+      "crop": [
+        310,
+        26,
+        552,
+        270
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/achievements/cool_customer.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 257579,
+      "sha256": "1d55bc49c1877ac68a14fff956d53ea011378bf1c928a909764c448b08b95d17",
+      "crop": [
+        310,
+        26,
+        552,
+        270
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/achievements/sweep_team.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 235877,
+      "sha256": "95df2772c8207a547c230167beeb0ccb82cdadf02247baefd3140fab02a7f02e",
+      "crop": [
+        584,
+        11,
+        821,
+        281
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/achievements/sweep_team.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 235877,
+      "sha256": "95df2772c8207a547c230167beeb0ccb82cdadf02247baefd3140fab02a7f02e",
+      "crop": [
+        584,
+        11,
+        821,
+        281
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/achievements/maple_mews.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 244246,
+      "sha256": "3dc3bf62c51dc5b59beb879c5a2b275dc2e6fb3ecc33d96c2f2e39478268fb9b",
+      "crop": [
+        853,
+        11,
+        1095,
+        283
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/achievements/maple_mews.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 244246,
+      "sha256": "3dc3bf62c51dc5b59beb879c5a2b275dc2e6fb3ecc33d96c2f2e39478268fb9b",
+      "crop": [
+        853,
+        11,
+        1095,
+        283
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/achievements/pine_camp.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 261341,
+      "sha256": "d0103d92479b2178bacdf79364ad8fa28278bfa364545cad77b035bfcc877f1e",
+      "crop": [
+        1124,
+        19,
+        1376,
+        278
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/achievements/pine_camp.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 261341,
+      "sha256": "d0103d92479b2178bacdf79364ad8fa28278bfa364545cad77b035bfcc877f1e",
+      "crop": [
+        1124,
+        19,
+        1376,
+        278
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/achievements/warehouse_row.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 251066,
+      "sha256": "6029616fc7ffafd889728625246148c3a9225236adab1ecde72e7f3d772b0ef7",
+      "crop": [
+        32,
+        288,
+        284,
+        556
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/achievements/warehouse_row.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 251066,
+      "sha256": "6029616fc7ffafd889728625246148c3a9225236adab1ecde72e7f3d772b0ef7",
+      "crop": [
+        32,
+        288,
+        284,
+        556
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/achievements/orchard_bend.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 261597,
+      "sha256": "1fe4d40674f8b5d55e12a64609e8550de05e846b42e17696c3bb253a37f2e92f",
+      "crop": [
+        306,
+        293,
+        552,
+        542
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/achievements/orchard_bend.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 261597,
+      "sha256": "1fe4d40674f8b5d55e12a64609e8550de05e846b42e17696c3bb253a37f2e92f",
+      "crop": [
+        306,
+        293,
+        552,
+        542
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/achievements/lakeside_fair.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 265494,
+      "sha256": "30672da93e5fdc5f4fa99a1e70cc2da30866715f8813283dcddfbdb3d666cc3e",
+      "crop": [
+        566,
+        289,
+        835,
+        548
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/achievements/lakeside_fair.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 265494,
+      "sha256": "30672da93e5fdc5f4fa99a1e70cc2da30866715f8813283dcddfbdb3d666cc3e",
+      "crop": [
+        566,
+        289,
+        835,
+        548
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/achievements/lantern_heights.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 261246,
+      "sha256": "a930aa66a0bda224266cf30fc5e92205761528493eb2bc4f29705844fb8ba680",
+      "crop": [
+        848,
+        295,
+        1096,
+        542
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/achievements/lantern_heights.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 261246,
+      "sha256": "a930aa66a0bda224266cf30fc5e92205761528493eb2bc4f29705844fb8ba680",
+      "crop": [
+        848,
+        295,
+        1096,
+        542
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/achievements/three_star.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 228892,
+      "sha256": "b4fde7444f751533dc188830edfb1d3283505a6ab3a7ec39ca81412ecfb79423",
+      "crop": [
+        1129,
+        288,
+        1367,
+        555
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/achievements/three_star.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 228892,
+      "sha256": "b4fde7444f751533dc188830edfb1d3283505a6ab3a7ec39ca81412ecfb79423",
+      "crop": [
+        1129,
+        288,
+        1367,
+        555
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/achievements/star_collector.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 253019,
+      "sha256": "cf62f2e9fd24b2c172338db5bc5eb1dae12e76624700d4e81e8cfd157f058c53",
+      "crop": [
+        24,
+        561,
+        278,
+        817
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/achievements/star_collector.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 253019,
+      "sha256": "cf62f2e9fd24b2c172338db5bc5eb1dae12e76624700d4e81e8cfd157f058c53",
+      "crop": [
+        24,
+        561,
+        278,
+        817
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/achievements/cinderbrook_hero.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 267682,
+      "sha256": "6a84cb657787c7e24855232ba9827316d17bcc0e0a933084eb6990dd544639ce",
+      "crop": [
+        288,
+        559,
+        569,
+        814
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/achievements/cinderbrook_hero.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 267682,
+      "sha256": "6a84cb657787c7e24855232ba9827316d17bcc0e0a933084eb6990dd544639ce",
+      "crop": [
+        288,
+        559,
+        569,
+        814
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/achievements/steady_hands.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 240315,
+      "sha256": "d35fb5f997ec40b374fc2a1ee0e0403c47a90a948f700ca28c1123112031b827",
+      "crop": [
+        579,
+        555,
+        821,
+        825
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/achievements/steady_hands.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 240315,
+      "sha256": "d35fb5f997ec40b374fc2a1ee0e0403c47a90a948f700ca28c1123112031b827",
+      "crop": [
+        579,
+        555,
+        821,
+        825
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/achievements/watch_captain.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 282410,
+      "sha256": "a33e6151c8fb595635449dd3c4f30b1111debd6c582126ccd77b5c3ca02b1dac",
+      "crop": [
+        843,
+        562,
+        1100,
+        817
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/achievements/watch_captain.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 282410,
+      "sha256": "a33e6151c8fb595635449dd3c4f30b1111debd6c582126ccd77b5c3ca02b1dac",
+      "crop": [
+        843,
+        562,
+        1100,
+        817
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/achievements/daily_dispatch.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 235448,
+      "sha256": "2e7efc8813c4b75a2e59febb5239b4910324b70d84be3b8d1ca33e8b6187a486",
+      "crop": [
+        1121,
+        559,
+        1375,
+        824
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/achievements/daily_dispatch.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 235448,
+      "sha256": "2e7efc8813c4b75a2e59febb5239b4910324b70d84be3b8d1ca33e8b6187a486",
+      "crop": [
+        1121,
+        559,
+        1375,
+        824
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/achievements/week_of_service.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 262463,
+      "sha256": "7fea6a2cfcdbee25470f7697968b38301956e0ea267bd5ddf60a194057f8b567",
+      "crop": [
+        20,
+        833,
+        288,
+        1093
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/achievements/week_of_service.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 262463,
+      "sha256": "7fea6a2cfcdbee25470f7697968b38301956e0ea267bd5ddf60a194057f8b567",
+      "crop": [
+        20,
+        833,
+        288,
+        1093
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/achievements/quartermaster.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 256532,
+      "sha256": "71d8139a19325f580b59c2300bcacee85c6d42f92995d67c4df8b591711aaa08",
+      "crop": [
+        302,
+        826,
+        556,
+        1098
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/achievements/quartermaster.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 256532,
+      "sha256": "71d8139a19325f580b59c2300bcacee85c6d42f92995d67c4df8b591711aaa08",
+      "crop": [
+        302,
+        826,
+        556,
+        1098
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/achievements/first_upgrade.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 260756,
+      "sha256": "3ba51d7918809e346b8732bfab40a4f3ed94a530e4cee28e93c27e6340c40a30",
+      "crop": [
+        571,
+        834,
+        823,
+        1091
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/achievements/first_upgrade.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 260756,
+      "sha256": "3ba51d7918809e346b8732bfab40a4f3ed94a530e4cee28e93c27e6340c40a30",
+      "crop": [
+        571,
+        834,
+        823,
+        1091
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/achievements/brigade_rank_5.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 261723,
+      "sha256": "b6a92a650e238bffcbe98b4e1a329dce7191226e372e93da6461f87d44794482",
+      "crop": [
+        846,
+        826,
+        1095,
+        1099
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/achievements/brigade_rank_5.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 261723,
+      "sha256": "b6a92a650e238bffcbe98b4e1a329dce7191226e372e93da6461f87d44794482",
+      "crop": [
+        846,
+        826,
+        1095,
+        1099
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/achievements/brigade_rank_10.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 272875,
+      "sha256": "0de6ea66a6b2851fff7061d0eeb2abf716d3cbdf0f81c390b4e9a5f4122b69d0",
+      "crop": [
+        1109,
+        832,
+        1384,
+        1089
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/achievements/brigade_rank_10.png",
+      "source": "marketing/source/achievements-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 272875,
+      "sha256": "0de6ea66a6b2851fff7061d0eeb2abf716d3cbdf0f81c390b4e9a5f4122b69d0",
+      "crop": [
+        1109,
+        832,
+        1384,
+        1089
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/leaderboards/career_xp.png",
+      "source": "marketing/source/leaderboards-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 301918,
+      "sha256": "b1e0e5718f6bcad73905b544b057dd4817318266013aa84f28cce64b6fd8f57e",
+      "crop": [
+        0,
+        0,
+        724,
+        724
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/leaderboards/career_xp.png",
+      "source": "marketing/source/leaderboards-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 301918,
+      "sha256": "b1e0e5718f6bcad73905b544b057dd4817318266013aa84f28cce64b6fd8f57e",
+      "crop": [
+        0,
+        0,
+        724,
+        724
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/leaderboards/incident_score.png",
+      "source": "marketing/source/leaderboards-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 299158,
+      "sha256": "3ce900b4a724d0bdd7dc94579354c4a28b3afc3d9cc79609bc01794fe5ec105f",
+      "crop": [
+        724,
+        0,
+        1448,
+        724
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/leaderboards/incident_score.png",
+      "source": "marketing/source/leaderboards-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 299158,
+      "sha256": "3ce900b4a724d0bdd7dc94579354c4a28b3afc3d9cc79609bc01794fe5ec105f",
+      "crop": [
+        724,
+        0,
+        1448,
+        724
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "marketing/leaderboards/endless_watch.png",
+      "source": "marketing/source/leaderboards-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 292186,
+      "sha256": "3785afeb900783d21e0c0abdc0273e78a51005d32a298568fd8e8c0050858f80",
+      "crop": [
+        1448,
+        0,
+        2172,
+        724
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    },
+    {
+      "path": "assets/leaderboards/endless_watch.png",
+      "source": "marketing/source/leaderboards-source.png",
+      "width": 512,
+      "height": 512,
+      "mode": "RGB",
+      "bytes": 292186,
+      "sha256": "3785afeb900783d21e0c0abdc0273e78a51005d32a298568fd8e8c0050858f80",
+      "crop": [
+        1448,
+        0,
+        2172,
+        724
+      ],
+      "sizing": "contain with at least 32px neutral margin"
+    }
+  ],
+  "visual_review": "All five generated source illustrations and final contact sheet reviewed for legibility, cell boundaries and correct identity."
+}

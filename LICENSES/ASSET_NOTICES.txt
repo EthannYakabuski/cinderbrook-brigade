@@ -1,0 +1,17 @@
+Cinderbrook Brigade - selected visual assets
+
+Models, textures, interface images, action icons and particle sprites identified
+in docs/ASSET_AUDIT.md and docs/asset-source-manifest.json were created and
+distributed by Kenney (https://kenney.nl).
+
+Selected packs: Car Kit, City Kit Suburban, City Kit Industrial, City Kit Roads,
+Nature Kit, Survival Kit, Mini Market, Particle Pack, Smoke Particles, UI Pack,
+Game Icons and Board Game Icons.
+
+The original pack license files in this directory identify Creative Commons
+Zero (CC0 1.0): https://creativecommons.org/publicdomain/zero/1.0/
+Retain those original notices when redistributing the selected assets.
+
+Original game code, scene composition, water-stream geometry and marketing
+materials have their own project licensing/provenance. New audio and included
+plugins have separate notices. Kenney is not represented as endorsing this game.

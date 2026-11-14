@@ -1,0 +1,25 @@
+A little truck. A town worth saving.
+
+Cinderbrook Brigade is a portrait firefighting arcade game built around one satisfying motion: sweep a cool blue water jet across a miniature world, watch the flames turn to steam, then lift your finger to refill.
+
+ONE FINGER, ONE CLEAR JOB
+Drag to aim and spray. Release to build your water reserve. Cool the hottest spots, keep neighboring buildings safe and choose when to refill. Generous touch aiming makes the first rescue easy to understand; saving every roof takes a steady hand.
+
+SIX NEIGHBORHOODS, 36 AUTHORED INCIDENTS
+Roll from the cottages of Maple Mews to Pine Camp, Warehouse Row, Orchard Bend, Lakeside Fair and the glowing rooftops of Lantern Heights. Each district brings its own layouts, scenery and ember patterns. Protect the structures, clear the incident and return for a cleaner three-star rescue.
+
+MAKE THE BRIGADE YOUR OWN
+Earn supply coins and career XP through play. Improve the copper pump, reserve tank, sweep nozzle, hydrant flow and protective foam across four ranks each. The campaign is designed to remain achievable with baseline equipment: upgrades give you room to improve your technique.
+
+A NEW REASON TO ANSWER THE BELL
+Take on the day's Daily Incident, see how many waves you can clear in Endless Watch, and claim seven-day login gifts. Collect twenty illustrated local achievements and improve your personal incident score, endless record and brigade career rank.
+
+SMALL WORLD, BIG PERSONALITY
+A coral fire engine, miniature 3D neighborhoods, golden trees and rich water-and-steam effects give every rescue a warm toy-town feel. Seven original musical arrangements follow your journey. Separate music and effects controls, reduced motion and optional haptics let you tune the experience.
+
+YOUR PROGRESS, SAVED LOCALLY
+Campaign stars, upgrades, records and your current incident persist on your device. Returning to an interrupted incident starts paused so you can get ready. The core game works offline; optional advertising and Google services need an internet connection when available.
+
+Advertising stays at natural breaks: a reserved menu/results banner, an interstitial opportunity after every third completed round, and an explicitly optional emergency continue after failure. That continue is earned only when the ad SDK confirms completion, then waits for you to resume. No purchase is required to retry.
+
+Prototype note: this build uses Google test advertising. Production Google Play Games achievements and leaderboards await account configuration. Local achievements and records work now. This prototype has not been submitted to Google Play.

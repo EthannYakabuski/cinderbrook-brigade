@@ -1,0 +1,141 @@
+name: Validate and build
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      android:
+        description: Also build and validate debug Android APK and AAB
+        type: boolean
+        default: true
+permissions:
+  contents: read
+concurrency:
+  group: cinderbrook-ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ${{ runner.temp }}/cinderbrook-godot
+            ~/.local/share/godot/export_templates/4.5.1.stable
+          key: cinderbrook-godot-4.5.1-linux-v1
+      - name: Install official checksummed Godot and Web templates
+        run: |
+          python tools/install_ci_godot.py "$RUNNER_TEMP/cinderbrook-godot"
+          echo "$RUNNER_TEMP/cinderbrook-godot" >> "$GITHUB_PATH"
+      - name: Validate source and test isolated profiles
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          python tools/run_checks.py --godot "$RUNNER_TEMP/cinderbrook-godot/Godot_v4.5.1-stable_linux.x86_64" --expected-sha "$GITHUB_SHA"
+      - name: Export single-threaded Web and bind exact clean source
+        run: |
+          set -euo pipefail
+          mkdir -p build/site/play
+          timeout 240 Godot_v4.5.1-stable_linux.x86_64 --headless --path . --export-release Web build/site/play/index.html 2>&1 | tee build/export-web.log
+          python tools/run_checks.py --check-log build/export-web.log
+          python tools/verify_web_export.py build/site/play --output build/web-export-validation.json
+          python tools/assemble_site.py build/site --require-clean --expected-sha "$GITHUB_SHA"
+          test -z "$(git status --porcelain --untracked-files=all)"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cinderbrook-brigade-web-${{ github.sha }}
+          path: build/site
+          retention-days: 3
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cinderbrook-brigade-validation-${{ github.sha }}
+          path: |
+            build/checks/*/summary.json
+            build/checks/*/*.stdout.log
+            build/checks/*/*.stderr.log
+            build/web-export-validation.json
+          retention-days: 3
+          if-no-files-found: warn
+  android:
+    if: github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && inputs.android)
+    needs: validate
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - uses: actions/cache@v4
+        with:
+          path: |
+            ${{ runner.temp }}/cinderbrook-godot
+            ~/.local/share/godot/export_templates/4.5.1.stable
+          key: cinderbrook-godot-4.5.1-linux-android-v1
+      - name: Install official engine, templates and Android components
+        run: |
+          set -euo pipefail
+          python tools/install_ci_godot.py "$RUNNER_TEMP/cinderbrook-godot" --android
+          echo "$RUNNER_TEMP/cinderbrook-godot" >> "$GITHUB_PATH"
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platform-tools" "platforms;android-35" "platforms;android-36" "build-tools;35.0.0" "ndk;28.1.13356709"
+      - name: Configure isolated editor and disposable debug signing
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p "$HOME/.config/godot" "$RUNNER_TEMP/cinderbrook-signing"
+          cat > "$HOME/.config/godot/editor_settings-4.5.tres" <<EOF
+          [gd_resource type="EditorSettings" format=3]
+          [resource]
+          export/android/java_sdk_path = "$JAVA_HOME"
+          export/android/android_sdk_path = "$ANDROID_HOME"
+          EOF
+          keytool -genkeypair -keystore "$RUNNER_TEMP/cinderbrook-signing/debug.keystore" -storepass android -alias androiddebugkey -keypass android -keyalg RSA -keysize 2048 -validity 10000 -dname "CN=Android Debug,O=Android,C=US"
+          echo "GODOT_ANDROID_KEYSTORE_DEBUG_PATH=$RUNNER_TEMP/cinderbrook-signing/debug.keystore" >> "$GITHUB_ENV"
+          echo "GODOT_ANDROID_KEYSTORE_DEBUG_USER=androiddebugkey" >> "$GITHUB_ENV"
+          echo "GODOT_ANDROID_KEYSTORE_DEBUG_PASSWORD=android" >> "$GITHUB_ENV"
+      - name: Build and inspect exact-source test packages
+        run: |
+          set -euo pipefail
+          test "$(git rev-parse HEAD)" = "$GITHUB_SHA"
+          mkdir -p build/android
+          touch build/.gdignore
+          timeout 240 Godot_v4.5.1-stable_linux.x86_64 --headless --editor --path . --import --quit 2>&1 | tee build/import-android.log
+          python tools/run_checks.py --check-log build/import-android.log
+          python platform/prepare_android.py --template "$HOME/.local/share/godot/export_templates/4.5.1.stable/android_source.zip"
+          timeout 1200 Godot_v4.5.1-stable_linux.x86_64 --headless --path . --export-debug Android build/android/cinderbrook-brigade-debug.aab 2>&1 | tee build/export-aab.log
+          timeout 1200 Godot_v4.5.1-stable_linux.x86_64 --headless --path . --export-debug 'Android Test APK' build/android/cinderbrook-brigade-test.apk 2>&1 | tee build/export-apk.log
+          python tools/run_checks.py --check-log build/export-aab.log --check-log build/export-apk.log
+          python platform/tests/validate_platform.py --artifact build/android/cinderbrook-brigade-debug.aab
+          python platform/tests/validate_platform.py --artifact build/android/cinderbrook-brigade-test.apk
+          python tools/verify_native_alignment.py build/android/cinderbrook-brigade-debug.aab --output build/android/aab-native-alignment.json
+          python tools/verify_native_alignment.py build/android/cinderbrook-brigade-test.apk --output build/android/apk-native-alignment.json
+          cp LICENSE NOTICE build/android/
+          cp -R LICENSES build/android/LICENSES
+          python - <<'PY'
+          import hashlib, json, os
+          from pathlib import Path
+          folder = Path('build/android')
+          files = {p.name: {'bytes': p.stat().st_size, 'sha256': hashlib.sha256(p.read_bytes()).hexdigest()} for p in sorted(folder.iterdir()) if p.suffix in ('.apk', '.aab')}
+          assert len(files) == 2
+          receipt = {'game': 'Cinderbrook Brigade', 'source_commit': os.environ['GITHUB_SHA'], 'signing': 'ephemeral CI debug key', 'native_runtime_tested': False, 'files': files}
+          (folder / 'build.json').write_text(json.dumps(receipt, indent=2) + '\n', encoding='utf-8')
+          PY
+          test -z "$(git status --porcelain --untracked-files=all)"
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cinderbrook-brigade-android-debug-${{ github.sha }}
+          path: build/android
+          retention-days: 3
+          if-no-files-found: error

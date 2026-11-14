@@ -1,0 +1,42 @@
+{
+  "admob_version": "5.1.0",
+  "play_games_version": "3.4.0",
+  "libraries": [
+    {
+      "path": "addons/admob/android/bin/ads/libs/poing-godot-admob-ads-debug.aar",
+      "sha256": "fac3128d6e64b59666b1bac3097952bbbde2f1b1573656cd51b9f64f745edd79",
+      "bytes": 134019,
+      "matches_owner_supplied_bundle": false
+    },
+    {
+      "path": "addons/admob/android/bin/ads/libs/poing-godot-admob-ads-release.aar",
+      "sha256": "aeca6a3c813da770390dc1d574765b17d8ba78fe0cf1cb61438dc08df1fe1c67",
+      "bytes": 127494,
+      "matches_owner_supplied_bundle": false
+    },
+    {
+      "path": "addons/admob/android/bin/ads/libs/poing-godot-admob-core-debug.aar",
+      "sha256": "f78a4075635d4d3f27d7de66d350fb77c16f21e60e24ceee702c80efe5b96e29",
+      "bytes": 4776,
+      "matches_owner_supplied_bundle": false
+    },
+    {
+      "path": "addons/admob/android/bin/ads/libs/poing-godot-admob-core-release.aar",
+      "sha256": "f89e3f1096047fabc83208e4e00a3f0aef847229bcb68cc01e791bd57468fda0",
+      "bytes": 4674,
+      "matches_owner_supplied_bundle": false
+    },
+    {
+      "path": "addons/GodotPlayGameServices/bin/debug/GodotPlayGameServices-debug.aar",
+      "sha256": "75b9ec61c3d8e013c8ca2eb150782e33519144dee94713b44f96147f2de55ee9",
+      "bytes": 88321,
+      "matches_owner_supplied_bundle": true
+    },
+    {
+      "path": "addons/GodotPlayGameServices/bin/release/GodotPlayGameServices-release.aar",
+      "sha256": "1f5545274a8b532e24d1f4489345dc8af0e63a1cd506893f85da34dfceb2f708",
+      "bytes": 84195,
+      "matches_owner_supplied_bundle": true
+    }
+  ]
+}

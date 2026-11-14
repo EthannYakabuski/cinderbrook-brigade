@@ -1,0 +1,19 @@
+Cinderbrook Brigade
+Original game code, authored incidents, documentation and original audio © 2026.
+Licensed under Apache License 2.0; see LICENSE.
+
+Kenney model, texture, interface, particle and sound assets retain their supplied
+Creative Commons CC0 notices. See LICENSES/ASSET_NOTICES.txt, the individual
+Kenney notices in LICENSES/, and docs/asset-source-manifest.json.
+
+Poing Studios Godot AdMob plugin and Godot Play Games Services retain their
+upstream MIT licenses within addons/. The vendored Android dependencies retain
+their upstream licenses. See platform/README.md and platform/plugin-binaries.json
+for the source and byte identities of the pinned libraries.
+
+Illustrated application, splash, feature and badge artwork was generated for
+this game. Artwork is distinct from genuine rendered-game screenshots; generation
+and preparation information is recorded in marketing/art-manifest.json.
+
+Google, Android, AdMob and Google Play are trademarks of their respective owners.
+This independent game is not endorsed by those companies.

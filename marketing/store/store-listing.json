@@ -1,0 +1,68 @@
+{
+  "title": "Cinderbrook Brigade",
+  "short_description": "Sweep the water. Save the rooftops. Bring a little town back to calm.",
+  "full_description": "A little truck. A town worth saving.\n\nCinderbrook Brigade is a portrait firefighting arcade game built around one satisfying motion: sweep a cool blue water jet across a miniature world, watch the flames turn to steam, then lift your finger to refill.\n\nONE FINGER, ONE CLEAR JOB\nDrag to aim and spray. Release to build your water reserve. Cool the hottest spots, keep neighboring buildings safe and choose when to refill. Generous touch aiming makes the first rescue easy to understand; saving every roof takes a steady hand.\n\nSIX NEIGHBORHOODS, 36 AUTHORED INCIDENTS\nRoll from the cottages of Maple Mews to Pine Camp, Warehouse Row, Orchard Bend, Lakeside Fair and the glowing rooftops of Lantern Heights. Each district brings its own layouts, scenery and ember patterns. Protect the structures, clear the incident and return for a cleaner three-star rescue.\n\nMAKE THE BRIGADE YOUR OWN\nEarn supply coins and career XP through play. Improve the copper pump, reserve tank, sweep nozzle, hydrant flow and protective foam across four ranks each. The campaign is designed to remain achievable with baseline equipment: upgrades give you room to improve your technique.\n\nA NEW REASON TO ANSWER THE BELL\nTake on the day's Daily Incident, see how many waves you can clear in Endless Watch, and claim seven-day login gifts. Collect twenty illustrated local achievements and improve your personal incident score, endless record and brigade career rank.\n\nSMALL WORLD, BIG PERSONALITY\nA coral fire engine, miniature 3D neighborhoods, golden trees and rich water-and-steam effects give every rescue a warm toy-town feel. Seven original musical arrangements follow your journey. Separate music and effects controls, reduced motion and optional haptics let you tune the experience.\n\nYOUR PROGRESS, SAVED LOCALLY\nCampaign stars, upgrades, records and your current incident persist on your device. Returning to an interrupted incident starts paused so you can get ready. The core game works offline; optional advertising and Google services need an internet connection when available.\n\nAdvertising stays at natural breaks: a reserved menu/results banner, an interstitial opportunity after every third completed round, and an explicitly optional emergency continue after failure. That continue is earned only when the ad SDK confirms completion, then waits for you to resume. No purchase is required to retry.\n\nPrototype note: this build uses Google test advertising. Production Google Play Games achievements and leaderboards await account configuration. Local achievements and records work now. This prototype has not been submitted to Google Play.",
+  "package_name": "com.ethannyakabuski.cinderbrookbrigade",
+  "release_ready": false,
+  "default_language": "en-US",
+  "category": "Game / Arcade",
+  "tags": [
+    "Casual",
+    "Single player",
+    "Offline",
+    "Stylized",
+    "Arcade"
+  ],
+  "tags_note": "Proposed labels; select the closest currently available Play Console tags.",
+  "orientation": "Portrait",
+  "primary_platform": "Android",
+  "additional_platform": "Web",
+  "contains_ads": true,
+  "in_app_purchases": false,
+  "content_rating": "Owner must complete the content-rating and audience questionnaires; no rating is claimed.",
+  "production_note": "Replace the prototype service-status paragraph only after production IDs, consent setup and live backend verification are complete.",
+  "three_selling_cards": [
+    {
+      "title": "A sweep of cool blue",
+      "copy": "Trace a wide water jet across the flames. Watch hot roofs turn to drifting steam, then lift to refill."
+    },
+    {
+      "title": "Every neighborhood has a story",
+      "copy": "Save cottages, campgrounds, workshops and fairgrounds across 36 authored incidents in six little districts."
+    },
+    {
+      "title": "Keep the brigade growing",
+      "copy": "Earn stars, improve five pieces of equipment, answer the daily call and chase your Endless Watch record."
+    }
+  ],
+  "lore": "When the old station bell rings, everyone in Cinderbrook leaves a light on. Your little truck follows those lights, one neighborhood at a time.",
+  "inspiration": "The immediate pleasure of washing a surface clean, the charm of miniature civic dioramas, and the gentle rhythm of spraying and refilling.",
+  "future_dlc": {
+    "name": "Snowbell Station",
+    "status": "Proposal only; not included",
+    "description": "A winter district with six new incidents, snow-dusted cottages, thawing hydrants and a cosmetic station livery. Keep the same one-finger controls and fair baseline equipment."
+  },
+  "technical": {
+    "engine": "Godot 4.5.1",
+    "renderer": "Compatibility",
+    "visuals": "3D Kenney dioramas with original generated brand illustrations",
+    "saves": "Versioned local save with backup and interrupted-run resume",
+    "services": "AdMob test IDs; Google Play Games production placeholders disabled",
+    "sound": "Seven original sixteen-bar instrumental loops, original water Foley and Kenney CC0 interface effects"
+  },
+  "art_alt_text": {
+    "app_icon": "Coral fire engine with a teal water cannon sweeping a blue jet toward an amber flame.",
+    "feature_graphic": "Cinderbrook Brigade title beside a coral fire engine cooling a cottage roof in a golden riverside village.",
+    "splash": "A coral fire engine sprays a cottage beside a teal creek beneath the Cinderbrook Brigade title."
+  },
+  "source_links": [
+    {
+      "title": "Google Play preview asset guidance",
+      "url": "https://support.google.com/googleplay/android-developer/answer/9866151"
+    },
+    {
+      "title": "Google Mobile Ads data disclosure",
+      "url": "https://developers.google.com/admob/android/privacy/play-data-disclosure"
+    }
+  ]
+}

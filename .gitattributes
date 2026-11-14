@@ -1,0 +1,20 @@
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.glb binary
+*.bin binary
+*.ogg binary
+*.wav binary
+*.mp3 binary
+*.aar binary
+*.zip binary
+*.res binary
+*.translation binary
+*.ttf binary
+*.otf binary
+LICENSES/** -text
+assets/audio/LICENSES/** -text
+addons/**/LICENSE -text
+marketing/play-games-achievements/import-files/*.csv -text

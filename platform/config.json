@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "admob": {
+    "test_mode": true,
+    "app_id": "ca-app-pub-3940256099942544~3347511713",
+    "banner_unit_id": "",
+    "interstitial_unit_id": "",
+    "rewarded_unit_id": "",
+    "tag_for_under_age_of_consent": false
+  },
+  "play_games": {
+    "enabled": false,
+    "game_id": "",
+    "achievements": {
+      "first_response": "",
+      "cool_customer": "",
+      "sweep_team": "",
+      "maple_mews": "",
+      "pine_camp": "",
+      "warehouse_row": "",
+      "orchard_bend": "",
+      "lakeside_fair": "",
+      "lantern_heights": "",
+      "three_star": "",
+      "star_collector": "",
+      "cinderbrook_hero": "",
+      "steady_hands": "",
+      "watch_captain": "",
+      "daily_dispatch": "",
+      "week_of_service": "",
+      "quartermaster": "",
+      "first_upgrade": "",
+      "brigade_rank_5": "",
+      "brigade_rank_10": ""
+    },
+    "leaderboards": {
+      "career_xp": "",
+      "incident_score": "",
+      "endless_watch": ""
+    }
+  }
+}

@@ -1,0 +1,4 @@
+CatalogId,Name,Description,Metric,ScoreOrder,IconFilename,PlayGamesLeaderboardId
+career_xp,Brigade Career XP,Total earned brigade experience.,xp,larger_is_better,career_xp.png,
+incident_score,Best Incident Score,Highest score earned in one campaign or Daily Incident.,best_score,larger_is_better,incident_score.png,
+endless_watch,Endless Watch Waves,Most waves cleared in one Endless Watch.,endless_wave,larger_is_better,endless_watch.png,

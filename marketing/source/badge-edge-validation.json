@@ -1,0 +1,239 @@
+{
+  "result": "PASS",
+  "icons": 23,
+  "edge_region": "Outer 40px on all four sides",
+  "limit": "All edge RGB channels below70; no gold/cream badge fragment in neutral margins",
+  "paired_store_runtime_bytes_identical": true,
+  "records": [
+    {
+      "id": "first_response",
+      "outer_40px_rgb_max": [
+        43,
+        42,
+        41,
+        41
+      ],
+      "sha256": "bced37e562719dc0a6db84ee45d3af442541ac92bd9c365b0b85980384d6ed81"
+    },
+    {
+      "id": "cool_customer",
+      "outer_40px_rgb_max": [
+        43,
+        42,
+        42,
+        42
+      ],
+      "sha256": "1d55bc49c1877ac68a14fff956d53ea011378bf1c928a909764c448b08b95d17"
+    },
+    {
+      "id": "sweep_team",
+      "outer_40px_rgb_max": [
+        43,
+        42,
+        41,
+        41
+      ],
+      "sha256": "95df2772c8207a547c230167beeb0ccb82cdadf02247baefd3140fab02a7f02e"
+    },
+    {
+      "id": "maple_mews",
+      "outer_40px_rgb_max": [
+        42,
+        42,
+        41,
+        41
+      ],
+      "sha256": "3dc3bf62c51dc5b59beb879c5a2b275dc2e6fb3ecc33d96c2f2e39478268fb9b"
+    },
+    {
+      "id": "pine_camp",
+      "outer_40px_rgb_max": [
+        42,
+        41,
+        42,
+        42
+      ],
+      "sha256": "d0103d92479b2178bacdf79364ad8fa28278bfa364545cad77b035bfcc877f1e"
+    },
+    {
+      "id": "warehouse_row",
+      "outer_40px_rgb_max": [
+        42,
+        41,
+        41,
+        41
+      ],
+      "sha256": "6029616fc7ffafd889728625246148c3a9225236adab1ecde72e7f3d772b0ef7"
+    },
+    {
+      "id": "orchard_bend",
+      "outer_40px_rgb_max": [
+        42,
+        42,
+        42,
+        42
+      ],
+      "sha256": "1fe4d40674f8b5d55e12a64609e8550de05e846b42e17696c3bb253a37f2e92f"
+    },
+    {
+      "id": "lakeside_fair",
+      "outer_40px_rgb_max": [
+        41,
+        41,
+        42,
+        42
+      ],
+      "sha256": "30672da93e5fdc5f4fa99a1e70cc2da30866715f8813283dcddfbdb3d666cc3e"
+    },
+    {
+      "id": "lantern_heights",
+      "outer_40px_rgb_max": [
+        42,
+        42,
+        42,
+        42
+      ],
+      "sha256": "a930aa66a0bda224266cf30fc5e92205761528493eb2bc4f29705844fb8ba680"
+    },
+    {
+      "id": "three_star",
+      "outer_40px_rgb_max": [
+        41,
+        42,
+        41,
+        41
+      ],
+      "sha256": "b4fde7444f751533dc188830edfb1d3283505a6ab3a7ec39ca81412ecfb79423"
+    },
+    {
+      "id": "star_collector",
+      "outer_40px_rgb_max": [
+        44,
+        42,
+        41,
+        43
+      ],
+      "sha256": "cf62f2e9fd24b2c172338db5bc5eb1dae12e76624700d4e81e8cfd157f058c53"
+    },
+    {
+      "id": "cinderbrook_hero",
+      "outer_40px_rgb_max": [
+        41,
+        41,
+        45,
+        44
+      ],
+      "sha256": "6a84cb657787c7e24855232ba9827316d17bcc0e0a933084eb6990dd544639ce"
+    },
+    {
+      "id": "steady_hands",
+      "outer_40px_rgb_max": [
+        45,
+        42,
+        41,
+        41
+      ],
+      "sha256": "d35fb5f997ec40b374fc2a1ee0e0403c47a90a948f700ca28c1123112031b827"
+    },
+    {
+      "id": "watch_captain",
+      "outer_40px_rgb_max": [
+        42,
+        42,
+        41,
+        41
+      ],
+      "sha256": "a33e6151c8fb595635449dd3c4f30b1111debd6c582126ccd77b5c3ca02b1dac"
+    },
+    {
+      "id": "daily_dispatch",
+      "outer_40px_rgb_max": [
+        42,
+        42,
+        40,
+        40
+      ],
+      "sha256": "2e7efc8813c4b75a2e59febb5239b4910324b70d84be3b8d1ca33e8b6187a486"
+    },
+    {
+      "id": "week_of_service",
+      "outer_40px_rgb_max": [
+        42,
+        41,
+        42,
+        42
+      ],
+      "sha256": "7fea6a2cfcdbee25470f7697968b38301956e0ea267bd5ddf60a194057f8b567"
+    },
+    {
+      "id": "quartermaster",
+      "outer_40px_rgb_max": [
+        43,
+        42,
+        41,
+        41
+      ],
+      "sha256": "71d8139a19325f580b59c2300bcacee85c6d42f92995d67c4df8b591711aaa08"
+    },
+    {
+      "id": "first_upgrade",
+      "outer_40px_rgb_max": [
+        42,
+        42,
+        42,
+        42
+      ],
+      "sha256": "3ba51d7918809e346b8732bfab40a4f3ed94a530e4cee28e93c27e6340c40a30"
+    },
+    {
+      "id": "brigade_rank_5",
+      "outer_40px_rgb_max": [
+        44,
+        42,
+        39,
+        39
+      ],
+      "sha256": "b6a92a650e238bffcbe98b4e1a329dce7191226e372e93da6461f87d44794482"
+    },
+    {
+      "id": "brigade_rank_10",
+      "outer_40px_rgb_max": [
+        41,
+        41,
+        42,
+        42
+      ],
+      "sha256": "0de6ea66a6b2851fff7061d0eeb2abf716d3cbdf0f81c390b4e9a5f4122b69d0"
+    },
+    {
+      "id": "career_xp",
+      "outer_40px_rgb_max": [
+        57,
+        57,
+        56,
+        57
+      ],
+      "sha256": "b1e0e5718f6bcad73905b544b057dd4817318266013aa84f28cce64b6fd8f57e"
+    },
+    {
+      "id": "incident_score",
+      "outer_40px_rgb_max": [
+        57,
+        57,
+        57,
+        57
+      ],
+      "sha256": "3ce900b4a724d0bdd7dc94579354c4a28b3afc3d9cc79609bc01794fe5ec105f"
+    },
+    {
+      "id": "endless_watch",
+      "outer_40px_rgb_max": [
+        57,
+        58,
+        57,
+        57
+      ],
+      "sha256": "3785afeb900783d21e0c0abdc0273e78a51005d32a298568fd8e8c0050858f80"
+    }
+  ]
+}

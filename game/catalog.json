@@ -1,0 +1,29 @@
+{
+  "achievements": [
+    {"id":"first_response","name":"First Response","description":"Clear your first incident.","type":"standard","steps":0,"points":10,"state":"revealed","metric":"clears","threshold":1,"icon":"res://assets/achievements/first_response.png"},
+    {"id":"cool_customer","name":"Cool Customer","description":"Extinguish 25 hotspots across completed incidents.","type":"standard","steps":0,"points":20,"state":"revealed","metric":"doused","threshold":25,"icon":"res://assets/achievements/cool_customer.png"},
+    {"id":"sweep_team","name":"Sweep Team","description":"Extinguish 250 hotspots across completed incidents.","type":"standard","steps":0,"points":50,"state":"revealed","metric":"doused","threshold":250,"icon":"res://assets/achievements/sweep_team.png"},
+    {"id":"maple_mews","name":"Maple Mews Keeper","description":"Clear all six Maple Mews incidents.","type":"standard","steps":0,"points":20,"state":"revealed","metric":"district_0","threshold":6,"icon":"res://assets/achievements/maple_mews.png"},
+    {"id":"pine_camp","name":"Campfire Guardian","description":"Clear all six Pine Camp incidents.","type":"standard","steps":0,"points":25,"state":"revealed","metric":"district_1","threshold":6,"icon":"res://assets/achievements/pine_camp.png"},
+    {"id":"warehouse_row","name":"Warehouse Warden","description":"Clear all six Warehouse Row incidents.","type":"standard","steps":0,"points":30,"state":"revealed","metric":"district_2","threshold":6,"icon":"res://assets/achievements/warehouse_row.png"},
+    {"id":"orchard_bend","name":"Orchard Friend","description":"Clear all six Orchard Bend incidents.","type":"standard","steps":0,"points":30,"state":"revealed","metric":"district_3","threshold":6,"icon":"res://assets/achievements/orchard_bend.png"},
+    {"id":"lakeside_fair","name":"Fairground Hero","description":"Clear all six Lakeside Fair incidents.","type":"standard","steps":0,"points":35,"state":"revealed","metric":"district_4","threshold":6,"icon":"res://assets/achievements/lakeside_fair.png"},
+    {"id":"lantern_heights","name":"Lantern Keeper","description":"Clear all six Lantern Heights incidents.","type":"standard","steps":0,"points":40,"state":"revealed","metric":"district_5","threshold":6,"icon":"res://assets/achievements/lantern_heights.png"},
+    {"id":"three_star","name":"A Clean Sweep","description":"Earn three stars on any campaign incident.","type":"standard","steps":0,"points":15,"state":"revealed","metric":"perfect","threshold":1,"icon":"res://assets/achievements/three_star.png"},
+    {"id":"star_collector","name":"Star Collector","description":"Collect 54 campaign stars.","type":"standard","steps":0,"points":40,"state":"revealed","metric":"stars","threshold":54,"icon":"res://assets/achievements/star_collector.png"},
+    {"id":"cinderbrook_hero","name":"Cinderbrook's Finest","description":"Clear all 36 campaign incidents.","type":"standard","steps":0,"points":75,"state":"revealed","metric":"campaign_clears","threshold":36,"icon":"res://assets/achievements/cinderbrook_hero.png"},
+    {"id":"steady_hands","name":"Steady Hands","description":"Finish an incident with at least 95 percent structure intact.","type":"standard","steps":0,"points":25,"state":"revealed","metric":"best_integrity","threshold":95,"icon":"res://assets/achievements/steady_hands.png"},
+    {"id":"watch_captain","name":"Watch Captain","description":"Clear five waves in a single Endless Watch.","type":"standard","steps":0,"points":60,"state":"revealed","metric":"endless_wave","threshold":5,"icon":"res://assets/achievements/watch_captain.png"},
+    {"id":"daily_dispatch","name":"Daily Dispatch","description":"Clear five Daily Incidents on separate dates.","type":"standard","steps":0,"points":40,"state":"revealed","metric":"daily_clears","threshold":5,"icon":"res://assets/achievements/daily_dispatch.png"},
+    {"id":"week_of_service","name":"A Week of Service","description":"Claim all seven consecutive daily login gifts.","type":"standard","steps":0,"points":35,"state":"revealed","metric":"best_streak","threshold":7,"icon":"res://assets/achievements/week_of_service.png"},
+    {"id":"quartermaster","name":"Quartermaster","description":"Purchase ten garage upgrade ranks.","type":"standard","steps":0,"points":35,"state":"revealed","metric":"upgrades","threshold":10,"icon":"res://assets/achievements/quartermaster.png"},
+    {"id":"first_upgrade","name":"Ready for Duty","description":"Purchase your first garage upgrade.","type":"standard","steps":0,"points":10,"state":"revealed","metric":"upgrades","threshold":1,"icon":"res://assets/achievements/first_upgrade.png"},
+    {"id":"brigade_rank_5","name":"Crew Leader","description":"Reach brigade rank 5 through earned career XP.","type":"standard","steps":0,"points":35,"state":"revealed","metric":"level","threshold":5,"icon":"res://assets/achievements/brigade_rank_5.png"},
+    {"id":"brigade_rank_10","name":"Brigade Chief","description":"Reach brigade rank 10 through earned career XP.","type":"standard","steps":0,"points":70,"state":"revealed","metric":"level","threshold":10,"icon":"res://assets/achievements/brigade_rank_10.png"}
+  ],
+  "leaderboards": [
+    {"id":"career_xp","name":"Brigade Career XP","description":"Total earned brigade experience.","sort_order":"larger_is_better","metric":"xp","icon":"res://assets/leaderboards/career_xp.png"},
+    {"id":"incident_score","name":"Best Incident Score","description":"Highest score earned in one campaign or Daily Incident.","sort_order":"larger_is_better","metric":"best_score","icon":"res://assets/leaderboards/incident_score.png"},
+    {"id":"endless_watch","name":"Endless Watch Waves","description":"Most waves cleared in one Endless Watch.","sort_order":"larger_is_better","metric":"endless_wave","icon":"res://assets/leaderboards/endless_watch.png"}
+  ]
+}

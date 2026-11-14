@@ -1,0 +1,27 @@
+{
+  "status": "DRAFT - owner review and production SDK configuration required",
+  "no_data_collected_claim": false,
+  "release_ready": false,
+  "local_data": [
+    "Campaign stars and unlocked incidents",
+    "Supply coins, upgrade ranks and career XP",
+    "Current incident recovery/resume state",
+    "Local achievements and personal records",
+    "Audio, haptics, reduced-motion and privacy preferences",
+    "Daily-gift streak and Daily Incident completion dates"
+  ],
+  "account_data": "The prototype does not create a developer account. Google Play Games sign-in is disabled until owner-supplied app and feature IDs are configured.",
+  "ads_review": "The integrated Google Mobile Ads SDK may process IP-derived approximate location, device/account identifiers, app interactions and diagnostics. The owner must disclose actual SDK version and production configuration; test ads do not justify a no-data-collected claim.",
+  "third_party_sources": [
+    "https://developers.google.com/admob/android/privacy/play-data-disclosure",
+    "https://policies.google.com/privacy"
+  ],
+  "owner_actions": [
+    "Confirm final developer identity and publish a durable privacy-policy URL.",
+    "Review the final merged Android manifest, SDK versions and exact consent configuration.",
+    "Complete Data safety and target-audience declarations for the actual released build.",
+    "Confirm retention/deletion/support processes and provide a monitored public contact.",
+    "Validate Google Play Games sign-in, data synchronization and account permissions after real configuration."
+  ],
+  "not_submitted": true
+}

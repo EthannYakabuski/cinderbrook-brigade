@@ -1,0 +1,637 @@
+[
+  {
+    "source": "kenney_car-kit\\Models\\GLB format\\box.glb",
+    "destination": "assets\\kenney\\car\\Models\\GLB format\\box.glb",
+    "sha256": "b773815c791d2708a2a70f1a9bb6d197d7211269ad96e273f9e364ea536c1b18"
+  },
+  {
+    "source": "kenney_car-kit\\Models\\GLB format\\cone.glb",
+    "destination": "assets\\kenney\\car\\Models\\GLB format\\cone.glb",
+    "sha256": "d6659fc365de47c5d056b14f3d3fb3e191d3a5b869c43171753621dcf14b76bd"
+  },
+  {
+    "source": "kenney_car-kit\\Models\\GLB format\\firetruck.glb",
+    "destination": "assets\\kenney\\car\\Models\\GLB format\\firetruck.glb",
+    "sha256": "c0c0a22809316536468da7e9c7f57b8ec1a8e387ec3a1cde032976c6d8a6c7a4"
+  },
+  {
+    "source": "kenney_car-kit\\Models\\GLB format\\Textures\\colormap.png",
+    "destination": "assets\\kenney\\car\\Models\\GLB format\\Textures\\colormap.png",
+    "sha256": "f3622a03a20c6696065cae9cbe391351be873508af190c2ebd1d420c055787a5"
+  },
+  {
+    "source": "kenney_car-kit\\Models\\GLB format\\van.glb",
+    "destination": "assets\\kenney\\car\\Models\\GLB format\\van.glb",
+    "sha256": "ed4ed56e8e5ed98db050af09ed2062b3b6bb7b93eab1e563cb6774b387b233a1"
+  },
+  {
+    "source": "kenney_game-icons\\PNG\\White\\2x\\audioOff.png",
+    "destination": "assets\\kenney\\icons\\audioOff.png",
+    "sha256": "c82e3784acee369264aa9e6cfc91973729982db5a2154d6ecddfd1927414d676"
+  },
+  {
+    "source": "kenney_game-icons\\PNG\\White\\2x\\audioOn.png",
+    "destination": "assets\\kenney\\icons\\audioOn.png",
+    "sha256": "aee49ff7b9151214178079eb860a341958ba54627c93d0b2636b05670a37a585"
+  },
+  {
+    "source": "kenney_game-icons\\PNG\\White\\2x\\checkmark.png",
+    "destination": "assets\\kenney\\icons\\checkmark.png",
+    "sha256": "00e3025322ddb4948598b7fb8d385762073de7b2b534d2cfd44372072608a92a"
+  },
+  {
+    "source": "kenney_game-icons\\PNG\\White\\2x\\cross.png",
+    "destination": "assets\\kenney\\icons\\cross.png",
+    "sha256": "8293e3758e7df2eb1c5bb8d6979cccc826e66c28f8c703e6cbb0a54a3c0efc33"
+  },
+  {
+    "source": "kenney_board-game-icons\\PNG\\Double (128px)\\dollar.png",
+    "destination": "assets\\kenney\\icons\\currency.png",
+    "sha256": "729677f8ce07738d14e9bdff1f2fe0b487bec242ddbe799287e32462b58e13b0"
+  },
+  {
+    "source": "kenney_game-icons\\PNG\\White\\2x\\gear.png",
+    "destination": "assets\\kenney\\icons\\gear.png",
+    "sha256": "50b313ffe97db1733e529d5b0f5ac91eed5c0c8ffee1034bbb7766508e4f720c"
+  },
+  {
+    "source": "kenney_game-icons\\PNG\\White\\2x\\home.png",
+    "destination": "assets\\kenney\\icons\\home.png",
+    "sha256": "1f6d39df47cb8849feb8f01aad329583f5f014c449c622b39aa154a3eca55160"
+  },
+  {
+    "source": "kenney_game-icons\\PNG\\White\\2x\\information.png",
+    "destination": "assets\\kenney\\icons\\information.png",
+    "sha256": "dc6909b9d262528156a8afd6247696d0ea39ff533a722ca8d3432c5957544e05"
+  },
+  {
+    "source": "kenney_game-icons\\PNG\\White\\2x\\leaderboardsSimple.png",
+    "destination": "assets\\kenney\\icons\\leaderboardsSimple.png",
+    "sha256": "9af73369adb5e57b4e6084e071c2c6ef489e3ab192c65369d54577c56b23ad3b"
+  },
+  {
+    "source": "kenney_game-icons\\PNG\\White\\2x\\locked.png",
+    "destination": "assets\\kenney\\icons\\locked.png",
+    "sha256": "b83e9f3d17e94a054fa0add775e89eb6973052dca9185a4b5fface1d14cf9cd1"
+  },
+  {
+    "source": "kenney_game-icons\\PNG\\White\\2x\\medal1.png",
+    "destination": "assets\\kenney\\icons\\medal1.png",
+    "sha256": "1fc2223c740227f97094a3ed8512b00f26ef58b60830ee1f6cb415dca2a90bf2"
+  },
+  {
+    "source": "kenney_game-icons\\PNG\\White\\2x\\musicOff.png",
+    "destination": "assets\\kenney\\icons\\musicOff.png",
+    "sha256": "ee0901ab81572df6dd47400b5694c0c41d8ccb1c3bf24485b4414dfb4c1172ea"
+  },
+  {
+    "source": "kenney_game-icons\\PNG\\White\\2x\\musicOn.png",
+    "destination": "assets\\kenney\\icons\\musicOn.png",
+    "sha256": "9998567109c4ad007ad796091b4f1d7774779f6f96c8b4b615f215f7d74c5230"
+  },
+  {
+    "source": "kenney_game-icons\\PNG\\White\\2x\\pause.png",
+    "destination": "assets\\kenney\\icons\\pause.png",
+    "sha256": "5c940ad60dd46b3252d4f991f24e9c21865722fe401947830228629baed28774"
+  },
+  {
+    "source": "kenney_game-icons\\PNG\\White\\2x\\plus.png",
+    "destination": "assets\\kenney\\icons\\plus.png",
+    "sha256": "dc5d564ffe3ae546f2e72ce19ea8349124cf48256418de50bb045a5d97ab9872"
+  },
+  {
+    "source": "kenney_game-icons\\PNG\\White\\2x\\return.png",
+    "destination": "assets\\kenney\\icons\\return.png",
+    "sha256": "99b425ec6d8e49633ddcea55e7485adf44a4ca8614abf39e59b7a83602ee3866"
+  },
+  {
+    "source": "kenney_game-icons\\PNG\\White\\2x\\shoppingBasket.png",
+    "destination": "assets\\kenney\\icons\\shoppingBasket.png",
+    "sha256": "edcc5b38af3e1f971a3503fb7dc6bf96c18296af866227c72885562d4984371d"
+  },
+  {
+    "source": "kenney_game-icons\\PNG\\White\\2x\\target.png",
+    "destination": "assets\\kenney\\icons\\target.png",
+    "sha256": "afd40325569fa91bfc690856dc4c70901bbd7c2e27dedc9fe3847258c61bbc81"
+  },
+  {
+    "source": "kenney_game-icons\\PNG\\White\\2x\\trophy.png",
+    "destination": "assets\\kenney\\icons\\trophy.png",
+    "sha256": "9525a3a01eb4ffddbb1c6dd9444ffa20876d18843d7ddd44e6c80d28744e8714"
+  },
+  {
+    "source": "kenney_game-icons\\PNG\\White\\2x\\unlocked.png",
+    "destination": "assets\\kenney\\icons\\unlocked.png",
+    "sha256": "fd9e8d852f72f9c315eadf3448515bbfba229ec6ded636f647855f5317da6a80"
+  },
+  {
+    "source": "kenney_game-icons\\PNG\\White\\2x\\warning.png",
+    "destination": "assets\\kenney\\icons\\warning.png",
+    "sha256": "dcd64b5bbf8073c222581e7da1ce74ad29d64762345ff5825300b823b3fba8f5"
+  },
+  {
+    "source": "kenney_game-icons\\PNG\\White\\2x\\wrench.png",
+    "destination": "assets\\kenney\\icons\\wrench.png",
+    "sha256": "024ffc10111b23b5f3fcf820cbb1959942cbfe54a4466141d7d6a8df1fa21db2"
+  },
+  {
+    "source": "kenney_city-kit-industrial_2.0\\Models\\GLB format\\building-a.glb",
+    "destination": "assets\\kenney\\industrial\\Models\\GLB format\\building-a.glb",
+    "sha256": "0e6ef8eb1e1bdbb9d06b5496b5daf3066e00eaf74b3fcd61b74072116a1c86cf"
+  },
+  {
+    "source": "kenney_city-kit-industrial_2.0\\Models\\GLB format\\building-b.glb",
+    "destination": "assets\\kenney\\industrial\\Models\\GLB format\\building-b.glb",
+    "sha256": "2ae65bd9166449f0bef438fbefb75d57451cb15c16659d7f22a7d895296a46af"
+  },
+  {
+    "source": "kenney_city-kit-industrial_2.0\\Models\\GLB format\\building-c.glb",
+    "destination": "assets\\kenney\\industrial\\Models\\GLB format\\building-c.glb",
+    "sha256": "94eb05acef8d8e4c1d817eb12e1c2a1287ffed625879170663a8c4f48786b465"
+  },
+  {
+    "source": "kenney_city-kit-industrial_2.0\\Models\\GLB format\\building-f.glb",
+    "destination": "assets\\kenney\\industrial\\Models\\GLB format\\building-f.glb",
+    "sha256": "05a91ab02f424ca4f4819c1749e014bc4404cdf2a75242190c066bb24b59cde7"
+  },
+  {
+    "source": "kenney_city-kit-industrial_2.0\\Models\\GLB format\\building-j.glb",
+    "destination": "assets\\kenney\\industrial\\Models\\GLB format\\building-j.glb",
+    "sha256": "58f135e706662a201bc0c660c2c680ec6bf2997233dd61fe03c28d4965b45bc9"
+  },
+  {
+    "source": "kenney_city-kit-industrial_2.0\\Models\\GLB format\\chimney-small.glb",
+    "destination": "assets\\kenney\\industrial\\Models\\GLB format\\chimney-small.glb",
+    "sha256": "22b09845e3df85102278eb440a1cbf9751790d5133a847469e112c55f8b44ff2"
+  },
+  {
+    "source": "kenney_city-kit-industrial_2.0\\Models\\GLB format\\detail-tank.glb",
+    "destination": "assets\\kenney\\industrial\\Models\\GLB format\\detail-tank.glb",
+    "sha256": "9e955732e4ef9ccff4a4d6967d29d8a7d2f9ed16c903923f2568216d9f0b50d2"
+  },
+  {
+    "source": "kenney_city-kit-industrial_2.0\\Models\\GLB format\\shipping-container-a.glb",
+    "destination": "assets\\kenney\\industrial\\Models\\GLB format\\shipping-container-a.glb",
+    "sha256": "7b2d5ca874c8e659ee6cfd1614f0470b70410b2ddc7620ac83b8954dedeb861d"
+  },
+  {
+    "source": "kenney_city-kit-industrial_2.0\\Models\\GLB format\\shipping-container-b.glb",
+    "destination": "assets\\kenney\\industrial\\Models\\GLB format\\shipping-container-b.glb",
+    "sha256": "290b3808149f8a9456ee96ff682fcf6a99f76adeac8e3b7b38234be434ea455c"
+  },
+  {
+    "source": "kenney_city-kit-industrial_2.0\\Models\\GLB format\\solar-panel-flat.glb",
+    "destination": "assets\\kenney\\industrial\\Models\\GLB format\\solar-panel-flat.glb",
+    "sha256": "0b10fa196480181d22734e4971f068e2909fb5835fab1857d26748e39b3b6bb1"
+  },
+  {
+    "source": "kenney_city-kit-industrial_2.0\\Models\\GLB format\\Textures\\colormap.png",
+    "destination": "assets\\kenney\\industrial\\Models\\GLB format\\Textures\\colormap.png",
+    "sha256": "950f4f891ebd05a2affac810e6eeb0fea1511bc39039b65a3cbf2e17d17bc6a2"
+  },
+  {
+    "source": "kenney_city-kit-industrial_2.0\\Models\\GLB format\\water-tower.glb",
+    "destination": "assets\\kenney\\industrial\\Models\\GLB format\\water-tower.glb",
+    "sha256": "11ac7ae19f32ce889bfe7a9c8e78c8ce8c77b7a76b52fd4ffa439a022ea2ef40"
+  },
+  {
+    "source": "kenney_mini-market\\Models\\GLB format\\display-bread.glb",
+    "destination": "assets\\kenney\\market\\Models\\GLB format\\display-bread.glb",
+    "sha256": "33a57fee0e331e5e40df5f0dc7af302e93266fd978dda810ab9f0ea4a2c205d1"
+  },
+  {
+    "source": "kenney_mini-market\\Models\\GLB format\\display-fruit.glb",
+    "destination": "assets\\kenney\\market\\Models\\GLB format\\display-fruit.glb",
+    "sha256": "4cc38dcbd0f703d5bc829ff4a627648872dd3f6578f3e7e01fdcee066367873b"
+  },
+  {
+    "source": "kenney_mini-market\\Models\\GLB format\\shopping-basket.glb",
+    "destination": "assets\\kenney\\market\\Models\\GLB format\\shopping-basket.glb",
+    "sha256": "a7704926cb56c5a9ab74488230fc7c4d7b914387c59e9c1b6f62376965c0ea7d"
+  },
+  {
+    "source": "kenney_mini-market\\Models\\GLB format\\Textures\\colormap.png",
+    "destination": "assets\\kenney\\market\\Models\\GLB format\\Textures\\colormap.png",
+    "sha256": "0d4947d34ff32acf4a359c7f22ca784e057e7e72f622170a9a77b6fc88fdb70e"
+  },
+  {
+    "source": "kenney_nature-kit\\Models\\GLTF format\\log.glb",
+    "destination": "assets\\kenney\\nature\\Models\\GLTF format\\log.glb",
+    "sha256": "8c8fe8f6adfc03a3c0cd6cb24961ff74be96c2da284d70322f05797d049972d6"
+  },
+  {
+    "source": "kenney_nature-kit\\Models\\GLTF format\\plant_bush.glb",
+    "destination": "assets\\kenney\\nature\\Models\\GLTF format\\plant_bush.glb",
+    "sha256": "ae7b1beb39e242b13f5f29e3ec23ef21034b814f82297b8aa00a9bf4e1b09590"
+  },
+  {
+    "source": "kenney_nature-kit\\Models\\GLTF format\\plant_bushSmall.glb",
+    "destination": "assets\\kenney\\nature\\Models\\GLTF format\\plant_bushSmall.glb",
+    "sha256": "a9620a7d1fb165ae68d323676f80dbb2a9e3aafb21110d18d18d90b07026b91d"
+  },
+  {
+    "source": "kenney_nature-kit\\Models\\GLTF format\\platform_grass.glb",
+    "destination": "assets\\kenney\\nature\\Models\\GLTF format\\platform_grass.glb",
+    "sha256": "74105fc9912c97e7809264dd69621863e0ddfd6ab92136f05918eda436ee898b"
+  },
+  {
+    "source": "kenney_nature-kit\\Models\\GLTF format\\rock_largeA.glb",
+    "destination": "assets\\kenney\\nature\\Models\\GLTF format\\rock_largeA.glb",
+    "sha256": "6dd15390fd96501dcd1454765a17ba61dbbd8d47705dfe5149c8dd92b353ce25"
+  },
+  {
+    "source": "kenney_nature-kit\\Models\\GLTF format\\rock_smallA.glb",
+    "destination": "assets\\kenney\\nature\\Models\\GLTF format\\rock_smallA.glb",
+    "sha256": "df9fff9d711e61370e8df0caa2514c89b8f8a8dc6c6fafaf4eb2ec79c5ae07c1"
+  },
+  {
+    "source": "kenney_nature-kit\\Models\\GLTF format\\rock_smallB.glb",
+    "destination": "assets\\kenney\\nature\\Models\\GLTF format\\rock_smallB.glb",
+    "sha256": "11b26bc0a12e971a3b69df1401e530e24432d528c262df94b99c412e7f372763"
+  },
+  {
+    "source": "kenney_nature-kit\\Models\\GLTF format\\rock_smallC.glb",
+    "destination": "assets\\kenney\\nature\\Models\\GLTF format\\rock_smallC.glb",
+    "sha256": "5cbc0a805f275771baf19165c7132288e4834ba97ec0fb16ce9cc37e1c2522e2"
+  },
+  {
+    "source": "kenney_nature-kit\\Models\\GLTF format\\stump_round.glb",
+    "destination": "assets\\kenney\\nature\\Models\\GLTF format\\stump_round.glb",
+    "sha256": "e9b0f385f0ef98493ef716a055aa51e0b99efb8445279be7bb8bd83329a4c4af"
+  },
+  {
+    "source": "kenney_nature-kit\\Models\\GLTF format\\tent_smallOpen.glb",
+    "destination": "assets\\kenney\\nature\\Models\\GLTF format\\tent_smallOpen.glb",
+    "sha256": "d32c3f7a5926de03521a012774316d38e09c27bd6dbae7cefdb01debe003ecdd"
+  },
+  {
+    "source": "kenney_nature-kit\\Models\\GLTF format\\tree_default_fall.glb",
+    "destination": "assets\\kenney\\nature\\Models\\GLTF format\\tree_default_fall.glb",
+    "sha256": "f8e90ed7f7771644998a7c361302213af04350150b3ea0631e8384d26506efa2"
+  },
+  {
+    "source": "kenney_nature-kit\\Models\\GLTF format\\tree_default.glb",
+    "destination": "assets\\kenney\\nature\\Models\\GLTF format\\tree_default.glb",
+    "sha256": "562d29638c902de3c7bee465d3a53bb77117efbc392ae04ed894faf6b5dc691d"
+  },
+  {
+    "source": "kenney_nature-kit\\Models\\GLTF format\\tree_oak.glb",
+    "destination": "assets\\kenney\\nature\\Models\\GLTF format\\tree_oak.glb",
+    "sha256": "d7fd8773674928c50c11b66d12c636d49bdcc15a8b1c7fbb98e6f63a3439a3f3"
+  },
+  {
+    "source": "kenney_nature-kit\\Models\\GLTF format\\tree_palmShort.glb",
+    "destination": "assets\\kenney\\nature\\Models\\GLTF format\\tree_palmShort.glb",
+    "sha256": "d2526ca31c144a238820aa5c0f6183c5b9cf37fd3cc037932e637cf7c473ba27"
+  },
+  {
+    "source": "kenney_nature-kit\\Models\\GLTF format\\tree_pineRoundA.glb",
+    "destination": "assets\\kenney\\nature\\Models\\GLTF format\\tree_pineRoundA.glb",
+    "sha256": "7dc9711f31585eafdcb965d0649c30af5e19f2def1955f7a915081d30759ef8e"
+  },
+  {
+    "source": "kenney_nature-kit\\Models\\GLTF format\\tree_pineRoundB.glb",
+    "destination": "assets\\kenney\\nature\\Models\\GLTF format\\tree_pineRoundB.glb",
+    "sha256": "d4b664a2ac27ffec4125d95dffebed23471595f3a86650a55bcb9ac6b7c54637"
+  },
+  {
+    "source": "kenney_nature-kit\\Models\\GLTF format\\tree_pineSmallA.glb",
+    "destination": "assets\\kenney\\nature\\Models\\GLTF format\\tree_pineSmallA.glb",
+    "sha256": "be1a438bbb2e157266c1fb093b775bff8ce3e29a4c8f04aaf9d44c7a4e1f1ff0"
+  },
+  {
+    "source": "kenney_nature-kit\\Models\\GLTF format\\tree_small.glb",
+    "destination": "assets\\kenney\\nature\\Models\\GLTF format\\tree_small.glb",
+    "sha256": "d26c0eeed65cc681667f50042ef23ec72ce47ae3b39837bfeec170b05ba6ab6a"
+  },
+  {
+    "source": "kenney_particle-pack\\PNG (Transparent)\\circle_01.png",
+    "destination": "assets\\kenney\\particles\\circle_01.png",
+    "sha256": "4b2d03683bf0fe4a946567adc3bd86b8ba045da84cee58dc2cf8aef63bbfaa06"
+  },
+  {
+    "source": "kenney_particle-pack\\PNG (Transparent)\\circle_05.png",
+    "destination": "assets\\kenney\\particles\\circle_05.png",
+    "sha256": "925b8ac284436f74f9cadf0ecd058da1c08fba65c098e4e34fd220603022f02e"
+  },
+  {
+    "source": "kenney_particle-pack\\PNG (Transparent)\\fire_01.png",
+    "destination": "assets\\kenney\\particles\\fire_01.png",
+    "sha256": "9727a9743ac6ab8dd4dd79f5fc5b0266290efae45f4d4452279eb5e4bcf3a978"
+  },
+  {
+    "source": "kenney_particle-pack\\PNG (Transparent)\\flame_01.png",
+    "destination": "assets\\kenney\\particles\\flame_01.png",
+    "sha256": "92a70bcb90b1e21c57b2dae42843135703b2e988abee97433f84c3119723d144"
+  },
+  {
+    "source": "kenney_particle-pack\\PNG (Transparent)\\flame_02.png",
+    "destination": "assets\\kenney\\particles\\flame_02.png",
+    "sha256": "7afff66979a5a30319d4fa491b13a9027223ebbdadfa38fae4ae76e31d05d9c5"
+  },
+  {
+    "source": "kenney_particle-pack\\PNG (Transparent)\\flame_05.png",
+    "destination": "assets\\kenney\\particles\\flame_05.png",
+    "sha256": "4c5cc587260010e4bb58b03cc2561ca0e96409e7db25ea4183cd3fb1d0237dc8"
+  },
+  {
+    "source": "kenney_particle-pack\\PNG (Transparent)\\flame_06.png",
+    "destination": "assets\\kenney\\particles\\flame_06.png",
+    "sha256": "fc95ac4d0e61b22d079aeb5feabf2914d380858ad95852e5b1638ad820526948"
+  },
+  {
+    "source": "kenney_particle-pack\\PNG (Transparent)\\light_01.png",
+    "destination": "assets\\kenney\\particles\\light_01.png",
+    "sha256": "caedcc5df5bcac4470244d2520d6a64b45b20c1ccf4d918da516c55e3fa365a6"
+  },
+  {
+    "source": "kenney_particle-pack\\PNG (Transparent)\\scorch_01.png",
+    "destination": "assets\\kenney\\particles\\scorch_01.png",
+    "sha256": "ea72697696638786ccd4795a346d177b1b6a904331b5536a7e85a7ed927b93a5"
+  },
+  {
+    "source": "kenney_particle-pack\\PNG (Transparent)\\smoke_01.png",
+    "destination": "assets\\kenney\\particles\\smoke_01.png",
+    "sha256": "e8724c219e8d35859167fc0a7e207e13c72ccf0c29704909b9bb3d3dc71c6cf7"
+  },
+  {
+    "source": "kenney_particle-pack\\PNG (Transparent)\\smoke_04.png",
+    "destination": "assets\\kenney\\particles\\smoke_04.png",
+    "sha256": "2db2f69874cdb1e5203f2f86803d5debde30402590cf50a810afaba882184616"
+  },
+  {
+    "source": "kenney_particle-pack\\PNG (Transparent)\\spark_01.png",
+    "destination": "assets\\kenney\\particles\\spark_01.png",
+    "sha256": "5902da3a324cad0a4b5a88ce1e3c9cc18fee50922c358ce93d8c9f1ad7708f0a"
+  },
+  {
+    "source": "kenney_particle-pack\\PNG (Transparent)\\trace_01.png",
+    "destination": "assets\\kenney\\particles\\trace_01.png",
+    "sha256": "34de69bc3f665b23fe9bed15f388efd8e8e4dc1a99f2fc5db9ba8715c525711f"
+  },
+  {
+    "source": "kenney_city-kit-roads\\Models\\GLB format\\road-bend.glb",
+    "destination": "assets\\kenney\\roads\\Models\\GLB format\\road-bend.glb",
+    "sha256": "9752f63448c8e7a3d30ca2e0e1bb6784c5adb72b56a2b05667be8d546c1674bc"
+  },
+  {
+    "source": "kenney_city-kit-roads\\Models\\GLB format\\road-crossing.glb",
+    "destination": "assets\\kenney\\roads\\Models\\GLB format\\road-crossing.glb",
+    "sha256": "eb8575335f77da513add4a5277a7b60cad4886c07966f024b15cf55e5966cde3"
+  },
+  {
+    "source": "kenney_city-kit-roads\\Models\\GLB format\\road-end.glb",
+    "destination": "assets\\kenney\\roads\\Models\\GLB format\\road-end.glb",
+    "sha256": "bdf62518cfcc2c1a1425a4c8bc845e8e344f9c8b34dfb364b6b7d442e6171f11"
+  },
+  {
+    "source": "kenney_city-kit-roads\\Models\\GLB format\\road-straight-half.glb",
+    "destination": "assets\\kenney\\roads\\Models\\GLB format\\road-straight-half.glb",
+    "sha256": "8dc2e2f4f6d38094f9c35004f78f20a596554454246d348db2832e6c443188bc"
+  },
+  {
+    "source": "kenney_city-kit-roads\\Models\\GLB format\\road-straight.glb",
+    "destination": "assets\\kenney\\roads\\Models\\GLB format\\road-straight.glb",
+    "sha256": "f8f744fb6fc96dedd5ad1f763b550166f2624a3757bf36b4b39969d2e7cacac5"
+  },
+  {
+    "source": "kenney_city-kit-roads\\Models\\GLB format\\Textures\\colormap.png",
+    "destination": "assets\\kenney\\roads\\Models\\GLB format\\Textures\\colormap.png",
+    "sha256": "a48e2962661ae44368ffddf3054f80ed8491d082b757dcc3011184cd9a98b185"
+  },
+  {
+    "source": "kenney_smoke-particles\\PNG\\White puff\\whitePuff00.png",
+    "destination": "assets\\kenney\\smoke\\whitePuff00.png",
+    "sha256": "33f894c2279bee9f77874dbfa3c0e9f071a0ee5e1a7065dcc40196029d699f58"
+  },
+  {
+    "source": "kenney_smoke-particles\\PNG\\White puff\\whitePuff01.png",
+    "destination": "assets\\kenney\\smoke\\whitePuff01.png",
+    "sha256": "5b15a3986ce9be1212dda30c60f97f6a5e9e01d740950385868a6d03713c6923"
+  },
+  {
+    "source": "kenney_smoke-particles\\PNG\\White puff\\whitePuff02.png",
+    "destination": "assets\\kenney\\smoke\\whitePuff02.png",
+    "sha256": "b0ed662d8989da0710c2363df9e7d1ffe5e99ee9efd080917b59330b0645b4e9"
+  },
+  {
+    "source": "kenney_smoke-particles\\PNG\\White puff\\whitePuff03.png",
+    "destination": "assets\\kenney\\smoke\\whitePuff03.png",
+    "sha256": "f027268d30b6dfbdea22833bc992fb45c456371919add2635e76c17bec35f7e0"
+  },
+  {
+    "source": "kenney_smoke-particles\\PNG\\White puff\\whitePuff04.png",
+    "destination": "assets\\kenney\\smoke\\whitePuff04.png",
+    "sha256": "8233a8b20beabd2e3dfb5224d3faf816fe229faeeaadad6d04350c1c818b60ee"
+  },
+  {
+    "source": "kenney_city-kit-suburban_20\\Models\\GLB format\\building-type-a.glb",
+    "destination": "assets\\kenney\\suburban\\Models\\GLB format\\building-type-a.glb",
+    "sha256": "49f32e20b9dcd24b1c8f6d6488807b8c8cb684cbb595bfb0bb36ad903e470faa"
+  },
+  {
+    "source": "kenney_city-kit-suburban_20\\Models\\GLB format\\building-type-b.glb",
+    "destination": "assets\\kenney\\suburban\\Models\\GLB format\\building-type-b.glb",
+    "sha256": "a964a10c51bb334be677657fd8fa483531974dd15b4243575990192818e2300e"
+  },
+  {
+    "source": "kenney_city-kit-suburban_20\\Models\\GLB format\\building-type-c.glb",
+    "destination": "assets\\kenney\\suburban\\Models\\GLB format\\building-type-c.glb",
+    "sha256": "86a69f30f1a09461283e158514945ae5cc9d56357b0ddc83a9a3f0eecd113591"
+  },
+  {
+    "source": "kenney_city-kit-suburban_20\\Models\\GLB format\\building-type-d.glb",
+    "destination": "assets\\kenney\\suburban\\Models\\GLB format\\building-type-d.glb",
+    "sha256": "a41cd28265b2b224e700373c3a8356562619699998b7fa4d70ed41de629a6731"
+  },
+  {
+    "source": "kenney_city-kit-suburban_20\\Models\\GLB format\\building-type-e.glb",
+    "destination": "assets\\kenney\\suburban\\Models\\GLB format\\building-type-e.glb",
+    "sha256": "9ec43994c8c332b1ae5b058d8b9646255831fd91047c1a35b1fc1ecae4c082fc"
+  },
+  {
+    "source": "kenney_city-kit-suburban_20\\Models\\GLB format\\building-type-g.glb",
+    "destination": "assets\\kenney\\suburban\\Models\\GLB format\\building-type-g.glb",
+    "sha256": "f497a7bc3a8e6b6273ba99f090042d1cfb3141da57d3c51998c57a479a0ece11"
+  },
+  {
+    "source": "kenney_city-kit-suburban_20\\Models\\GLB format\\building-type-j.glb",
+    "destination": "assets\\kenney\\suburban\\Models\\GLB format\\building-type-j.glb",
+    "sha256": "fbdce9cb6bb6cf60a861bab36a896403aff604afbf2cb2b86676ae6f49fa2de3"
+  },
+  {
+    "source": "kenney_city-kit-suburban_20\\Models\\GLB format\\building-type-n.glb",
+    "destination": "assets\\kenney\\suburban\\Models\\GLB format\\building-type-n.glb",
+    "sha256": "f2a29ececcca4a27bbef187caba0e7bb0e35de7a0de9742a8b8440ce6874c48c"
+  },
+  {
+    "source": "kenney_city-kit-suburban_20\\Models\\GLB format\\fence-1x2.glb",
+    "destination": "assets\\kenney\\suburban\\Models\\GLB format\\fence-1x2.glb",
+    "sha256": "54dd8d87f4ee0fd4d945b694a10a74eb7b20b1bd7468e09fd21fc32fb2b78397"
+  },
+  {
+    "source": "kenney_city-kit-suburban_20\\Models\\GLB format\\fence-low.glb",
+    "destination": "assets\\kenney\\suburban\\Models\\GLB format\\fence-low.glb",
+    "sha256": "fe0272d73820bb4c8db3bed408a28cbd5c042da1373142bd13122a1ac9d1a168"
+  },
+  {
+    "source": "kenney_city-kit-suburban_20\\Models\\GLB format\\path-long.glb",
+    "destination": "assets\\kenney\\suburban\\Models\\GLB format\\path-long.glb",
+    "sha256": "af6869e19f9922e84df23a48795618f03565587dc2c397bd84cf1f066cfa39d5"
+  },
+  {
+    "source": "kenney_city-kit-suburban_20\\Models\\GLB format\\path-short.glb",
+    "destination": "assets\\kenney\\suburban\\Models\\GLB format\\path-short.glb",
+    "sha256": "0f657ebadf8c56adcd54335b8da2e54120f539918ea50509812731790ef99c2b"
+  },
+  {
+    "source": "kenney_city-kit-suburban_20\\Models\\GLB format\\planter.glb",
+    "destination": "assets\\kenney\\suburban\\Models\\GLB format\\planter.glb",
+    "sha256": "a876e87d908f0397dcaf94b7705835447825c4c5b39195319535415386542c17"
+  },
+  {
+    "source": "kenney_city-kit-suburban_20\\Models\\GLB format\\Textures\\colormap.png",
+    "destination": "assets\\kenney\\suburban\\Models\\GLB format\\Textures\\colormap.png",
+    "sha256": "9b5de86078c25ef02351a80d35ff3c978693a1044565b73eedd9ae9b5b80665d"
+  },
+  {
+    "source": "kenney_city-kit-suburban_20\\Models\\GLB format\\tree-large.glb",
+    "destination": "assets\\kenney\\suburban\\Models\\GLB format\\tree-large.glb",
+    "sha256": "16d1f95c149bc727a953a473cf20bf21de9bf1a88747c4f9d2eeb4ac7d43e291"
+  },
+  {
+    "source": "kenney_city-kit-suburban_20\\Models\\GLB format\\tree-small.glb",
+    "destination": "assets\\kenney\\suburban\\Models\\GLB format\\tree-small.glb",
+    "sha256": "5f63359e5f392609d7617cc98070855ca1ffd4f4b4bc3978a5ff56ece88a58d6"
+  },
+  {
+    "source": "kenney_survival-kit\\Models\\GLB format\\barrel.glb",
+    "destination": "assets\\kenney\\survival\\Models\\GLB format\\barrel.glb",
+    "sha256": "3a0d12f6bdd1badd361f64ce0fbbf878a4ccfc2de8ff1ac4ed4c1aea2a9ee04a"
+  },
+  {
+    "source": "kenney_survival-kit\\Models\\GLB format\\box-large.glb",
+    "destination": "assets\\kenney\\survival\\Models\\GLB format\\box-large.glb",
+    "sha256": "69b4052f32b7b27e5d2ee27041b091a07d4a2dd4d877168a701607a97609f0f6"
+  },
+  {
+    "source": "kenney_survival-kit\\Models\\GLB format\\box.glb",
+    "destination": "assets\\kenney\\survival\\Models\\GLB format\\box.glb",
+    "sha256": "346eebd23986793b992ca6e05e9f98d6f5db96a9bfa3aa7c8360ac8b7920def8"
+  },
+  {
+    "source": "kenney_survival-kit\\Models\\GLB format\\bucket.glb",
+    "destination": "assets\\kenney\\survival\\Models\\GLB format\\bucket.glb",
+    "sha256": "ff173908480929067cd634d5edfedba038428f1503db487521492975fa5c8274"
+  },
+  {
+    "source": "kenney_survival-kit\\Models\\GLB format\\campfire-pit.glb",
+    "destination": "assets\\kenney\\survival\\Models\\GLB format\\campfire-pit.glb",
+    "sha256": "a78ce38de408456649146077e1917d70bb39f7c87c3c7370276d809d2409b0ab"
+  },
+  {
+    "source": "kenney_survival-kit\\Models\\GLB format\\fence.glb",
+    "destination": "assets\\kenney\\survival\\Models\\GLB format\\fence.glb",
+    "sha256": "5d8050e39c8b83b5835ea38b9b17429b4a03e289b566a1db771b7e1d9c6e4050"
+  },
+  {
+    "source": "kenney_survival-kit\\Models\\GLB format\\resource-planks.glb",
+    "destination": "assets\\kenney\\survival\\Models\\GLB format\\resource-planks.glb",
+    "sha256": "d3804257474a3baab7ac067be91de5c3d6d18d5803775dc876cb6d9442c30873"
+  },
+  {
+    "source": "kenney_survival-kit\\Models\\GLB format\\signpost.glb",
+    "destination": "assets\\kenney\\survival\\Models\\GLB format\\signpost.glb",
+    "sha256": "6d33757888c4ec9249610266ca8d60532b1138ae28fd37e93fa843ec4856fd25"
+  },
+  {
+    "source": "kenney_survival-kit\\Models\\GLB format\\structure-roof.glb",
+    "destination": "assets\\kenney\\survival\\Models\\GLB format\\structure-roof.glb",
+    "sha256": "645e0454780d0b07084e3d5ffc6c5b164742f62b07b810e1cb838897c7ca83ac"
+  },
+  {
+    "source": "kenney_survival-kit\\Models\\GLB format\\structure.glb",
+    "destination": "assets\\kenney\\survival\\Models\\GLB format\\structure.glb",
+    "sha256": "2ff24b6e283bc687c04cd3e0341049e34ce10fe2394a9856af89226a72eebd9d"
+  },
+  {
+    "source": "kenney_survival-kit\\Models\\GLB format\\tent-canvas.glb",
+    "destination": "assets\\kenney\\survival\\Models\\GLB format\\tent-canvas.glb",
+    "sha256": "efc4bca46a22e4cc4fe391aeafba161c24bc39bfa75e192c57eaacaf686f9717"
+  },
+  {
+    "source": "kenney_survival-kit\\Models\\GLB format\\tent.glb",
+    "destination": "assets\\kenney\\survival\\Models\\GLB format\\tent.glb",
+    "sha256": "2c1c5fcc213929af0904a84921084361599ffab5077423a44d3d72a81d8c87c6"
+  },
+  {
+    "source": "kenney_survival-kit\\Models\\GLB format\\Textures\\colormap.png",
+    "destination": "assets\\kenney\\survival\\Models\\GLB format\\Textures\\colormap.png",
+    "sha256": "6ca023be9f12e8c2358fcf94320c8a894b4c05a3dd0bad1f5c268312053caca1"
+  },
+  {
+    "source": "kenney_survival-kit\\Models\\GLB format\\tree-log.glb",
+    "destination": "assets\\kenney\\survival\\Models\\GLB format\\tree-log.glb",
+    "sha256": "bd358e55e63a75bd54bea1e4b40ed362baa937ce8e503f2aa2370a5a1d9da11c"
+  },
+  {
+    "source": "kenney_ui-pack\\PNG\\Blue\\Double\\arrow_basic_e.png",
+    "destination": "assets\\kenney\\ui\\arrow_basic_e.png",
+    "sha256": "e46b58e60d4cb3db59c980f47355e898bf0c7e81495f734da01093cd3e8446d5"
+  },
+  {
+    "source": "kenney_ui-pack\\PNG\\Blue\\Double\\arrow_basic_w.png",
+    "destination": "assets\\kenney\\ui\\arrow_basic_w.png",
+    "sha256": "91d049a93c4188f7548042f167bc43af61dd8e04991067801de5244ac017aad9"
+  },
+  {
+    "source": "kenney_ui-pack\\PNG\\Blue\\Double\\button_rectangle_depth_flat.png",
+    "destination": "assets\\kenney\\ui\\button_rectangle_depth_flat.png",
+    "sha256": "91fbaa6c2568e832fc2f72c574535d55673e8a2a7f5df9da260ca449c5c228f2"
+  },
+  {
+    "source": "kenney_ui-pack\\PNG\\Blue\\Double\\button_rectangle_flat.png",
+    "destination": "assets\\kenney\\ui\\button_rectangle_flat.png",
+    "sha256": "dd41d38a51be834a881f883f7b333223b25d59d5de4fdf8607d5c6362000b499"
+  },
+  {
+    "source": "kenney_ui-pack\\PNG\\Blue\\Double\\button_round_depth_flat.png",
+    "destination": "assets\\kenney\\ui\\button_round_depth_flat.png",
+    "sha256": "40987a44960a8d05c8ded3630e6dcfef636c611fb40eb0425d66d6be97189256"
+  },
+  {
+    "source": "kenney_ui-pack\\PNG\\Blue\\Double\\button_round_flat.png",
+    "destination": "assets\\kenney\\ui\\button_round_flat.png",
+    "sha256": "96f17fbbf0e78b2154c7e09f34b5f609c90b07ad9c9eb088c28886995b02e466"
+  },
+  {
+    "source": "kenney_ui-pack\\PNG\\Blue\\Double\\icon_checkmark.png",
+    "destination": "assets\\kenney\\ui\\icon_checkmark.png",
+    "sha256": "b6d35f90b008a1e14e201c8ad07188ab783eb71ab84349f2fce7e2ffcb421fda"
+  },
+  {
+    "source": "kenney_ui-pack\\PNG\\Blue\\Double\\icon_cross.png",
+    "destination": "assets\\kenney\\ui\\icon_cross.png",
+    "sha256": "7ef55cfc752b0091a8d0c0e6dc73a57dc6f38cfe1fc9dd882bd86c6fbb8b57a6"
+  },
+  {
+    "source": "kenney_ui-pack\\PNG\\Grey\\Double\\button_rectangle_flat.png",
+    "destination": "assets\\ui\\button_pressed.png",
+    "sha256": "a1eff64c4b5dd37d56caf3d5f55474d5ce6475576731f9dc2418ccea9307ff3a"
+  },
+  {
+    "source": "kenney_ui-pack\\PNG\\Grey\\Double\\button_rectangle_depth_flat.png",
+    "destination": "assets\\ui\\button.png",
+    "sha256": "f0f3d52f110768bf93a10b44f4ec3c727924c25734ce85e1275464c9b02cfe18"
+  },
+  {
+    "source": "kenney_ui-pack\\PNG\\Grey\\Double\\star_outline.png",
+    "destination": "assets\\ui\\star_empty.png",
+    "sha256": "510a3a7e38834f61f425b7304573b86fc8a3a807f3577f1ca6a58f7b821d4a5f"
+  },
+  {
+    "source": "kenney_ui-pack\\PNG\\Yellow\\Double\\star.png",
+    "destination": "assets\\ui\\star_full.png",
+    "sha256": "3b985be792f2f73f0d5b2827c806236723f44f8cd03c39fc73a4e273ec03e4f8"
+  }
+]
