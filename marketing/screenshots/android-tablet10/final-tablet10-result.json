@@ -1,0 +1,29 @@
+{
+  "path": "marketing/screenshots/android-tablet10/final-tablet10-result.png",
+  "width": 1600,
+  "height": 2560,
+  "sha256": "e9097a7429f13c36a34911c7c532dbb46cf47d1af69b3d89559284c60b65ff89",
+  "profile": "tablet10",
+  "description": "Final APK incident 04 success on the logical ten-inch emulator: three stars, 95% structure, 38 seconds remaining, 87 supplies, 82 XP and 2390 points.",
+  "method": "ADB exec-out screencap: unmodified read-only Android rendering diagnostic; no touch acceptance implied",
+  "device_class": "Android API 30 x86 emulator; logical display profile; graphics backend recorded in runtime diagnostics",
+  "physical_device": false,
+  "capture_kind": "android_emulator",
+  "source_id": "android-1488f7ec33d146ef",
+  "capture_started_at_utc": "2026-11-15T02:00:18.382905+00:00",
+  "captured_at_utc": "2026-11-15T02:00:19.591499+00:00",
+  "display_size": "Physical size: 1080x2220\r\nOverride size: 1600x2560",
+  "display_density": "Physical density: 440\r\nOverride density: 300",
+  "serial": "emulator-5560",
+  "review_visible": true,
+  "view_kind": "result",
+  "promotion_origin": {
+    "png_path": "build/native/observations/final-tablet10-result-observation.png",
+    "receipt_path": "build/native/observations/final-tablet10-result-observation.json",
+    "png_sha256": "e9097a7429f13c36a34911c7c532dbb46cf47d1af69b3d89559284c60b65ff89",
+    "receipt_sha256": "294105dbefd043ec4aa20b8418914ab8e02715778e378ac8f16ea3fefd4135ff",
+    "promoted_at_utc": "2026-11-15T02:18:58.722693+00:00",
+    "pixels_unchanged": true,
+    "new_capture_performed": false
+  }
+}

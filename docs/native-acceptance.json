@@ -1,0 +1,544 @@
+{
+  "schema_version": 2,
+  "game": "Cinderbrook Brigade",
+  "status": "PASS",
+  "evidence_cutoff_utc": "2026-11-15T02:44:43.1605465Z",
+  "tested_artifact": {
+    "kind": "replacement local Android debug APK",
+    "sha256": "1488f7ec33d146ef869c91890c4f46c0634e300d0bd3d897d93c1d030a4190d4",
+    "source_id": "android-1488f7ec33d146ef",
+    "package_evidence": "docs/android-package-evidence.json",
+    "identity_status": "INSTALLED_HASH_VERIFIED",
+    "identity_rule": "Top-level observations apply only to the replacement artifact once its identity is recorded. Archived baseline observations remain under artifact_history and are not inherited.",
+    "bytes": 282978835,
+    "candidate_path": "build/android/cinderbrook-brigade-test-sdk160.apk",
+    "package_evidence_status": "CANONICAL_ARTIFACT_HASHES_VERIFIED",
+    "canonical_path": "build/android/cinderbrook-brigade-test.apk",
+    "package_evidence_sha256": "6bc06e91b8118563af2aff11f431399bd4ded1e9ab1e2992db3dc63342ca2ca0"
+  },
+  "method": {
+    "runtime_execution_status": "RECORDED_EMULATOR_ACCEPTANCE_COMPLETE",
+    "planned_runtime": "Android API 30 x86 emulator with temporary host GPU rendering",
+    "planned_input": "Owner-authorized ordinary Android SDK touchscreen input",
+    "physical_device": false,
+    "model_simulation": false,
+    "logical_profiles_observed": [
+      "Phone: 1080 x 1920 at 420 dpi",
+      "Logical 7-inch tablet: 1200 x 1920 at 320 dpi",
+      "Logical 10-inch tablet: 1600 x 2560 at 300 dpi"
+    ]
+  },
+  "verified_observations": [
+    {
+      "id": "replacement_installation",
+      "result": "PASS_INSTALLATION_ONLY",
+      "summary": "The replacement APK installed successfully over the baseline. Its local and installed hashes match. The complete saved profile remained equal immediately across installation: paused run 8, 597 supplies, 603 XP, pump rank 1 and all four presentation settings enabled."
+    },
+    {
+      "id": "replacement_cold_start_profile",
+      "result": "PASS_SAVED_STATE_ONLY",
+      "summary": "After a recorded COLD launch and 20-second wait, the replacement app retained the complete active run 8 snapshot and every profile value except the expected save sequence increment from 317 to 318. Elapsed time remained 6.1667 seconds, water 100, supplies 597 and XP 603."
+    },
+    {
+      "id": "replacement_resume_pause",
+      "result": "PASS",
+      "summary": "The replacement APK visibly restored Crew on standby with explicit Resume. A later saved profile remained exactly equal to the post-launch read after approximately 270 seconds, confirming the paused run did not advance."
+    },
+    {
+      "id": "replacement_tablet10_gameplay",
+      "result": "PASS_ACTIVE_GAMEPLAY",
+      "summary": "Ordinary Resume and a 1200 ms hold advanced incident 4 on the replacement APK and cooled one target. The genuine ten-inch frame shows two fires, 98% safe, 50 seconds and water 100. The later paused profile records elapsed 11.7333 seconds; those separate observations are not conflated."
+    },
+    {
+      "id": "replacement_tablet10_victory",
+      "result": "PASS",
+      "summary": "Ordinary play finished incident 4 with 3 stars, 95% structure, 38 seconds and 2390 points. The exact payout of 87 supplies and 82 XP brought totals to 684 supplies and 685 XP. Home and subsequent Garage navigation retained the entire settled profile."
+    },
+    {
+      "id": "replacement_home_title_banner",
+      "result": "PASS_TABLET10",
+      "summary": "The replacement ten-inch Home frame shows the full unclipped Cinderbrook Brigade title, Rank 3, 684 supplies, incident 5, all navigation buttons and an actual Google test banner."
+    },
+    {
+      "id": "replacement_garage_journal_drag",
+      "result": "PASS_TABLET10",
+      "summary": "Ordinary content dragging now scrolls Garage to Gentle foam and the footer, and Journal to regional achievements and Star Collector 12/54. Garage scrolling left the saved profile unchanged and triggered no purchase. Map dragging and the seven-inch layout remain separate pending checks."
+    },
+    {
+      "id": "replacement_map_drag_cancellation",
+      "result": "PASS_TABLET10",
+      "summary": "Dragging from an enabled map incident button now scrolls the map to Warehouse Row and later incidents without starting a run. The entire saved profile remains unchanged. An intentional map incident-button tap is a separate pending regression."
+    },
+    {
+      "id": "replacement_tablet7_title_gameplay",
+      "result": "PASS_ACTIVE_SCENE",
+      "summary": "The seven-inch Home title is fully visible with a genuine test banner. An ordinary Home Save05 tap starts run 9, Backyard Barbecue; its genuine active frame shows four fires, 99% safe, 59 seconds and water 100. No spray or victory is asserted by this receipt."
+    },
+    {
+      "id": "replacement_phone_core_and_failure",
+      "result": "PASS_GAMEPLAY_AND_FAILURE",
+      "summary": "Two ordinary phone holds cooled two targets. A genuine active frame shows three fires, 92% safe, 46 seconds and water 88 while refilling; the later paused profile has water 100. After resuming and allowing time to expire, run 9 naturally failed at 60 seconds with recovery choices. It has not settled in these receipts."
+    },
+    {
+      "id": "replacement_phone_active_background",
+      "result": "PASS",
+      "summary": "After briefly resuming active play, Android Home paused the incident. The complete saved profile stayed identical through a 15-second wait and HOT return, with elapsed time 19.1 seconds and water 100. The visible return screen required Resume and said the incident was paused while away."
+    },
+    {
+      "id": "replacement_unearned_ad_no_grant",
+      "result": "PASS",
+      "summary": "The first replacement rewarded ad presented, then dismissed with an unearned callback after the visible close button. The failed run stayed identical, both recovery flags remained false, and supplies/XP did not change. The game explicitly reported that no continuation was earned. Earlier Android Back had left the ad end card visible and is not counted as a dismissal."
+    },
+    {
+      "id": "replacement_earned_credit_before_close",
+      "result": "PASS",
+      "summary": "The second live Google test rewarded ad emitted presented, earned, then dismissed with earned context. While the creative remained open, only recovery_earned changed to true; the failed run, wallet and gameplay metrics otherwise remained unchanged. The complete saved profile stayed identical between the earned observation and close."
+    },
+    {
+      "id": "replacement_earned_dismissal_and_cold_restart",
+      "result": "PASS",
+      "summary": "Dismissal applied 30 extra seconds, water 80 and +35 structure repair capped at 100, cleared the earned flag and marked recovery used. It required Resume. A cold restart then preserved the complete active snapshot and all profile values except the save sequence, again visibly requiring Resume. This restart occurred after application, not while the ad was open."
+    },
+    {
+      "id": "replacement_phone_recovered_settlement",
+      "result": "PASS",
+      "summary": "Ordinary phone spraying and refill pauses completed run 9 after the earned continuation. The result showed two stars, 82% structure, 12 seconds left and 2174 points. Exactly 91 supplies and 100 XP were settled, leaving 775 supplies and 785 XP with active state cleared. A subsequent cold restart preserved the complete settled profile without duplicate payment."
+    },
+    {
+      "id": "replacement_settlement_cold_restart",
+      "result": "PASS",
+      "summary": "A real cold restart after run 9 preserved the entire profile, including 775 supplies, 785 XP, last paid run 9 and empty active state. Currency and XP were not paid twice; the same profile persisted through privacy navigation."
+    },
+    {
+      "id": "replacement_map_tap_and_replay",
+      "result": "PASS",
+      "summary": "An ordinary enabled Neighborhoods button tap started Incident 01 as run 10. Ordinary phone spraying won three stars, 99% structure, 38 seconds and 2211 points, settling 75 supplies and 64 XP once. The profile stayed unchanged when the seven-inch layout displayed the same result; that capture is not a seven-inch-played victory."
+    },
+    {
+      "id": "replacement_services_and_about",
+      "result": "PASS_LIMITED",
+      "summary": "Privacy choices displayed the Android test-ads response; no regional consent form was shown. Play Games explicitly reported unconfigured production services with local achievements and records. About/licenses was readable and Android Back returned Home."
+    },
+    {
+      "id": "replacement_upgrade_and_quest",
+      "result": "PASS",
+      "summary": "One ordinary Garage purchase cost 135 supplies, raising Copper pump from rank 1 to 2; the UI displayed 116% cooling. The complete profile survived cold restart unchanged, and Daily equipped rank 2. Claiming the earned 20-hotspot quest added exactly 35 supplies and 50 XP, separately from incident settlement."
+    },
+    {
+      "id": "replacement_round9_interstitial",
+      "result": "PASS",
+      "summary": "At nine completed rounds, intentional Play Daily presented a real Google test interstitial. The complete saved profile stayed identical while it showed; the next run did not exist yet. Dismissal created Daily run 11 at zero elapsed time, with explicit Resume. Cold restart preserved that exact active state, while consumed cadence remained round 9 so the break was not repeated."
+    },
+    {
+      "id": "replacement_direct_empty_hold_and_refill",
+      "result": "PASS",
+      "summary": "During a real 30-second stationary touch on the seven-inch Daily scene, a concurrent raw capture showed water 0/100 and Lift your finger to refill while the input process remained running. Total use stayed at one 100-water tank and 7.7 seconds of actual spray. After release, saved water rose to 43.4 before pause. No state injection or simulated frame was used."
+    },
+    {
+      "id": "replacement_daily_full_refill_and_failure",
+      "result": "PASS",
+      "summary": "Releasing and resuming without spraying refilled the tank from 43.4 to 100, confirmed by the saved profile and visible WATER 100/100. The Daily incident later failed naturally at its 72-second limit with no recovery earned or used. The optional continuation and End incident controls were visible; no settlement was claimed for this failure-choice screen."
+    },
+    {
+      "id": "replacement_open_ad_kill_before_earned",
+      "result": "PASS",
+      "summary": "The app was force-stopped after a real rewarded presentation, before any earned callback. Cold restart preserved the failed run with both recovery flags false and unchanged supplies/XP. All semantic profile fields matched; only save sequence and an accumulator serialization difference below 1e-15 changed. The rendered return screen required Resume. This is a process-interruption test, separate from unearned visible-X dismissal."
+    },
+    {
+      "id": "replacement_open_ad_kill_after_earned",
+      "result": "PASS",
+      "summary": "A real earned callback persisted credit while the ad remained open. The immediate pre-stop profile still had earned credit unused, matching the earlier observation. Cold restart applied one 30-second extension, water 80 and +35 structure repair capped at 100, then required Resume. A second cold restart preserved the entire profile except save sequence, with no duplicate application or wallet change. The earlier log retains presented/earned; the later ring buffer retains earned only, with no dismissal recorded."
+    },
+    {
+      "id": "replacement_explicit_daily_abandonment",
+      "result": "PASS",
+      "summary": "The Leave confirmation preserved the restored Daily run until explicitly confirmed. Returning Home cleared active state without supplies, XP, settlement or completed-round changes."
+    },
+    {
+      "id": "replacement_endless_first_wave",
+      "result": "PASS_WAVE_CLEAR_ONLY",
+      "summary": "Ordinary held touches and refill pauses cleared five targets in Endless Watch 1 using pump rank 2. The wave decision screen showed three stars and 2372 points with Continue and Bank choices. Supplies remained 750 and XP 899; no payout was granted before banking."
+    },
+    {
+      "id": "replacement_static_identity_and_capture_curation",
+      "result": "PASS_STATIC_AND_PROVENANCE",
+      "summary": "An independent final audit rehashed the canonical APK/AAB and reverified all 23 corrected packaged icons against source pixels and CTEX bytes, including both archive CRC checks. Eighteen unaltered selected runtime frames provide six distinct views per logical phone, seven-inch and ten-inch profile; every source matches the final APK and all sidecars match the provenance manifest. The development AAB is unsigned and has no runtime acceptance."
+    },
+    {
+      "id": "replacement_endless_continue_bank_restart",
+      "result": "PASS",
+      "summary": "Continue the watch carried run 12 and its 2372-point first wave into Watch 2. Ordinary touches cleared 11 total targets across two waves for 4824 points. Banking paid exactly 175 supplies and 204 XP, leaving 925 supplies and 1103 XP; the active run cleared and the Endless record became two waves. Cold restart preserved the complete profile, including save sequence 623, without duplicate payout."
+    },
+    {
+      "id": "final_identity_and_cleanup",
+      "result": "PASS",
+      "summary": "The installed APK hash was rechecked after native acceptance and still matched the final artifact. The controller restored the original display dimensions and density, then closed only the verified task-owned emulator. The owner Godot editor and shared ADB server remained running."
+    }
+  ],
+  "provenance_limits": [
+    "Replacement checks establish only the observations listed here; baseline gameplay and ad results are not inherited.",
+    "Historical baseline captures, receipts and defects retain their original APK identity under artifact_history.",
+    "Native emulator evidence does not establish physical-device performance or production backend verification."
+  ],
+  "audit_evidence": {
+    "status": "RECORDED_EMULATOR_ACCEPTANCE_COMPLETE",
+    "local_audit_sha256": "1d8f415c41606b3fa82e1930418134175f501190122dbe4ce1c9c69ffab80943",
+    "completed_action_receipts": 46,
+    "independently_verified_images": 53,
+    "assertion_checks": 39,
+    "check_counts": {
+      "PASS": 39,
+      "FAIL": 0
+    },
+    "raw_profiles_or_logs_published": false
+  },
+  "pending_acceptance_checks": [
+    {
+      "id": "preserve_existing_profile",
+      "status": "PASS",
+      "requirement": "Install the replacement APK without clearing data; compare the complete profile with paused baseline run 8, 597 supplies, 603 XP, pump rank 1 and all four presentation settings enabled.",
+      "evidence_receipt_sha256": "3d0da79a9a155d5b44b1641fc32762c4018f37c52b56aae4944bb6d02cd346f0"
+    },
+    {
+      "id": "replacement_launch_preserves_profile",
+      "status": "PASS",
+      "requirement": "Launch the installed replacement app and verify the complete paused profile and explicit Resume before ordinary play.",
+      "saved_state_verified": true,
+      "explicit_resume_visual_pending": false
+    },
+    {
+      "id": "tablet10_gameplay_result_home",
+      "status": "PASS",
+      "requirement": "Play and win through ordinary native input on the logical ten-inch layout; inspect top-aligned home artwork and genuine gameplay and result captures.",
+      "active_gameplay_verified": true,
+      "victory_and_home_art_pending": false
+    },
+    {
+      "id": "phone_gameplay_result",
+      "status": "PASS",
+      "requirement": "Play the core loop on the phone layout and inspect genuine gameplay and result captures from the replacement APK.",
+      "ordinary_spray_and_natural_failure_verified": true,
+      "settled_result_pending": false
+    },
+    {
+      "id": "tablet7_gameplay_and_scrolling",
+      "status": "PASS",
+      "requirement": "Play on the seven-inch layout; drag list contents in Garage, Neighborhoods and Journal; verify that intended button taps still activate.",
+      "body_drag_repairs_verified_on_tablet10": [
+        "Garage",
+        "Journal",
+        "Neighborhoods"
+      ],
+      "map_drag_pending": false,
+      "active_tablet7_scene_verified": true,
+      "intentional_map_incident_tap_pending": false,
+      "scope": "Active seven-inch scene; all three body drags verified on ten-inch; intentional map tap verified on phone. Seven-inch result is a resized phone-played result."
+    },
+    {
+      "id": "live_banner_and_interstitial",
+      "status": "PASS",
+      "requirement": "Observe the Google test banner and a natural-break interstitial with frozen gameplay, paused dismissal and durable cadence.",
+      "native_test_banner_verified": true,
+      "native_interstitial_pending": false,
+      "durable_round9_cadence_verified": true
+    },
+    {
+      "id": "earned_reward_and_restart",
+      "status": "PASS",
+      "requirement": "Observe a live native earned callback; persist credit, apply it only after dismissal, require Resume, and retain the reward and state through cold restart.",
+      "native_earned_callback_verified": true,
+      "credit_durable_before_dismissal": true,
+      "recovery_cold_restart_preserved": true
+    },
+    {
+      "id": "unearned_dismissal_no_grant",
+      "status": "PASS",
+      "requirement": "Dismiss a live rewarded ad without an earned callback and verify that no continuation or currency is granted."
+    },
+    {
+      "id": "artifact_and_capture_identity",
+      "status": "PASS",
+      "requirement": "Verify current APK and AAB identity, corrected packed icons and each final native capture source and hash; do not inherit baseline or CI-runtime coverage.",
+      "canonical_hashes_verified": true,
+      "corrected_packed_icons_verified": 23,
+      "curated_runtime_captures_verified": 18,
+      "views_per_profile": 6
+    },
+    {
+      "id": "rewarded_open_ad_process_interruption",
+      "status": "PASS",
+      "requirement": "Verify process interruption before an earned callback and after earned credit but before ad dismissal; distinguish these from visible-X dismissal and restart after applied recovery.",
+      "before_earned_kill_verified": true,
+      "after_earned_before_dismissal_pending": false,
+      "after_earned_process_restore_verified": true,
+      "second_restore_no_duplicate_verified": true
+    },
+    {
+      "id": "replacement_endless_continue_bank_restart",
+      "status": "PASS",
+      "requirement": "Use ordinary touch to continue Endless Watch, bank the completed run and verify exact cold-restart persistence without duplicate payout.",
+      "waves_cleared": 2,
+      "score": 4824,
+      "supplies_granted": 175,
+      "xp_granted": 204,
+      "complete_profile_equal_after_restart": true
+    }
+  ],
+  "remaining_acceptance": [
+    "Physical-device performance, thermal behavior, physical vibration and subjective human audio/difficulty assessment are outside this emulator acceptance.",
+    "Regional consent-form variants and real production Play Games/AdMob backend verification remain untested.",
+    "The development AAB is unsigned and statically verified; AAB delivery/runtime and production release signing remain separate release work."
+  ],
+  "final_package_acceptance": "PASS for the recorded final-APK emulator prototype acceptance. Ordinary touch gameplay, campaign success/failure, Daily refill and ad-interruption paths, two-wave Endless banking, progression and restart persistence passed. Live Google test ads granted recovery only after earned callbacks and kept play paused. Layout and scroll fixes passed across logical phone, seven-inch and ten-inch coverage; 18 curated raw captures and all 23 packaged icons match the final artifact. Physical-device, human-listening and production-backend claims are excluded.",
+  "full_acceptance_claimed": true,
+  "ci_pass_claimed": false,
+  "production_service_verification_claimed": false,
+  "known_defects": [
+    {
+      "id": "native_list_body_drag",
+      "status": "REPAIR_VERIFIED",
+      "observed_artifact_sha256": "bdf5190d962015ab72fbc0a7a4a9e415b747020f102d5e2154ee3d986c73a85d",
+      "accepted_as_pass": true,
+      "note": "All three baseline body-drag failures were corrected in replacement ten-inch tests; an intended phone map-button tap also starts the selected incident. Historical baseline failure remains preserved.",
+      "repaired_areas_verified_on_tablet10": [
+        "Garage",
+        "Journal",
+        "Neighborhoods"
+      ],
+      "remaining_native_retest": []
+    }
+  ],
+  "artifact_history": [
+    {
+      "schema_version": 1,
+      "game": "Cinderbrook Brigade",
+      "status": "PARTIAL",
+      "evidence_cutoff_utc": "2026-11-15T01:46:41.838685+00:00",
+      "tested_artifact": {
+        "kind": "local Android debug APK",
+        "sha256": "bdf5190d962015ab72fbc0a7a4a9e415b747020f102d5e2154ee3d986c73a85d",
+        "source_id": "android-bdf5190d962015ab",
+        "package_evidence": "docs/android-package-evidence-baseline.json",
+        "identity_rule": "These observations apply only to this exact APK. They do not automatically apply to a replacement SDK160 package, AAB or CI build.",
+        "archived_apk_path": "build/android/baseline-bdf5190d/cinderbrook-brigade-test.apk",
+        "archive_bytes_verified_identical": true
+      },
+      "method": {
+        "runtime": "Android API 30 x86 emulator with temporary host GPU rendering",
+        "input": "Ordinary touchscreen taps/holds through the owner-authorized Android SDK input route",
+        "capture": "Unmodified full Android framebuffer via screencap",
+        "logical_profiles_observed": [
+          "Phone: 1080 x 1920 at 420 dpi",
+          "Logical 7-inch tablet: 1200 x 1920 at 320 dpi",
+          "Logical 10-inch tablet: 1600 x 2560 at 300 dpi; baseline Home, cold restart and active incident 4."
+        ],
+        "physical_device": false,
+        "model_simulation": false,
+        "independent_audit": "Saved profiles, completed action receipts, native callback-event records, image hashes/dimensions and selected visual frames were audited independently of the input controller."
+      },
+      "verified_observations": [
+        {
+          "id": "untouched_failure",
+          "result": "PASS",
+          "summary": "Untouched failed run 1 settled zero supplies, XP and points and did not increment engaged-round cadence."
+        },
+        {
+          "id": "pause_and_restart",
+          "result": "PASS",
+          "summary": "Paused run 2 retained its full active snapshot across a 34-second wait and cold restart. A separate legitimate new-day gift at streak 2 increased supplies from 35 to 80 without altering settlement."
+        },
+        {
+          "id": "campaign_win1",
+          "result": "PASS",
+          "summary": "Ordinary touch cleared incident 1 (run 2): 3 stars, 2228 points, 75 supplies and 64 XP."
+        },
+        {
+          "id": "held_water_and_release",
+          "result": "PASS_WITH_LIMIT",
+          "summary": "A fourteen-second hold used 100 water with 7.7 sprayed seconds. Later release snapshots showed water rising from 32.9 to 100 without added spray. No image was captured while held exactly at zero; held-capacity behavior is inferred from cumulative metrics."
+        },
+        {
+          "id": "played_failure",
+          "result": "PASS",
+          "summary": "Played failed run 3 settled zero currency and counted as engaged round 2."
+        },
+        {
+          "id": "unearned_rewarded_dismissals",
+          "result": "PASS",
+          "summary": "Two actual test-ad presentations dismissed unearned. Full failed-state snapshots remained equal and no continuation or currency was granted."
+        },
+        {
+          "id": "campaign_win2_tablet7",
+          "result": "PASS",
+          "summary": "Two ordinary holds cleared incident 2 (run 4) on the logical 7-inch layout: 3 stars, 2250 points, 81 supplies and 73 XP."
+        },
+        {
+          "id": "round3_interstitial",
+          "result": "PASS",
+          "summary": "Next after engaged round 3 presented an actual interstitial test ad. The saved profile remained unchanged while open. Dismissal created run 5 at elapsed 0 and water 100 behind explicit Resume. Cadence consumed_round 3 and the paused run survived cold restart."
+        },
+        {
+          "id": "live_earned_reward",
+          "result": "PASS",
+          "summary": "The third rewarded test logged presented, earned, then dismissed with earned context. Earned credit was durable while the ad remained open; the simulation snapshot otherwise did not change. Dismissal applied one continuation with 30 seconds remaining, water 80, repaired structures and explicit Resume. The ad awarded no currency."
+        },
+        {
+          "id": "rewarded_restart_and_clear",
+          "result": "PASS",
+          "summary": "The applied reward survived cold restart with the full active snapshot equal and no double grant. A settled framebuffer showed Resume. Ordinary play then cleared incident 3 (run 5): 3 stars, 99% structure, 28 seconds left, 2386 points, 87 supplies and 82 XP. Totals became 323 supplies and 219 XP."
+        },
+        {
+          "id": "home_settlement",
+          "result": "PASS",
+          "summary": "Returning Home after the recovered win left the entire saved profile unchanged; no duplicate settlement."
+        },
+        {
+          "id": "garage_purchase",
+          "result": "PASS",
+          "summary": "The visible 55-supply Copper pump purchase reduced supplies from 323 to 268 and increased pump rank from 0 to 1, unlocking the first-upgrade achievement. XP and the last settlement remained unchanged. The later cold restart retained the purchased rank."
+        },
+        {
+          "id": "settings_saved",
+          "result": "PASS",
+          "summary": "Ordinary taps saved music, sound effects, vibration and motion as disabled. Other profile values remained unchanged apart from save sequence. This does not establish listening or physical-vibration acceptance."
+        },
+        {
+          "id": "native_service_status",
+          "result": "PASS_WITH_LIMIT",
+          "summary": "Privacy choices returned the generic Android test-ads-enabled status; no consent form was visible. Connect Play Games reported not configured and local achievements/records. No regional consent or production backend success is claimed."
+        },
+        {
+          "id": "about_campaign_journal",
+          "result": "PASS_WITH_LIMIT",
+          "summary": "About and license information, the campaign progression list and Journal rendered. The first three incidents showed three stars; incident 4 was enabled. Local Journal records showed 219 XP and best score 2386 before the later quest claim. Ordinary list body dragging failed as recorded separately."
+        },
+        {
+          "id": "three_clear_quest",
+          "result": "PASS",
+          "summary": "Claiming the completed three-incident quest added exactly 35 supplies and 50 XP, raising totals to 303 supplies and 269 XP. The clears claim flag persisted and the incident settlement stayed unchanged."
+        },
+        {
+          "id": "daily_background",
+          "result": "PASS",
+          "summary": "Daily run 6 started Camp Quiet with the purchased pump rank 1. After Android Home for 20 seconds and a HOT return, the complete saved profile remained identical: elapsed 6.65 seconds and water 100. The visible screen required Resume and stated that the incident was paused while away."
+        },
+        {
+          "id": "daily_clear_bonus",
+          "result": "PASS",
+          "summary": "Ordinary play cleared Daily run 6 with 3 stars, 85% structure, 30 seconds left and 2507 points. The payout was 175 supplies and 209 XP, including the exact first-clear bonus of 70 supplies and 100 XP. Six hotspots were cooled and daily_paid became day 20772. A second Daily play on that date is not covered."
+        },
+        {
+          "id": "endless_wave_and_bank",
+          "result": "PASS",
+          "summary": "Ordinary play cleared Endless wave 1 with 3 stars, 2366 points and 5 hotspots cooled. Currency stayed unchanged until Bank the watch. Banking paid 119 supplies and 125 XP, bringing totals to 597 supplies and 603 XP; the wave record became 1."
+        },
+        {
+          "id": "cold_progress_persistence",
+          "result": "PASS",
+          "summary": "A later recorded COLD launch retained the entire profile, including save sequence: 597 supplies, 603 XP, pump rank 1, all four settings disabled, the clears quest claim, daily_paid day 20772, Endless wave record 1 and run 7 settlement. No duplicate payout occurred. The logical ten-inch Home image shows Rank 3 and 597 supplies; it is baseline evidence, not final-package gameplay acceptance."
+        },
+        {
+          "id": "tablet10_active_campaign",
+          "result": "PASS",
+          "summary": "A genuine logical ten-inch frame shows active incident 4, two fires, 99% safe, 56 seconds and water 100. The later paused run 8 profile records actual spray use. Supplies remain 597 and XP 603. Settings were restored to enabled through ordinary controls before this run. This is baseline APK evidence."
+        }
+      ],
+      "provenance_limits": [
+        "Three authored campaign incidents, a Daily clear, one Endless wave and banking, selected secondary app areas, one interstitial cadence boundary and a logical ten-inch Home/cold restart are represented here.",
+        "The first two unearned rewards are valid no-grant observations; they do not establish an SDK defect. The later earned callback succeeded on the same baseline APK.",
+        "Loading artwork and missed-tap frames are excluded as proof of restored or active gameplay. Existing original receipts and pixels are preserved.",
+        "Logical emulator tablet layouts are not physical-device evidence.",
+        "Capture bounds bracket framebuffer acquisition when capture_started_at_utc is available. Earlier receipts lacking that field used post-metadata completion timestamps; old history was not rewritten. Native log wall-clock values are not asserted to be UTC."
+      ],
+      "audit_evidence": {
+        "local_audit_sha256": "7d63e918ae6bf9bce22f58508c8552cee0d5e05bd2798e6fcfedd4b855633f23",
+        "completed_action_receipts": 44,
+        "independently_verified_images": 31,
+        "assertion_checks": 32,
+        "check_counts": {
+          "PASS": 31,
+          "FAIL": 1
+        },
+        "raw_profiles_or_logs_published": false,
+        "archived_local_audit": "build/native/acceptance-audit-baseline-bdf5190d.json"
+      },
+      "remaining_acceptance": [
+        "Corrected native list body-drag scrolling and top-aligned home artwork in the final package",
+        "Process interruption before earning and between earned callback and dismissal; additional native callback failure/cancel variants",
+        "Repeat cadence cycles beyond the observed third engaged round and cold restart",
+        "Further campaign content, repeated Daily same-day bonus rejection and multiwave Endless continuation",
+        "Final-package visual acceptance and fresh store captures across phone/tablet7/tablet10; current observations apply to baseline APK only",
+        "Physical-device testing, subjective audio, regional consent flows and production backend verification"
+      ],
+      "final_package_acceptance": "This historical record covers the archived baseline APK only. Its known body-drag defect and pending native changes require separate replacement-package acceptance.",
+      "full_acceptance_claimed": false,
+      "ci_pass_claimed": false,
+      "production_service_verification_claimed": false,
+      "known_defects": [
+        {
+          "id": "native_list_body_drag",
+          "status": "CONFIRMED_IN_TESTED_BASELINE",
+          "affected_areas": [
+            "Garage",
+            "Neighborhoods",
+            "Journal"
+          ],
+          "evidence": "Campaign frames before and after content drag are byte-identical. Journal stays at the first records after content drag; moving its scrollbar reaches later achievements. Garage also retained its top upgrade cards after body drag.",
+          "fallback_verified": "Journal scrollbar drag",
+          "fix_and_retest": "Source correction is in progress under a separate owner. Corrected final-package native body dragging remains pending.",
+          "accepted_as_pass": false
+        }
+      ],
+      "record_role": "HISTORICAL_BASELINE"
+    }
+  ],
+  "preinstall_expected_state": {
+    "baseline_artifact_sha256": "bdf5190d962015ab72fbc0a7a4a9e415b747020f102d5e2154ee3d986c73a85d",
+    "source_receipt_sha256": "fffd5e6d17f86838c60c635d7de34bb42528bbf19b94343628efefe6dfc670cb",
+    "run_id": 8,
+    "mode": "campaign",
+    "incident_number_one_based": 4,
+    "paused_elapsed": 6.16666666666665,
+    "water": 100,
+    "coins": 597,
+    "xp": 603,
+    "pump_rank": 1,
+    "settings": {
+      "motion": true,
+      "music": true,
+      "sfx": true,
+      "vibration": true
+    },
+    "migration_verified": true,
+    "installation_profile_preserved": true
+  },
+  "companion_aab_static": {
+    "sha256": "d49018c248dfc3de6af4df4ce77bd5f52477ad1a08b7e75d75ff21657cc830b6",
+    "bytes": 110475528,
+    "unsigned": true,
+    "jar_signature_entries_present": false,
+    "runtime_tested": false,
+    "acceptance_scope": "Static artifact identity only; separate from APK runtime evidence.",
+    "canonical_path": "build/android/cinderbrook-brigade-debug.aab"
+  },
+  "gameplay_evidence_cutoff_utc": "2026-11-15T02:42:30.939085+00:00",
+  "acceptance_scope": {
+    "completed": "Recorded final-APK emulator prototype acceptance",
+    "ordinary_android_input": true,
+    "state_injection_used": false,
+    "physical_device": false,
+    "human_playtesting_claimed": false,
+    "release_readiness_claimed": false,
+    "baseline_results_inherited_as_replacement_passes": false,
+    "final_campaign_runtime": "Incident 04 victory, Incident 05 failure/earned recovery victory, Incident 01 map replay victory",
+    "final_daily_runtime": "Seeded scene, empty held tank, full refill, natural failure, ad interruption recovery and explicit abandonment",
+    "final_endless_runtime": "Two ordinary-play waves, continuation, bank and exact cold-restart persistence",
+    "baseline_only_cases": "First new-day gift, first Daily clear bonus and four setting toggles are retained under baseline artifact history; they are not relabelled as replacement executions."
+  },
+  "native_input_sent": true,
+  "native_gameplay_accepted": true,
+  "native_ad_callbacks_accepted": true,
+  "native_gameplay_save_restart_accepted": true,
+  "native_ui_areas_accepted": true,
+  "native_final_artifact_retested": true
+}

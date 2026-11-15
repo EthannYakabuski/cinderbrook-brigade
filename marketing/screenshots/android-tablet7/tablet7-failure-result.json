@@ -1,0 +1,19 @@
+{
+  "path": "marketing/screenshots/android-tablet7/tablet7-failure-result.png",
+  "width": 1200,
+  "height": 1920,
+  "sha256": "fa46739fae9109f3007d95063e6f09f2e77681eae949c58ab5f777e1e2d56754",
+  "profile": "tablet7",
+  "description": "Actual native failure result on a logical seven-inch 1200x1920, 320-dpi layout; the initial Play again tap missed while the display reconfiguration settled.",
+  "method": "ADB exec-out screencap: unmodified full Android framebuffer after ordinary touchscreen UI input",
+  "device_class": "Android API 30 x86 emulator; logical display profile; graphics backend recorded in runtime diagnostics",
+  "physical_device": false,
+  "capture_kind": "android_emulator",
+  "source_id": "android-bdf5190d962015ab",
+  "capture_started_at_utc": "2026-11-15T01:09:16.288812+00:00",
+  "captured_at_utc": "2026-11-15T01:09:17.090867+00:00",
+  "display_size": "Physical size: 1080x2220\r\nOverride size: 1200x1920",
+  "display_density": "Physical density: 440\r\nOverride density: 320",
+  "serial": "emulator-5560",
+  "review_visible": false
+}

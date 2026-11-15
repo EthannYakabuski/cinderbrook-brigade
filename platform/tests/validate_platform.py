@@ -35,6 +35,9 @@ web = presets.split('[preset.1.options]')[1].split('[preset.2]')[0]
 assert 'variant/thread_support=false' in web
 assert (root / 'android/.gdignore').exists(), 'Generated Android assets must never be scanned as project resources'
 assert not list((root / 'addons/admob').rglob('admob_sample*')), 'unused sample translations must be absent'
+ad_exporter = (root / 'addons/admob/android/bin/ads/poing_godot_admob_ads.gd').read_text(encoding='utf-8')
+ads_sdk_versions = re.findall(r'com\.google\.android\.libraries\.ads\.mobile\.sdk:ads-mobile-sdk:([^"\s]+)', ad_exporter)
+assert ads_sdk_versions == ['1.6.0'], 'Pin the SDK with the official earned-before-dismiss callback-order fix'
 libraries = []
 for path in sorted((root / 'addons').rglob('*.aar')):
     with zipfile.ZipFile(path) as archive:
@@ -43,7 +46,7 @@ for path in sorted((root / 'addons').rglob('*.aar')):
 assert len(libraries) == 6, 'Expected PGS debug/release and Poing core+ads debug/release'
 expected_libraries = json.loads((root / 'platform/plugin-binaries.json').read_text(encoding='utf-8'))['libraries']
 assert {row['path']: row['sha256'] for row in libraries} == {row['path'] : row['sha256'] for row in expected_libraries}, 'Plugin binary hash mismatch'
-report = {'configuration': 'pass', 'catalog_achievements': len(catalog['achievements']), 'catalog_boards': len(catalog['leaderboards']), 'libraries': libraries}
+report = {'configuration': 'pass', 'ads_sdk_version': ads_sdk_versions[0], 'catalog_achievements': len(catalog['achievements']), 'catalog_boards': len(catalog['leaderboards']), 'libraries': libraries}
 if args.artifact:
     expected = {'arm64-v8a': (2, 183), 'x86_64': (2, 62), 'x86': (1, 3)}
     abis = {}

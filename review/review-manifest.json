@@ -1,9 +1,47 @@
 {
-  "captures": 0,
-  "profiles": [],
+  "captures": 18,
+  "recorded_native_captures": 24,
+  "profiles": [
+    "phone",
+    "tablet10",
+    "tablet7"
+  ],
   "capture_provenance": "marketing/screenshots/provenance.json",
+  "gallery_paths": [
+    "marketing/screenshots/android-tablet10/final-tablet10-active-incident.png",
+    "marketing/screenshots/android-tablet7/final-tablet7-active-incident.png",
+    "marketing/screenshots/android-phone/final-phone-active-incident.png",
+    "marketing/screenshots/android-phone/final-phone-failure-choice.png",
+    "marketing/screenshots/android-phone/final-phone-home.png",
+    "marketing/screenshots/android-phone/final-phone-garage.png",
+    "marketing/screenshots/android-phone/final-phone-settings.png",
+    "marketing/screenshots/android-tablet10/final-tablet10-home.png",
+    "marketing/screenshots/android-tablet10/final-tablet10-result.png",
+    "marketing/screenshots/android-tablet10/final-tablet10-garage.png",
+    "marketing/screenshots/android-tablet10/final-tablet10-journal.png",
+    "marketing/screenshots/android-tablet10/final-tablet10-neighborhoods.png",
+    "marketing/screenshots/android-phone/final-phone-recovered-result.png",
+    "marketing/screenshots/android-tablet7/final-tablet7-result.png",
+    "marketing/screenshots/android-tablet7/final-tablet7-garage.png",
+    "marketing/screenshots/android-tablet7/final-tablet7-map.png",
+    "marketing/screenshots/android-tablet7/final-tablet7-journal.png",
+    "marketing/screenshots/android-tablet7/final-tablet7-home.png"
+  ],
+  "capture_integrity_status": "PASS",
   "art_type": "Original generated marketing illustration",
   "screenshots_modified": false,
   "web_export_present": true,
-  "hosting_settings_changed": false
+  "native_acceptance_receipt": "docs/native-acceptance.json",
+  "native_acceptance_status": "PASS",
+  "native_full_acceptance_claimed": true,
+  "native_final_package_acceptance": "PASS for the recorded final-APK emulator prototype acceptance. Ordinary touch gameplay, campaign success/failure, Daily refill and ad-interruption paths, two-wave Endless banking, progression and restart persistence passed. Live Google test ads granted recovery only after earned callbacks and kept play paused. Layout and scroll fixes passed across logical phone, seven-inch and ten-inch coverage; 18 curated raw captures and all 23 packaged icons match the final artifact. Physical-device, human-listening and production-backend claims are excluded.",
+  "hosting": {
+    "configured": true,
+    "source": "GitHub Actions",
+    "PAGES_DEPLOY_ENABLED": true,
+    "configuration_owner_authorized": true,
+    "deployment_verified": false,
+    "deployment_evidence": null
+  },
+  "hosting_settings_changed_by_assembler": false
 }

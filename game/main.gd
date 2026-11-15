@@ -40,6 +40,7 @@ var hud_ember:Label
 var reward_button:Button
 var reward_hint:Label
 var banner_spacer:Control
+var home_art:TextureRect
 var music:AudioStreamPlayer
 var spray_audio:AudioStreamPlayer
 var sounds:Array[AudioStreamPlayer]=[]
@@ -111,7 +112,7 @@ func _clear_ui() -> void:
 	for child in ui.get_children():
 		if child is CanvasItem:child.hide()
 		child.queue_free()
-	hud_water=null;hud_integrity=null;hud_time=null;hud_count=null;hud_hint=null;hud_water_text=null;hud_ember=null;reward_button=null;reward_hint=null;banner_spacer=null;toast_label=null;result_panel=null
+	hud_water=null;hud_integrity=null;hud_time=null;hud_count=null;hud_hint=null;hud_water_text=null;hud_ember=null;reward_button=null;reward_hint=null;banner_spacer=null;home_art=null;toast_label=null;result_panel=null
 
 func _margin(parent:Control,preset:int,top:float,bottom:float) -> VBoxContainer:
 	var m:=MarginContainer.new();m.set_anchors_and_offsets_preset(preset);m.offset_left=24;m.offset_right=-24;m.offset_top=top;m.offset_bottom=bottom;parent.add_child(m)
@@ -137,7 +138,7 @@ func _preview() -> void:
 
 func home() -> void:
 	_refresh_day();_state("home")
-	var splash:=TextureRect.new();splash.texture=load("res://assets/brand/splash-portrait.png");splash.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;splash.stretch_mode=TextureRect.STRETCH_KEEP_ASPECT_COVERED;splash.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);splash.mouse_filter=Control.MOUSE_FILTER_IGNORE;ui.add_child(splash)
+	home_art=TextureRect.new();home_art.texture=load("res://assets/brand/splash-portrait.png");home_art.expand_mode=TextureRect.EXPAND_IGNORE_SIZE;home_art.stretch_mode=TextureRect.STRETCH_SCALE;home_art.mouse_filter=Control.MOUSE_FILTER_IGNORE;ui.add_child(home_art);_layout_home_art()
 	var bottom:=_margin(ui,Control.PRESET_BOTTOM_WIDE,-410-_reserve(),-18)
 	var card:=_panel(bottom);var head:=_row(card);var rank:=label("BRIGADE RANK %d"%profile.level(),16,AQUA);rank.autowrap_mode=TextServer.AUTOWRAP_OFF;rank.size_flags_horizontal=Control.SIZE_EXPAND_FILL;head.add_child(rank);var wallet:=label("%d supplies"%profile.data.coins,18,GOLD);wallet.autowrap_mode=TextServer.AUTOWRAP_OFF;head.add_child(wallet)
 	card.add_child(button("Save incident %02d"%(profile.frontier()+1),func():_transition("campaign",profile.frontier())))
@@ -146,6 +147,17 @@ func home() -> void:
 	row=_row(card);row.add_child(button("Journal",show_journal,true));row.add_child(button("Settings",show_settings,true))
 	card.add_child(label("HOLD TO SPRAY  /  LIFT TO REFILL",14,MUTED))
 	banner_spacer=_spacer(bottom,_reserve())
+
+func _layout_home_art() -> void:
+	if not is_instance_valid(home_art) or home_art.texture==null:return
+	var viewport_size:=get_viewport().get_visible_rect().size
+	var texture_size:=home_art.texture.get_size()
+	if viewport_size.x<=0 or viewport_size.y<=0 or texture_size.x<=0 or texture_size.y<=0:return
+	# Preserve the full-resolution art and its title at the top. Wider tablet
+	# viewports crop the bottom of the illustration instead of the title.
+	var cover_scale:=maxf(viewport_size.x/texture_size.x,viewport_size.y/texture_size.y)
+	home_art.size=texture_size*cover_scale
+	home_art.position=Vector2((viewport_size.x-home_art.size.x)*0.5,0)
 
 func _page(title:String,subtitle:String="") -> VBoxContainer:
 	var shade:=ColorRect.new();shade.color=Color(0.025,0.08,0.10,0.92);shade.set_anchors_and_offsets_preset(Control.PRESET_FULL_RECT);ui.add_child(shade)
@@ -157,7 +169,15 @@ func _page(title:String,subtitle:String="") -> VBoxContainer:
 	,true);back.custom_minimum_size=Vector2(90,48);back.size_flags_horizontal=0;top.add_child(back)
 	if not subtitle.is_empty():outer.add_child(label(subtitle,17,MUTED))
 	var scroll:=ScrollContainer.new();scroll.horizontal_scroll_mode=ScrollContainer.SCROLL_MODE_DISABLED;scroll.size_flags_vertical=Control.SIZE_EXPAND_FILL;outer.add_child(scroll)
-	var body:=VBoxContainer.new();body.size_flags_horizontal=Control.SIZE_EXPAND_FILL;body.add_theme_constant_override("separation",12);scroll.add_child(body);return body
+	var body:=VBoxContainer.new();body.size_flags_horizontal=Control.SIZE_EXPAND_FILL;body.add_theme_constant_override("separation",12);_enable_touch_scroll(body);scroll.add_child(body);return body
+
+func _enable_touch_scroll(node:Node) -> void:
+	# Page cards and buttons must bubble touch-emulated mouse events to the
+	# ScrollContainer. Its native drag gesture also cancels child button clicks.
+	# Preserve decorative IGNORE controls and leave non-page controls unchanged.
+	if node is Control and node.mouse_filter!=Control.MOUSE_FILTER_IGNORE:node.mouse_filter=Control.MOUSE_FILTER_PASS
+	node.child_entered_tree.connect(_enable_touch_scroll)
+	for child in node.get_children():_enable_touch_scroll(child)
 
 func show_map() -> void:
 	_state("map");var body:=_page("Neighborhoods","36 handcrafted incidents. Earn stars by protecting the town.")
@@ -450,7 +470,8 @@ func _reserve_changed() -> void:
 	if is_instance_valid(banner_spacer):banner_spacer.custom_minimum_size.y=_reserve()
 	if screen in ["home","result"]:call_deferred("home" if screen=="home" else "_result")
 
-func _resized() -> void:_clear_pointer()
+func _resized() -> void:
+	_clear_pointer();_layout_home_art()
 
 func _back() -> void:
 	if fullscreen:return

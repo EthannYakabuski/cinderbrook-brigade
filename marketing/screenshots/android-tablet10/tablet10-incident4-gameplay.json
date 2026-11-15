@@ -1,0 +1,19 @@
+{
+  "path": "marketing/screenshots/android-tablet10/tablet10-incident4-gameplay.png",
+  "width": 1600,
+  "height": 2560,
+  "sha256": "fa29a4983c2992efca7ced5a4e00ac29a42dcd1c999f7c7b31f970031f482b61",
+  "profile": "tablet10",
+  "description": "Native Android campaign incident 04 on a logical ten-inch emulator after ordinary touch spraying; unmodified framebuffer.",
+  "method": "ADB exec-out screencap: unmodified full Android framebuffer after ordinary touchscreen UI input",
+  "device_class": "Android API 30 x86 emulator; logical display profile; graphics backend recorded in runtime diagnostics",
+  "physical_device": false,
+  "capture_kind": "android_emulator",
+  "source_id": "android-bdf5190d962015ab",
+  "capture_started_at_utc": "2026-11-15T01:46:37.603184+00:00",
+  "captured_at_utc": "2026-11-15T01:46:38.914613+00:00",
+  "display_size": "Physical size: 1080x2220\r\nOverride size: 1600x2560",
+  "display_density": "Physical density: 440\r\nOverride density: 300",
+  "serial": "emulator-5560",
+  "review_visible": false
+}

@@ -34,7 +34,9 @@ def main():
     def adb(*command):
         return subprocess.check_output([args.adb, "-s", args.serial, *command], timeout=45)
     adb("shell", "pidof", PACKAGE)
+    capture_started_at_utc = datetime.now(timezone.utc).isoformat()
     pixels = adb("exec-out", "screencap", "-p")
+    captured_at_utc = datetime.now(timezone.utc).isoformat()
     if not pixels.startswith(b"\x89PNG\r\n\x1a\n"):
         raise SystemExit("Emulator returned no PNG; nothing recorded.")
     width, height = struct.unpack(">II", pixels[16:24])
@@ -54,7 +56,9 @@ def main():
                    "ADB exec-out screencap: unmodified full Android framebuffer after ordinary touchscreen UI input"),
         "device_class": "Android API 30 x86 emulator; logical display profile; graphics backend recorded in runtime diagnostics",
         "physical_device": False, "capture_kind": "android_emulator", "source_id": source_id,
-        "captured_at_utc": datetime.now(timezone.utc).isoformat(),
+        # Bound framebuffer acquisition before APK hashing and metadata reads.
+        "capture_started_at_utc": capture_started_at_utc,
+        "captured_at_utc": captured_at_utc,
         "display_size": adb("shell", "wm", "size").decode().strip(),
         "display_density": adb("shell", "wm", "density").decode().strip(),
         "serial": args.serial,
@@ -64,10 +68,11 @@ def main():
     if not args.diagnostic:
         manifest = ROOT / "marketing/screenshots/provenance.json"
         data = json.loads(manifest.read_text(encoding="utf-8")) if manifest.exists() else {"game": "Cinderbrook Brigade", "schema_version": 1, "sources": {}, "captures": []}
-        data["sources"][source_id] = {
+        # Preserve an existing archived artifact/receipt binding for this hash.
+        data["sources"].setdefault(source_id, {
             "kind": "android_apk", "apk_sha256": apk_hash, "package_name": PACKAGE,
             "build_evidence": "docs/android-package-evidence.json", "artifact_path": apk.relative_to(ROOT).as_posix(),
-        }
+        })
         data["captures"].append(observation)
         manifest.write_text(json.dumps(data, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(observation, indent=2))

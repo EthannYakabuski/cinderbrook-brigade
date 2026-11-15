@@ -1,0 +1,29 @@
+{
+  "path": "marketing/screenshots/android-tablet10/final-tablet10-home.png",
+  "width": 1600,
+  "height": 2560,
+  "sha256": "6caec48a634edc0a4f8f206afd2c24da3d3311bd49fec42d338e58a6db75885d",
+  "profile": "tablet10",
+  "description": "Final APK illustrated Home on the logical ten-inch emulator, with brigade rank 3, 684 supplies, incident 05 available and a visible Google test banner.",
+  "method": "ADB exec-out screencap: unmodified read-only Android rendering diagnostic; no touch acceptance implied",
+  "device_class": "Android API 30 x86 emulator; logical display profile; graphics backend recorded in runtime diagnostics",
+  "physical_device": false,
+  "capture_kind": "android_emulator",
+  "source_id": "android-1488f7ec33d146ef",
+  "capture_started_at_utc": "2026-11-15T02:00:45.410657+00:00",
+  "captured_at_utc": "2026-11-15T02:00:51.611480+00:00",
+  "display_size": "Physical size: 1080x2220\r\nOverride size: 1600x2560",
+  "display_density": "Physical density: 440\r\nOverride density: 300",
+  "serial": "emulator-5560",
+  "review_visible": true,
+  "view_kind": "home",
+  "promotion_origin": {
+    "png_path": "build/native/observations/final-tablet10-home.png",
+    "receipt_path": "build/native/observations/final-tablet10-home.json",
+    "png_sha256": "6caec48a634edc0a4f8f206afd2c24da3d3311bd49fec42d338e58a6db75885d",
+    "receipt_sha256": "fff85b6a8c85195cc3f3195904f1eea93428dd5240ef21dffb06484373443c8e",
+    "promoted_at_utc": "2026-11-15T02:18:58.722693+00:00",
+    "pixels_unchanged": true,
+    "new_capture_performed": false
+  }
+}

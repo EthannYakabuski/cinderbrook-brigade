@@ -1,0 +1,29 @@
+{
+  "path": "marketing/screenshots/android-tablet10/final-tablet10-neighborhoods.png",
+  "width": 1600,
+  "height": 2560,
+  "sha256": "7c86439dcd3cd5a41cc59e2dbba5056b978630333c9d3c7eb55328a44670d4c3",
+  "profile": "tablet10",
+  "description": "Final APK Neighborhoods on the logical ten-inch emulator after ordinary content dragging, showing incident stars, the unlocked fifth incident and later districts.",
+  "method": "ADB exec-out screencap: unmodified read-only Android rendering diagnostic; no touch acceptance implied",
+  "device_class": "Android API 30 x86 emulator; logical display profile; graphics backend recorded in runtime diagnostics",
+  "physical_device": false,
+  "capture_kind": "android_emulator",
+  "source_id": "android-1488f7ec33d146ef",
+  "capture_started_at_utc": "2026-11-15T02:02:44.412528+00:00",
+  "captured_at_utc": "2026-11-15T02:02:45.920743+00:00",
+  "display_size": "Physical size: 1080x2220\r\nOverride size: 1600x2560",
+  "display_density": "Physical density: 440\r\nOverride density: 300",
+  "serial": "emulator-5560",
+  "review_visible": true,
+  "view_kind": "neighborhoods",
+  "promotion_origin": {
+    "png_path": "build/native/observations/final-map-after-button-drag.png",
+    "receipt_path": "build/native/observations/final-map-after-button-drag.json",
+    "png_sha256": "7c86439dcd3cd5a41cc59e2dbba5056b978630333c9d3c7eb55328a44670d4c3",
+    "receipt_sha256": "938e16961bd1b70c551b8c378385a359e5c7e392e3a506f4237472f172816fe5",
+    "promoted_at_utc": "2026-11-15T02:18:58.722693+00:00",
+    "pixels_unchanged": true,
+    "new_capture_performed": false
+  }
+}

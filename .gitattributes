@@ -18,3 +18,9 @@ LICENSES/** -text
 assets/audio/LICENSES/** -text
 addons/**/LICENSE -text
 marketing/play-games-achievements/import-files/*.csv -text
+# Serialized evidence is hash-referenced; preserve the original receipt bytes.
+docs/android-package-evidence*.json -text whitespace=cr-at-eol
+docs/packed-art-evidence*.json -text whitespace=cr-at-eol
+docs/native-acceptance.json -text whitespace=cr-at-eol
+docs/web-refresh-acceptance.json -text whitespace=cr-at-eol
+marketing/screenshots/**/*.json -text whitespace=cr-at-eol

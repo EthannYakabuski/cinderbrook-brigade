@@ -1,6 +1,6 @@
-# NOT EXECUTED during this task. Native Computer Use approval expired.
-# This optional owner-run helper is not evidence of touch acceptance and must
-# not be used by an agent to bypass an unapproved native-control request.
+# Ordinary Android SDK input for an explicitly authorized test emulator.
+# Actual execution receipts, framebuffer observations and resulting saved state
+# establish coverage; this helper's presence alone is not acceptance evidence.
 """Record ordinary Android input and read-only observations for this game.
 
 No game-state injection, time acceleration, screenshot editing or fake rewards.

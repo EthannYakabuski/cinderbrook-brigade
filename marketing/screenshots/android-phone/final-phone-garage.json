@@ -1,0 +1,20 @@
+{
+  "path": "marketing/screenshots/android-phone/final-phone-garage.png",
+  "width": 1080,
+  "height": 1920,
+  "sha256": "826698bed712603a7b611b1082dcf11f8898b64f2ed1d191cd926c6983842f95",
+  "profile": "phone",
+  "description": "Final APK phone Garage showing earned supplies, equipment progression and upgrade costs.",
+  "method": "ADB exec-out screencap: unmodified full Android framebuffer after ordinary touchscreen UI input",
+  "device_class": "Android API 30 x86 emulator; logical display profile; graphics backend recorded in runtime diagnostics",
+  "physical_device": false,
+  "capture_kind": "android_emulator",
+  "source_id": "android-1488f7ec33d146ef",
+  "capture_started_at_utc": "2026-11-15T02:16:11.001835+00:00",
+  "captured_at_utc": "2026-11-15T02:16:11.846482+00:00",
+  "display_size": "Physical size: 1080x2220\r\nOverride size: 1080x1920",
+  "display_density": "Physical density: 440\r\nOverride density: 420",
+  "serial": "emulator-5560",
+  "review_visible": true,
+  "view_kind": "garage"
+}

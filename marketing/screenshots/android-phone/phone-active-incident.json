@@ -1,0 +1,19 @@
+{
+  "path": "marketing/screenshots/android-phone/phone-active-incident.png",
+  "width": 1080,
+  "height": 1920,
+  "sha256": "27fa4e8764948b40ca45d3037a1ae412f4cbf01549e518a34f454ec98b0d0f01",
+  "profile": "phone",
+  "description": "Actual Android incident 01 gameplay after ordinary spray depletion, release and resumed refill; emulator framebuffer.",
+  "method": "ADB exec-out screencap: unmodified full Android framebuffer after ordinary touchscreen UI input",
+  "device_class": "Android API 30 x86 emulator; logical display profile; graphics backend recorded in runtime diagnostics",
+  "physical_device": false,
+  "capture_kind": "android_emulator",
+  "source_id": "android-bdf5190d962015ab",
+  "capture_started_at_utc": "2026-11-15T01:04:34.032151+00:00",
+  "captured_at_utc": "2026-11-15T01:04:34.685457+00:00",
+  "display_size": "Physical size: 1080x2220\r\nOverride size: 1080x1920",
+  "display_density": "Physical density: 440\r\nOverride density: 420",
+  "serial": "emulator-5560",
+  "review_visible": false
+}

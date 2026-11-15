@@ -1,0 +1,19 @@
+{
+  "path": "marketing/screenshots/android-phone/phone-three-star-result.png",
+  "width": 1080,
+  "height": 1920,
+  "sha256": "a26d8eaf3364dbc8297ef649a95f7f28a3a29ea2e51bc54161b01525cff9bb48",
+  "profile": "phone",
+  "description": "Native Android incident 01 cleared by ordinary touchscreen hold: three stars, 99% structure, 40 seconds left, 75 supplies and 64 XP.",
+  "method": "ADB exec-out screencap: unmodified full Android framebuffer after ordinary touchscreen UI input",
+  "device_class": "Android API 30 x86 emulator; logical display profile; graphics backend recorded in runtime diagnostics",
+  "physical_device": false,
+  "capture_kind": "android_emulator",
+  "source_id": "android-bdf5190d962015ab",
+  "capture_started_at_utc": "2026-11-15T01:02:44.039276+00:00",
+  "captured_at_utc": "2026-11-15T01:02:44.793989+00:00",
+  "display_size": "Physical size: 1080x2220\r\nOverride size: 1080x1920",
+  "display_density": "Physical density: 440\r\nOverride density: 420",
+  "serial": "emulator-5560",
+  "review_visible": false
+}

@@ -1,0 +1,20 @@
+{
+  "path": "marketing/screenshots/android-tablet7/final-tablet7-result.png",
+  "width": 1200,
+  "height": 1920,
+  "sha256": "d45addfe473838a27072bb2e8d9fff307a9190dbc910691450cda4a87b499dfa",
+  "profile": "tablet7",
+  "description": "Final APK seven-inch result screen after ordinary map-launched incident completion.",
+  "method": "ADB exec-out screencap: unmodified full Android framebuffer after ordinary touchscreen UI input",
+  "device_class": "Android API 30 x86 emulator; logical display profile; graphics backend recorded in runtime diagnostics",
+  "physical_device": false,
+  "capture_kind": "android_emulator",
+  "source_id": "android-1488f7ec33d146ef",
+  "capture_started_at_utc": "2026-11-15T02:19:54.770622+00:00",
+  "captured_at_utc": "2026-11-15T02:19:55.661800+00:00",
+  "display_size": "Physical size: 1080x2220\r\nOverride size: 1200x1920",
+  "display_density": "Physical density: 440\r\nOverride density: 320",
+  "serial": "emulator-5560",
+  "review_visible": true,
+  "view_kind": "result"
+}

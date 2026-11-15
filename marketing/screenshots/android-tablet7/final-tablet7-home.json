@@ -1,0 +1,29 @@
+{
+  "path": "marketing/screenshots/android-tablet7/final-tablet7-home.png",
+  "width": 1200,
+  "height": 1920,
+  "sha256": "1e0fa959fa38fe205a225264d0715fdb21d83e271fa790ecc4f6036066ead71c",
+  "profile": "tablet7",
+  "description": "Final APK illustrated Home on the logical seven-inch emulator, with brigade rank 3, 684 supplies, incident 05 available and a visible Google test banner.",
+  "method": "ADB exec-out screencap: unmodified read-only Android rendering diagnostic; no touch acceptance implied",
+  "device_class": "Android API 30 x86 emulator; logical display profile; graphics backend recorded in runtime diagnostics",
+  "physical_device": false,
+  "capture_kind": "android_emulator",
+  "source_id": "android-1488f7ec33d146ef",
+  "capture_started_at_utc": "2026-11-15T02:03:19.270436+00:00",
+  "captured_at_utc": "2026-11-15T02:03:22.705375+00:00",
+  "display_size": "Physical size: 1080x2220\r\nOverride size: 1200x1920",
+  "display_density": "Physical density: 440\r\nOverride density: 320",
+  "serial": "emulator-5560",
+  "review_visible": true,
+  "view_kind": "home",
+  "promotion_origin": {
+    "png_path": "build/native/observations/final-tablet7-home.png",
+    "receipt_path": "build/native/observations/final-tablet7-home.json",
+    "png_sha256": "1e0fa959fa38fe205a225264d0715fdb21d83e271fa790ecc4f6036066ead71c",
+    "receipt_sha256": "6144aeafbb422416c3c58c96c98bad5553679d1f4cf79eeb45649873a7d9a5ca",
+    "promoted_at_utc": "2026-11-15T02:22:45.485496+00:00",
+    "pixels_unchanged": true,
+    "new_capture_performed": false
+  }
+}

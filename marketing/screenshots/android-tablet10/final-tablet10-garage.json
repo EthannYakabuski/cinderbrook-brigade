@@ -1,0 +1,29 @@
+{
+  "path": "marketing/screenshots/android-tablet10/final-tablet10-garage.png",
+  "width": 1600,
+  "height": 2560,
+  "sha256": "b21fd1e8141d7975e5ff5869180a99284e39c90a9f1477ef226300959aa0d16b",
+  "profile": "tablet10",
+  "description": "Final APK Garage on the logical ten-inch emulator, showing the purchased Copper pump rank, earned supplies and equipment upgrade costs.",
+  "method": "ADB exec-out screencap: unmodified read-only Android rendering diagnostic; no touch acceptance implied",
+  "device_class": "Android API 30 x86 emulator; logical display profile; graphics backend recorded in runtime diagnostics",
+  "physical_device": false,
+  "capture_kind": "android_emulator",
+  "source_id": "android-1488f7ec33d146ef",
+  "capture_started_at_utc": "2026-11-15T02:01:21.442356+00:00",
+  "captured_at_utc": "2026-11-15T02:01:22.600441+00:00",
+  "display_size": "Physical size: 1080x2220\r\nOverride size: 1600x2560",
+  "display_density": "Physical density: 440\r\nOverride density: 300",
+  "serial": "emulator-5560",
+  "review_visible": true,
+  "view_kind": "garage",
+  "promotion_origin": {
+    "png_path": "build/native/observations/final-garage-before-drag.png",
+    "receipt_path": "build/native/observations/final-garage-before-drag.json",
+    "png_sha256": "b21fd1e8141d7975e5ff5869180a99284e39c90a9f1477ef226300959aa0d16b",
+    "receipt_sha256": "131d8a3913f47320d35d57dead26208d2ae8442ce19ca5c497473c2fd0394302",
+    "promoted_at_utc": "2026-11-15T02:18:58.722693+00:00",
+    "pixels_unchanged": true,
+    "new_capture_performed": false
+  }
+}

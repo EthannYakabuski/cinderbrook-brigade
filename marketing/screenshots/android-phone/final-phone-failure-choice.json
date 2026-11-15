@@ -1,0 +1,27 @@
+{
+  "path": "marketing/screenshots/android-phone/final-phone-failure-choice.png",
+  "width": 1080,
+  "height": 1920,
+  "sha256": "ae39de8e9c126f7cbb42a84724f78b74fb211f7652dc0df6f05a6a701a8dd7de",
+  "profile": "phone",
+  "description": "Final APK phone failure choice after time ran out: optional rewarded emergency refill or End incident. This is the continuation choice, not a settled result.",
+  "method": "ADB exec-out screencap: unmodified full Android framebuffer after ordinary touchscreen UI input",
+  "device_class": "Android API 30 x86 emulator; logical display profile; graphics backend recorded in runtime diagnostics",
+  "physical_device": false,
+  "capture_kind": "android_emulator",
+  "source_id": "android-1488f7ec33d146ef",
+  "capture_started_at_utc": "2026-11-15T02:07:55.441455+00:00",
+  "captured_at_utc": "2026-11-15T02:07:56.545662+00:00",
+  "display_size": "Physical size: 1080x2220\r\nOverride size: 1080x1920",
+  "display_density": "Physical density: 440\r\nOverride density: 420",
+  "serial": "emulator-5560",
+  "metadata_correction": {
+    "previous_path": "marketing/screenshots/android-phone/final-phone-failure-result.png",
+    "original_receipt_archive": "build/native/curation-originals/20261115-phone-tablet10/android-phone/final-phone-failure-result.json",
+    "reason": "Rename to describe the visible opt-in continuation choice accurately.",
+    "pixels_unchanged": true,
+    "corrected_at_utc": "2026-11-15T02:18:58.722693+00:00"
+  },
+  "review_visible": true,
+  "view_kind": "failure-choice"
+}

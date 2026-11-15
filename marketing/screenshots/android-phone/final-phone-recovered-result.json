@@ -1,0 +1,29 @@
+{
+  "path": "marketing/screenshots/android-phone/final-phone-recovered-result.png",
+  "width": 1080,
+  "height": 1920,
+  "sha256": "515051e64c5b348e861bf4124cfe0b8c75e77d74b5dd7a16c2598830eab79e45",
+  "profile": "phone",
+  "description": "Final APK incident 05 success on the phone emulator after earned continuation and ordinary play: two stars, 82% structure, 12 seconds remaining, 91 supplies, 100 XP and 2174 points.",
+  "method": "ADB exec-out screencap: unmodified read-only Android rendering diagnostic; no touch acceptance implied",
+  "device_class": "Android API 30 x86 emulator; logical display profile; graphics backend recorded in runtime diagnostics",
+  "physical_device": false,
+  "capture_kind": "android_emulator",
+  "source_id": "android-1488f7ec33d146ef",
+  "capture_started_at_utc": "2026-11-15T02:14:11.687218+00:00",
+  "captured_at_utc": "2026-11-15T02:14:12.982704+00:00",
+  "display_size": "Physical size: 1080x2220\r\nOverride size: 1080x1920",
+  "display_density": "Physical density: 440\r\nOverride density: 420",
+  "serial": "emulator-5560",
+  "review_visible": true,
+  "view_kind": "result",
+  "promotion_origin": {
+    "png_path": "build/native/observations/final-phone-recovered-outcome.png",
+    "receipt_path": "build/native/observations/final-phone-recovered-outcome.json",
+    "png_sha256": "515051e64c5b348e861bf4124cfe0b8c75e77d74b5dd7a16c2598830eab79e45",
+    "receipt_sha256": "61e5a8dfb5f1caf2f0a34f303d34ae3de9918ff55b3eec8b931b161abc5c6057",
+    "promoted_at_utc": "2026-11-15T02:18:58.722693+00:00",
+    "pixels_unchanged": true,
+    "new_capture_performed": false
+  }
+}

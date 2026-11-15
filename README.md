@@ -18,12 +18,24 @@ This is a stylized arcade game, not instruction for responding to a real fire.
 
 ## Play and review
 
-Implementation is available; native acceptance is incomplete. Emulator control
-is now approved. A temporary host GPU option fixed the emulator's black game
-area; Windows control-tool capture still times out. See [verification and remaining work](docs/VERIFICATION.md),
+The current APK passed the recorded emulator prototype acceptance: 39 audited
+checks with no failures. Ordinary Android SDK touch checks covered campaign wins,
+natural failure, held-empty water/refill, purchases, pause and cold-restart
+persistence. Real Google test ads verified earned-only continuation, paused
+dismissal and durable interstitial cadence. The corrected tablet Home artwork
+and Garage, Neighborhoods and Journal touch scrolling were retested in the APK.
+Eighteen selected runtime images cover phone and logical seven-inch and ten-inch
+emulator layouts. Both open-ad process-interruption paths passed; two Endless
+waves were banked and retained through cold restart without duplicate payment.
+[The native receipt](docs/native-acceptance.json) identifies the exact covered APK
+and keeps the earlier build's observations separate.
+See [verification and remaining work](docs/VERIFICATION.md),
 [the initial design](INITIAL_VECTOR_PROMPT.txt) and [the acceptance checklist](docs/ACCEPTANCE.md).
-Actual Web play cleared the first incident and retained its reward after reopening.
-Required Android touch/ad tests and phone/tablet capture evidence remain pending.
+Actual Web play also verified campaign progression, a persisted garage purchase,
+Daily failure/resume and an Endless wave. The refreshed export passed ordinary
+campaign wins, settled and active-run reload checks, Garage wheel navigation,
+and persisted mute/unmute with no observed console errors. Emulator evidence does not establish
+physical-device or production-service acceptance.
 
 Open `project.godot` in Godot 4.5.1 and run the main scene. Android is the primary
 target; Web uses the single-threaded Compatibility export. There is no Windows
@@ -31,8 +43,11 @@ distribution. Local generated outputs belong in `build/android/` and
 `build/site/`; they are not source-controlled.
 
 The HTML review source is `review/index.html`. A complete assembled review lives
-at `build/site/review/index.html` after export and assembly. Owner-approved Pages configuration now uses GitHub Actions. Deployment remains
-gated on successful validation and Android CI for the exact published commit.
+at `build/site/review/index.html` after export and assembly. Owner-approved Pages
+configuration uses GitHub Actions. Deployment requires successful validation
+and Android CI for the exact published commit; consult the repository's
+[Actions runs](https://github.com/EthannYakabuski/cinderbrook-brigade/actions)
+and the final handoff for actual revision-specific results.
 
 ## Native configuration and builds
 
@@ -85,8 +100,9 @@ See [import instructions and the ID worksheet](docs/ACHIEVEMENT_IMPORT.md).
 ## Validation and licenses
 
 GitHub-hosted CI validates the source and tests, exports Web, and builds Android
-on main pushes. A prepared Pages workflow is manually gated; its presence does
-not enable hosting. Final acceptance records must distinguish model simulations,
+on main pushes. Owner-approved Pages settings are configured, but deployment
+still requires successful validation and Android CI for the exact commit.
+Final acceptance records must distinguish model simulations,
 scripted desktop renders, Android emulator input and physical-device checks.
 
 Original code is Apache-2.0. Preserve [NOTICE](NOTICE), all supplied Kenney CC0

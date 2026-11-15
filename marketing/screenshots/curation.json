@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "game": "Cinderbrook Brigade",
+  "curated_at_utc": "2026-11-15T02:22:45.485496+00:00",
+  "source_id": "android-1488f7ec33d146ef",
+  "apk_sha256": "1488f7ec33d146ef869c91890c4f46c0634e300d0bd3d897d93c1d030a4190d4",
+  "selection": "Six distinct genuine native views per logical phone, seven-inch and ten-inch emulator profile; all selected frames bind to the same final APK.",
+  "png_pixels_modified": false,
+  "new_capture_performed_by_curation": false,
+  "physical_device_evidence": false,
+  "baseline_captures_preserved_but_hidden": true,
+  "claim_limit": "Image integrity and visual curation only; gameplay, ad and persistence observations are documented separately.",
+  "profiles": {
+    "phone": [
+      {
+        "path": "marketing/screenshots/android-phone/final-phone-active-incident.png",
+        "view_kind": "gameplay",
+        "width": 1080,
+        "height": 1920,
+        "sha256": "cb7b168a7bd48749a707f2beade65c9ccadfcd09b151dea7c5e0915611490359",
+        "captured_at_utc": "2026-11-15T02:05:02.512467+00:00"
+      },
+      {
+        "path": "marketing/screenshots/android-phone/final-phone-failure-choice.png",
+        "view_kind": "failure-choice",
+        "width": 1080,
+        "height": 1920,
+        "sha256": "ae39de8e9c126f7cbb42a84724f78b74fb211f7652dc0df6f05a6a701a8dd7de",
+        "captured_at_utc": "2026-11-15T02:07:56.545662+00:00"
+      },
+      {
+        "path": "marketing/screenshots/android-phone/final-phone-home.png",
+        "view_kind": "home",
+        "width": 1080,
+        "height": 1920,
+        "sha256": "8d6d635015c7a1e1088c89baf11dc33026bc85a3356d4bc895f3223d24ca0d06",
+        "captured_at_utc": "2026-11-15T02:15:39.578914+00:00"
+      },
+      {
+        "path": "marketing/screenshots/android-phone/final-phone-garage.png",
+        "view_kind": "garage",
+        "width": 1080,
+        "height": 1920,
+        "sha256": "826698bed712603a7b611b1082dcf11f8898b64f2ed1d191cd926c6983842f95",
+        "captured_at_utc": "2026-11-15T02:16:11.846482+00:00"
+      },
+      {
+        "path": "marketing/screenshots/android-phone/final-phone-settings.png",
+        "view_kind": "settings",
+        "width": 1080,
+        "height": 1920,
+        "sha256": "841dec4fd55571af925d88f1f1c3b594f45b6c50571952c78c734711ee9e2c76",
+        "captured_at_utc": "2026-11-15T02:16:17.690713+00:00"
+      },
+      {
+        "path": "marketing/screenshots/android-phone/final-phone-recovered-result.png",
+        "view_kind": "result",
+        "width": 1080,
+        "height": 1920,
+        "sha256": "515051e64c5b348e861bf4124cfe0b8c75e77d74b5dd7a16c2598830eab79e45",
+        "captured_at_utc": "2026-11-15T02:14:12.982704+00:00"
+      }
+    ],
+    "tablet7": [
+      {
+        "path": "marketing/screenshots/android-tablet7/final-tablet7-active-incident.png",
+        "view_kind": "gameplay",
+        "width": 1200,
+        "height": 1920,
+        "sha256": "cd90a06827da70113a20508803f8b155077b5bdaba986293803e6aa3258611ec",
+        "captured_at_utc": "2026-11-15T02:03:55.379440+00:00"
+      },
+      {
+        "path": "marketing/screenshots/android-tablet7/final-tablet7-result.png",
+        "view_kind": "result",
+        "width": 1200,
+        "height": 1920,
+        "sha256": "d45addfe473838a27072bb2e8d9fff307a9190dbc910691450cda4a87b499dfa",
+        "captured_at_utc": "2026-11-15T02:19:55.661800+00:00"
+      },
+      {
+        "path": "marketing/screenshots/android-tablet7/final-tablet7-garage.png",
+        "view_kind": "garage",
+        "width": 1200,
+        "height": 1920,
+        "sha256": "bc82cd04805609f9e4ddb22755c48d7ee18447c35d0c61dc8bb0474c8891bd7d",
+        "captured_at_utc": "2026-11-15T02:20:52.905776+00:00"
+      },
+      {
+        "path": "marketing/screenshots/android-tablet7/final-tablet7-map.png",
+        "view_kind": "neighborhoods",
+        "width": 1200,
+        "height": 1920,
+        "sha256": "a864696828b1d399f494cf9713519b23a8567ef368230ed1455e8ee74f4e6a33",
+        "captured_at_utc": "2026-11-15T02:20:57.891390+00:00"
+      },
+      {
+        "path": "marketing/screenshots/android-tablet7/final-tablet7-journal.png",
+        "view_kind": "journal",
+        "width": 1200,
+        "height": 1920,
+        "sha256": "ca219f21f2fc753897f8fa49f2d124f2ff907a2dde1a013b83bfaf91d44957e3",
+        "captured_at_utc": "2026-11-15T02:21:02.973062+00:00"
+      },
+      {
+        "path": "marketing/screenshots/android-tablet7/final-tablet7-home.png",
+        "view_kind": "home",
+        "width": 1200,
+        "height": 1920,
+        "sha256": "1e0fa959fa38fe205a225264d0715fdb21d83e271fa790ecc4f6036066ead71c",
+        "captured_at_utc": "2026-11-15T02:03:22.705375+00:00"
+      }
+    ],
+    "tablet10": [
+      {
+        "path": "marketing/screenshots/android-tablet10/final-tablet10-active-incident.png",
+        "view_kind": "gameplay",
+        "width": 1600,
+        "height": 2560,
+        "sha256": "6fc146d5d685f9877e96ad4a9a0656ddc9ecb1f1687108f316f050ab4663a2c6",
+        "captured_at_utc": "2026-11-15T01:59:25.707867+00:00"
+      },
+      {
+        "path": "marketing/screenshots/android-tablet10/final-tablet10-home.png",
+        "view_kind": "home",
+        "width": 1600,
+        "height": 2560,
+        "sha256": "6caec48a634edc0a4f8f206afd2c24da3d3311bd49fec42d338e58a6db75885d",
+        "captured_at_utc": "2026-11-15T02:00:51.611480+00:00"
+      },
+      {
+        "path": "marketing/screenshots/android-tablet10/final-tablet10-result.png",
+        "view_kind": "result",
+        "width": 1600,
+        "height": 2560,
+        "sha256": "e9097a7429f13c36a34911c7c532dbb46cf47d1af69b3d89559284c60b65ff89",
+        "captured_at_utc": "2026-11-15T02:00:19.591499+00:00"
+      },
+      {
+        "path": "marketing/screenshots/android-tablet10/final-tablet10-garage.png",
+        "view_kind": "garage",
+        "width": 1600,
+        "height": 2560,
+        "sha256": "b21fd1e8141d7975e5ff5869180a99284e39c90a9f1477ef226300959aa0d16b",
+        "captured_at_utc": "2026-11-15T02:01:22.600441+00:00"
+      },
+      {
+        "path": "marketing/screenshots/android-tablet10/final-tablet10-journal.png",
+        "view_kind": "journal",
+        "width": 1600,
+        "height": 2560,
+        "sha256": "13d3bcfcf6446d153b0bf30bde190f38696cad715627ec3e3f12ec7ed5153ed8",
+        "captured_at_utc": "2026-11-15T02:02:06.640332+00:00"
+      },
+      {
+        "path": "marketing/screenshots/android-tablet10/final-tablet10-neighborhoods.png",
+        "view_kind": "neighborhoods",
+        "width": 1600,
+        "height": 2560,
+        "sha256": "7c86439dcd3cd5a41cc59e2dbba5056b978630333c9d3c7eb55328a44670d4c3",
+        "captured_at_utc": "2026-11-15T02:02:45.920743+00:00"
+      }
+    ]
+  }
+}

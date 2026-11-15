@@ -1,0 +1,20 @@
+{
+  "path": "marketing/screenshots/android-tablet10/final-tablet10-active-incident.png",
+  "width": 1600,
+  "height": 2560,
+  "sha256": "6fc146d5d685f9877e96ad4a9a0656ddc9ecb1f1687108f316f050ab4663a2c6",
+  "profile": "tablet10",
+  "description": "Final APK: active campaign incident 04 on the logical 10-inch Android emulator after ordinary touch spraying; raw framebuffer.",
+  "method": "ADB exec-out screencap: unmodified full Android framebuffer after ordinary touchscreen UI input",
+  "device_class": "Android API 30 x86 emulator; logical display profile; graphics backend recorded in runtime diagnostics",
+  "physical_device": false,
+  "capture_kind": "android_emulator",
+  "source_id": "android-1488f7ec33d146ef",
+  "capture_started_at_utc": "2026-11-15T01:59:24.513341+00:00",
+  "captured_at_utc": "2026-11-15T01:59:25.707867+00:00",
+  "display_size": "Physical size: 1080x2220\r\nOverride size: 1600x2560",
+  "display_density": "Physical density: 440\r\nOverride density: 300",
+  "serial": "emulator-5560",
+  "review_visible": true,
+  "view_kind": "gameplay"
+}

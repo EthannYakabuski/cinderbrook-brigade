@@ -1,0 +1,18 @@
+{
+  "path": "marketing/screenshots/android-phone/phone-first-failure.png",
+  "width": 1080,
+  "height": 1920,
+  "sha256": "dba12f819677b751baf94d975f9d726373d94b70e42ff28271c01fbfbd648f10",
+  "profile": "phone",
+  "description": "Actual Android failure after the first incident elapsed without spraying; ordinary SDK menu input, no state injection.",
+  "method": "ADB exec-out screencap: unmodified full Android framebuffer after ordinary touchscreen UI input",
+  "device_class": "Android API 30 x86 emulator; logical display profile; graphics backend recorded in runtime diagnostics",
+  "physical_device": false,
+  "capture_kind": "android_emulator",
+  "source_id": "android-bdf5190d962015ab",
+  "captured_at_utc": "2026-11-15T00:52:41.288612+00:00",
+  "display_size": "Physical size: 1080x2220\r\nOverride size: 1080x1920",
+  "display_density": "Physical density: 440\r\nOverride density: 420",
+  "serial": "emulator-5560",
+  "review_visible": false
+}

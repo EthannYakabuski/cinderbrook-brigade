@@ -1,0 +1,94 @@
+{
+  "schema_version": 2,
+  "game": "Cinderbrook Brigade",
+  "checked_utc": "2026-11-15T02:16:14.823749+00:00",
+  "artifact": {
+    "kind": "refreshed local single-threaded Web export",
+    "pck_bytes": 19230432,
+    "pck_sha256": "b233acb180d31b67d901bdce2fd171472df4222ad1de7a67a83d1d3a1398f78f",
+    "local_export_receipt": "build/web-final/runs/20261115T015354Z-9f4b1cce/receipt.json",
+    "local_promotion_receipt": "build/web-final/runs/20261115T015354Z-9f4b1cce/promotion.json"
+  },
+  "static_export_validation": "PASS: all 712 PCK entry checksums, WebAssembly header, single-threaded shell and absence of unwanted payload verified",
+  "runtime_status": "PASS_COVERED_LOCAL_SMOKE",
+  "runtime_environment": "Coordinator-owned supported isolated in-app browser, 430 by 900 viewport",
+  "evidence_source": "Coordinator reported direct observations from its official browser tool trace. No browser screenshot file is claimed by this receipt.",
+  "input_method": "Ordinary pointer clicks, held clicks, mouse wheel and reload; no game-state injection",
+  "verified_observations": [
+    {
+      "id": "existing_profile_loaded",
+      "result": "PASS",
+      "summary": "Refreshed game opened at rank 2 with 292 supplies and incident 3 available. Garage displayed pump rank 1 and 262 XP."
+    },
+    {
+      "id": "garage_wheel_navigation",
+      "result": "PASS",
+      "summary": "Mouse wheel scrolling revealed all five garage upgrades. Ordinary mouse dragging did not scroll; this does not verify touch dragging and is not represented as touch-repair acceptance."
+    },
+    {
+      "id": "ordinary_campaign_win",
+      "result": "PASS",
+      "summary": "Three ordinary held pointer clicks on visible roofs cleared incident 3 with three stars, 95% structure, 40 seconds remaining, 2402 points, 87 supplies and 82 XP."
+    },
+    {
+      "id": "home_reload_persistence",
+      "result": "PASS",
+      "summary": "Returning Home and reloading retained rank 3, 379 supplies and incident 4 available. The 87-supply settlement was not paid twice."
+    },
+    {
+      "id": "music_setting_reload",
+      "result": "PASS",
+      "summary": "Music was turned Off through Settings. Reloading and checking Settings retained Off; ordinary input then restored On."
+    },
+    {
+      "id": "active_pause_reload",
+      "result": "PASS",
+      "summary": "Incident 4 was started through Home and paused with its Pause control. Reload restored an explicit Resume screen. Ordinary Resume continued the same incident."
+    },
+    {
+      "id": "second_refreshed_win",
+      "result": "PASS",
+      "summary": "After reload/resume, three ordinary held target clicks cleared incident 4 with three stars, 96% structure, 44 seconds remaining, 2460 points, 87 supplies and 82 XP. Final Home displayed rank 3, 466 supplies and incident 5 available."
+    },
+    {
+      "id": "music_enabled_lifecycle",
+      "result": "PASS_RUNTIME_STABILITY_ONLY",
+      "summary": "Menu navigation, mute/reload/restore, active-run pause/reload/resume and a second win completed with music enabled again, without the prior audio-buffer error. No subjective listening assessment is claimed."
+    },
+    {
+      "id": "console_observations",
+      "result": "PASS",
+      "summary": "Inspected warning and error lists were empty twice during the initial checks and again after reload, after the second win and at finish."
+    }
+  ],
+  "browser_input_sent": true,
+  "screenshots_saved_or_claimed": false,
+  "personal_browser_or_native_windows_fallback": false,
+  "historical_worker_attempt": {
+    "status": "NOT_RUN_BROWSER_UNAVAILABLE",
+    "outcome": "The documentation worker could not create iab and received an empty browser inventory. The coordinator subsequently obtained isolated browser access and performed the observations above.",
+    "local_receipt": "build/web-final/runs/20261115T015354Z-9f4b1cce/browser-acceptance-child-unavailable.json",
+    "input_sent": false
+  },
+  "prior_web_evidence_applies_to_earlier_export_only": true,
+  "physical_device": false,
+  "native_acceptance_claimed": false,
+  "full_web_acceptance_claimed": false,
+  "remaining_local_smoke_checks": [],
+  "remaining_delivery_checks": [
+    "Verify the eventual live GitHub Pages deployment separately from this local-origin test."
+  ],
+  "covered_local_smoke_acceptance_complete": true,
+  "all_authored_content_played": false,
+  "subjective_audio_listening_tested": false,
+  "viewport_after_cleanup": {
+    "width": 1280,
+    "height": 720
+  },
+  "limitations": [
+    "Covered local browser smoke checks only; all authored levels were not played through ordinary input.",
+    "Mouse wheel navigation is not native touch-drag acceptance.",
+    "No subjective listening, physical-device or production-service backend acceptance.",
+    "The eventual live deployment may have different origin/save storage and must be verified independently."
+  ]
+}
